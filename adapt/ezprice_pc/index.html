@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이지프라이스</title>
+   
+	<!--style-->
+	<link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/reset.css">
+	<link rel="stylesheet" type="text/css" href="//img.ezwelfare.net/welfare_new/css/notokr_font.css">
+	<link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/swiper.css">
+
+	<style type="text/css">
+		/* web event 기본소스 */
+		#footer_wrapper .foot_menu {margin-top: 0;}
+		.ezprice_evt,
+		.ezprice_evt * {box-sizing: border-box;}
+		.ezprice_evt .blind {visibility:hidden;overflow:hidden;position:fixed;top:-999px;left:-999px;width:0;height:0;font-size:0;line-height:0;}
+		.ezprice_evt img {display: block; margin: 0 auto; border: 0;}
+		.ezprice_evt .e_width {width:1200px; margin: 0 auto;}
+		.ezprice_evt .pos_re {position: relative;}
+		.ezprice_evt map area {outline: none;}
+		/* web event 기본소스 */
+
+		/* visual */
+		.ezprice_evt .visual{background:url('//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_visual_bg.jpg') no-repeat center top;}
+		.ezprice_evt .visual .visual_cont{position: absolute;}
+		.ezprice_evt .visual .visual_cont01{top: 107px;left: 182px;width: 424px;height: 51px;}
+		.ezprice_evt .visual .visual_cont02{bottom: 12px;left: 50%;transform: translateX(-50%);}
+		.ezprice_evt .visual .visual_cont02 span{color: #fff;font-size: 26px;font-family:'Roboto';font-weight: bold;}
+
+		/* cont01 */
+		.ezprice_evt .cont01{background:url('//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezpricel_bg1.jpg') no-repeat center top;}
+		.ezprice_evt .cont01 .cont01_date{position: absolute;}
+		.ezprice_evt .cont01 .cont01_date span{color: #fff;font-size: 50px;font-family:"notokr-medium";}
+		.ezprice_evt .cont01 .cont01_date_icon{top: 56px;left: 322px;}
+		.ezprice_evt .cont01 .cont01_date_day{top: 50px;left: 536px;}
+		.ezprice_evt .cont01 .cont01_date_hour{top: 50px;left: 639px;}
+		.ezprice_evt .cont01 .cont01_date_minute{top: 50px;left: 733px;}
+		.ezprice_evt .cont01 .cont01_date_second{top: 50px;left: 828px;}
+
+		/* cont02 */
+		.ezprice_evt .cont02{background:url('//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezpricel_bg2.jpg') no-repeat center top;}
+
+		/* cont03 */
+		.ezprice_evt .cont03{background: #d8eff9;padding: 50px 0;}
+		.ezprice_evt .cont03 .ezprice_slide li{width: 380px;}
+		.ezprice_evt .cont03 .ezprice_slide li img{width: 100%;height: 250px;border-radius: 10px 10px 0 0;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box{background: #fff;padding: 42px 8px 8px;border-radius: 0 0 10px 10px;position: relative;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .prd_tit{font-size: 18px;font-family:"notokr-medium";color: #222;margin-bottom: 17px;padding: 0 16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .prd_coupon_txt{font-size: 14px;font-family:"notokr-regular";color: #1bc1a7;margin-bottom: 11px;padding: 0 16px;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .prd_coupon_price{font-size: 26px;font-family:'Roboto';color: #222;font-weight: bold;margin-bottom: 24px;padding: 0 16px;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .prd_coupon_price span{font-size: 16px;font-family:"notokr-medium";margin-right: 15px;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .prd_coupon_price s{font-size: 16px;font-family:"notokr-medium";color: #a2a2a2;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .prd_info{padding: 20px 15px;line-height: 26px;background-color: #f3f3f3;border-radius: 0 0 10px 10px;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .prd_info p{min-height: 52px;text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;font-size: 18px;font-family:"notokr-regular";color: #000;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .coupon_tag{position: absolute;top: -20px;left: 24px;font-size: 19px;font-family:"notokr-bold";color: #fff;display: inline-block;padding: 10px;border-radius: 4px;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .coupon_tag.yellow_bg{background-color: #f1c232;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .coupon_tag.green_bg{background-color: #43b174;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .coupon_tag.purple_bg{background-color: #aa2172;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .coupon_tag.orange_bg{background-color: #e66303;}
+		.ezprice_evt .cont03 .ezprice_slide li .prd_desc_box .coupon_tag span{font-size: 12px;font-family:"notokr-regular";}
+		.ezprice_evt .cont03 .ezprice_slide .swiper-button-prev,
+		.ezprice_evt .cont03 .ezprice_slide .swiper-button-next{width: 80px;height: 80px;top: 50%;left: 50%;transform: translate(-50%,-50%);margin: 0;}
+		.ezprice_evt .cont03 .ezprice_slide .swiper-button-prev{background: url("//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_slide_left.png");margin-left: -620px;}
+		.ezprice_evt .cont03 .ezprice_slide .swiper-button-next{background: url("//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_slide_right.png");margin-left: 620px;}
+
+		/* cont04 */
+		.ezprice_evt .cont04{background: #f6f7f9;padding: 50px 0;}
+		.ezprice_evt .cont04 .tab_top{margin-bottom: 23px;}
+		.ezprice_evt .cont04 .tab_top p{display: inline-block;}
+		.ezprice_evt .cont04 .tab_top p.tab_tit{font-size: 20px;font-family:"notokr-bold";color: #142f38;margin-left: 24px;}
+		.ezprice_evt .cont04 .tab_top p.tab_total{font-size: 18px;font-family:"notokr-regular";color: #333;padding: 13px 35px;background-color: #fff;border: 2px solid #dad7d7;border-radius: 30px;margin-left: 15px;}
+		.ezprice_evt .cont04 .tab_top p.tab_total .total_num{font-family:"notokr-bold";color: #0a9882;}
+		.ezprice_evt .cont04 .tab_btn{margin-bottom: 60px;}
+		.ezprice_evt .cont04 .tab_btn ul{overflow: hidden;width: 100%;border-top: 3px solid #ced2d7;}
+		.ezprice_evt .cont04 .tab_btn ul li{float: left;width: 25%;background-color: #fff;border-bottom: 1px solid #e7e7e7;border-right: 1px solid #e7e7e7;transition: all 0.3s;}
+		.ezprice_evt .cont04 .tab_btn ul li:nth-child(4n+1){border-left: 1px solid #e7e7e7;}
+		.ezprice_evt .cont04 .tab_btn ul li:hover,
+		.ezprice_evt .cont04 .tab_btn ul li.active{background-color: #e8eef4;}
+		.ezprice_evt .cont04 .tab_btn ul li a{display: block;padding: 20px 25px;font-size: 18px;font-family:"notokr-regular";color: #333;}	
+		.ezprice_evt .cont04 .tab_cont ul{overflow: hidden;}
+		.ezprice_evt .cont04 .tab_cont ul li{float: left;width: 380px;margin: 0 30px 30px 0;}
+		.ezprice_evt .cont04 .tab_cont ul li:nth-child(3n){margin: 0 0 30px 0;}
+		.ezprice_evt .cont04 .tab_cont ul li img{width: 100%;height: 258px;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box{background: #fff;padding: 42px 8px 8px;position: relative;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_tit{font-size: 18px;font-family:"notokr-medium";color: #222;margin-bottom: 17px;padding: 0 16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_hash{font-size: 14px;font-family:"notokr-regular";color: #666;margin-bottom: 17px;padding: 0 16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_hash span{display: inline-block;margin-right: 5px;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_txt{font-size: 14px;font-family:"notokr-regular";color: #1bc1a7;margin-bottom: 11px;padding: 0 16px;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_price{font-size: 26px;font-family:'Roboto';color: #222;font-weight: bold;margin-bottom: 12px;padding: 0 16px;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_price span{font-size: 16px;font-family:"notokr-medium";margin-right: 15px;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_price s{font-size: 16px;font-family:"notokr-medium";color: #a2a2a2;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_tag{position: absolute;top: -20px;left: 24px;font-size: 19px;font-family:"notokr-bold";color: #fff;display: inline-block;padding: 10px;border-radius: 4px;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_tag.yellow_bg{background-color: #f1c232;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_tag.green_bg{background-color: #43b174;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_tag.purple_bg{background-color: #aa2172;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_tag.orange_bg{background-color: #e66303;}
+		.ezprice_evt .cont04 .tab_cont ul li .list_desc_box .list_coupon_tag span{font-size: 12px;font-family:"notokr-regular";}
+	</style>
+</head>
+<body>
+	
+	<div class="ezprice_evt">
+		<!-- s: visual -->
+		<div class="visual">
+			<div class="e_width pos_re">
+				<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_visual_img.png" alt="">
+				<div class="visual_cont visual_cont01">
+					<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_visual_text01.png" alt="">
+				</div>
+				<div class="visual_cont visual_cont02">
+					<span>2023.11.15</span>
+					<span>~</span>
+					<span>2023.02.02</span>
+				</div>
+			</div>
+		</div>
+		<!-- e: visual -->
+		<!-- s: contents -->
+		<div class="cont cont01">
+			<div class="e_width pos_re">
+				<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_img1.png" alt="">
+				<div class="cont01_date cont01_date_icon">
+					<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_clock_icon.png" alt="">
+				</div>
+				<div class="cont01_date cont01_date_day">
+					<span>28</span>
+				</div>
+				<div class="cont01_date cont01_date_hour">
+					<span>12</span>
+				</div>
+				<div class="cont01_date cont01_date_minute">
+					<span>46</span>
+				</div>
+				<div class="cont01_date cont01_date_second">
+					<span>58</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="cont cont02">
+			<div class="e_width">
+				<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezpricel_img2.png" alt="">
+			</div>
+		</div>
+
+		<div class="cont cont03">
+			<div class="swiper-container ezprice_slide">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<a href="javascript:void(0);">
+							<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_prd_sample01.jpg" alt="">
+							<div class="prd_desc_box">
+								<p class="prd_tit">라마다 앙코르 바이 원덤 부산 해운대라마다 앙코르 바이 원덤 부산 해운대</p>
+								<p class="prd_coupon_txt">쿠폰적용가</p>
+								<p class="prd_coupon_price">5,579,600<span>원~</span><s>5,585,640원~</s></p>
+								<div class="prd_info">
+									<p>
+										체크아웃체크인체크아웃체크인체크아웃체크<br>
+										체크아웃체크인체크아웃체크인체크아웃체크<br>
+										체크아웃체크인체크아웃체크인체크아웃체크
+									</p>
+								</div>
+								<p class="coupon_tag yellow_bg">6000<span>원 쿠폰</span></p>
+							</div>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="javascript:void(0);">
+							<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_prd_sample02.jpg" alt="">
+							<div class="prd_desc_box">
+								<p class="prd_tit">라마다 앙코르 바이 원덤 부산 해운대</p>
+								<p class="prd_coupon_txt">쿠폰적용가</p>
+								<p class="prd_coupon_price">579,600<span>원~</span><s>585,640원~</s></p>
+								<div class="prd_info">
+									<p>
+										체크아웃체크인체크아웃체크인체크아웃체크체크아웃체크인체크아웃체크인체크아웃체크인
+									</p>
+								</div>
+								<p class="coupon_tag orange_bg">6000<span>원 쿠폰</span></p>
+							</div>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="javascript:void(0);">
+							<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_prd_sample03.jpg" alt="">
+							<div class="prd_desc_box">
+								<p class="prd_tit">라마다 앙코르 바이 원덤 부산 해운대라마다 앙코르 바이 원덤 부산 해운대</p>
+								<p class="prd_coupon_txt">쿠폰적용가</p>
+								<p class="prd_coupon_price">579,600<span>원~</span><s>585,640원~</s></p>
+								<div class="prd_info">
+									<p>
+										체크아웃체크인체크아웃체크인체크아웃체크
+									</p>
+								</div>
+								<p class="coupon_tag purple_bg">6000<span>원 쿠폰</span></p>
+							</div>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="javascript:void(0);">
+							<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/05/230510_ezprice_prd_sample03.jpg" alt="">
+							<div class="prd_desc_box">
+								<p class="prd_tit">라마다 앙코르 바이 원덤 부산 해운대라마다 앙코르 바이 원덤 부산 해운대</p>
+								<p class="prd_coupon_txt">쿠폰적용가</p>
+								<p class="prd_coupon_price">579,600<span>원~</span><s>585,640원~</s></p>
+								<div class="prd_info">
+									<p>
+										체크아웃체크인체크아웃체크인체크아웃체크인
+									</p>
+								</div>
+								<p class="coupon_tag green_bg">6000<span>원 쿠폰</span></p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		
+		<div class="cont cont04">
+			<div class="e_width">
+				<div class="tab_wrap">
+					<div class="tab_top">
+						<p class="tab_tit">지역 선택</p>
+						<p class="tab_total">
+							<span>전체</span>
+							<span class="total_num">96</span>
+							<span>개</span>
+						</p>
+					</div>
+					<!-- //tab top -->
+					<div class="tab_btn">
+						<ul>
+							<li class="active"><a href="javascript:void(0);">전체</a></li>
+							<li><a href="javascript:void(0);">서울</a></li>
+							<li><a href="javascript:void(0);">부산</a></li>
+							<li><a href="javascript:void(0);">제주</a></li>
+							<li><a href="javascript:void(0);">경기 / 인천 / 세종</a></li>
+							<li><a href="javascript:void(0);">광주 / 대구</a></li>
+							<li><a href="javascript:void(0);">대전</a></li>
+							<li><a href="javascript:void(0);">울산</a></li>
+							<li><a href="javascript:void(0);">강원</a></li>
+							<li><a href="javascript:void(0);">충북 / 충남</a></li>
+							<li><a href="javascript:void(0);">전북 / 전남</a></li>
+							<li><a href="javascript:void(0);">경북 / 경남</a></li>
+						</ul>
+					</div>
+					<!-- //tab btn -->
+					<div class="tab_cont">
+						<ul>
+							<li>
+								<a href="javascript:void(0);">
+									<img src="//static.ezwelfare.net/OTF/rs::320:320/plain/ezcheckin/live/FACL/image/10058061/39/39020/38796/ef34ff31703b486994fdc191ff750098.jpg" alt="">
+									<div class="list_desc_box">
+										<p class="list_tit">라마다 앙코르 바이 원덤 부산 해운대라마다 앙코르 바이 원덤 부산 해운대</p>
+										<p class="list_hash"><span>#잠실랜드마크</span><span>#석촌호수뷰</span><span>#석촌호수뷰</span><span>#석촌호수뷰</span><span>#석촌호수뷰</span></p>
+										<p class="list_coupon_txt">쿠폰적용가</p>
+										<p class="list_coupon_price">5,579,600<span>원~</span><s>5,585,640원~</s></p>
+										<p class="list_coupon_tag orange_bg">6000<span>원 쿠폰</span></p>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<img src="//static.ezwelfare.net/OTF/rs::320:320/plain/ezcheckin/live/FACL/image/10058061/21/21090/38018/e19f4be86414da20ffa45f8c32c3d69a.jpg" alt="">
+									<div class="list_desc_box">
+										<p class="list_tit">라마다 앙코르 바이 원덤 부산 해운대라마다 앙코르 바이 원덤 부산 해운대</p>
+										<p class="list_hash"><span>#잠실랜드마크</span><span>#석촌호수뷰</span></p>
+										<p class="list_coupon_txt">쿠폰적용가</p>
+										<p class="list_coupon_price">579,600<span>원~</span><s>585,640원~</s></p>
+										<p class="list_coupon_tag green_bg">6000<span>원 쿠폰</span></p>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<img src="//static.ezwelfare.net/OTF/rs::320:320/plain/ezcheckin/live/FACL/image/10058061/35/35380/33701/9f19367a01004f16e24aa690bd5bbdde.jpg" alt="">
+									<div class="list_desc_box">
+										<p class="list_tit">라마다 앙코르 바이 원덤 부산 해운대라마다 앙코르 바이 원덤 부산 해운대</p>
+										<p class="list_hash"><span>#잠실랜드마크</span><span>#석촌호수뷰</span></p>
+										<p class="list_coupon_txt">쿠폰적용가</p>
+										<p class="list_coupon_price">579,600<span>원~</span><s>585,640원~</s></p>
+										<p class="list_coupon_tag purple_bg">6000<span>원 쿠폰</span></p>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<img src="//static.ezwelfare.net/OTF/rs::320:320/plain/ezcheckin/live/FACL/image/10058061/35/35380/33701/9f19367a01004f16e24aa690bd5bbdde.jpg" alt="">
+									<div class="list_desc_box">
+										<p class="list_tit">라마다 앙코르 바이 원덤 부산 해운대라마다 앙코르 바이 원덤 부산 해운대</p>
+										<p class="list_hash"><span>#잠실랜드마크</span><span>#석촌호수뷰</span><span>#석촌호수뷰</span><span>#석촌호수뷰</span><span>#석촌호수뷰</span></p>
+										<p class="list_coupon_txt">쿠폰적용가</p>
+										<p class="list_coupon_price">579,600<span>원~</span><s>585,640원~</s></p>
+										<p class="list_coupon_tag yellow_bg">6000<span>원 쿠폰</span></p>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<img src="//static.ezwelfare.net/OTF/rs::320:320/plain/ezcheckin/live/FACL/image/10058061/39/39020/38796/ef34ff31703b486994fdc191ff750098.jpg" alt="">
+									<div class="list_desc_box">
+										<p class="list_tit">라마다 앙코르 바이 원덤 부산 해운대라마다 앙코르 바이 원덤 부산 해운대</p>
+										<p class="list_hash"><span>#잠실랜드마크</span><span>#석촌호수뷰</span></p>
+										<p class="list_coupon_txt">쿠폰적용가</p>
+										<p class="list_coupon_price">579,600<span>원~</span><s>585,640원~</s></p>
+										<p class="list_coupon_tag purple_bg">6000<span>원 쿠폰</span></p>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<img src="//static.ezwelfare.net/OTF/rs::320:320/plain/ezcheckin/live/FACL/image/10058061/21/21090/38018/e19f4be86414da20ffa45f8c32c3d69a.jpg" alt="">
+									<div class="list_desc_box">
+										<p class="list_tit">라마다 앙코르 바이 원덤 부산 해운대라마다 앙코르 바이 원덤 부산 해운대</p>
+										<p class="list_hash"><span>#잠실랜드마크</span><span>#석촌호수뷰</span></p>
+										<p class="list_coupon_txt">쿠폰적용가</p>
+										<p class="list_coupon_price">579,600<span>원~</span><s>585,640원~</s></p>
+										<p class="list_coupon_tag green_bg">6000<span>원 쿠폰</span></p>
+									</div>	
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //tab cont -->
+				</div>
+			</div>
+		</div>
+		<!-- e: contents -->
+	</div>
+
+	<!--js-->
+	<script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/jquery.js"></script>
+	<script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/swiper.js"></script>
+	<script type="text/javascript">
+		// 날짜 계산 함수
+		function diffDayFunc() {
+			var endDay = "2024-8-31",
+				masTime = new Date(endDay).setHours(23,59,59),
+				todayTime = new Date(),
+				diff = masTime - todayTime,
+				
+				diffDay = Math.floor(diff / (1000*60*60*24)),
+				diffHour = Math.floor((diff / (1000*60*60)) % 24),
+				diffMin = Math.floor((diff / (1000*60)) % 60),
+				diffSec = Math.floor(diff / 1000 % 60);
+			
+			$(".cont01_date_day span").text(String(diffDay).padStart(2, "0"));
+			$(".cont01_date_hour span").text(String(diffHour).padStart(2, "0"));
+			$(".cont01_date_minute span").text(String(diffMin).padStart(2, "0"));
+			$(".cont01_date_second span").text(String(diffSec).padStart(2, "0"));
+		}
+
+		$(document).ready(function(){
+			// 날짜 함수 on
+			diffDayFunc();
+			setInterval(diffDayFunc, 1000);
+
+			// ezprice_slide
+			new Swiper ('.ezprice_slide', {
+				loop : true,
+				autoplay: {     
+					delay: 2000, 
+				},
+				slidesPerView : 'auto',
+				spaceBetween: 30,
+				centeredSlides: true,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		});
+	</script>
+
+</body>
+</html>

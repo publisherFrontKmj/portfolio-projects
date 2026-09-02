@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점검등록_검색결과X (협력사 검색결과X 팝업)</title>
+
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/reset.css">
+	<link rel="stylesheet" type="text/css" href="//img.ezwelfare.net/welfare_new/css/notokr_font.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/partner_pc.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="header_wrapper" class="header_wrapper">
+        <div class="header_wrap">
+            <div class="header_top right">
+                <div class="wrap_inner">
+                    <ul class="header_top_wrap">
+                        <li>
+                            <a href="javascript:void(0);" class="header_top_go">
+                                <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/header_top_go.png" alt="어드민 바로가기">
+                                어드민 바로가기
+                            </a>
+                            <a href="javascript:void(0);" class="header_top_go header_contents_menu">
+                                <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/cotents_manage_icon.png" alt="컨텐츠 관리">
+                                컨텐츠 관리
+                            </a> 
+                            <a href="javascript:void(0);" class="header_top_logout">
+                                <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/header_top_logout.png" alt="로그아웃">
+                                로그아웃
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //wrap_inner -->
+            </div>
+            <!-- //header_top -->
+            <div class="header_nav">
+                <div class="wrap_inner">
+                    <div class="header_nav_wrap clearfix">
+                        <h1 class="leftBox">
+                            <a href="javascript:void(0);">
+                                <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/partner_logo.png" alt="로고">
+                                협력사 지원센터
+                            </a>
+                        </h1>
+                        <div class="gnb rightBox center">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="javascript:void(0);">입점안내</a>
+                                    <ul class="sub_nav">
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">입점 신청</a></li>
+                                        <li><a href="javascript:void(0);">상품 분류 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">매뉴얼</a>
+                                    <ul class="sub_nav">
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">입점 신청</a></li>
+                                        <li><a href="javascript:void(0);">입점 계약</a></li>
+                                        <li><a href="javascript:void(0);">운영 매뉴얼</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">공지/FAQ</a>
+                                    <ul class="sub_nav">
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">자주 묻는 질문</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">사업소개</a>
+                                    <ul class="sub_nav">
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">서비스 소개</a></li>
+                                        <li><a href="javascript:void(0);">제휴&광고</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">정보보안점검</a>
+                                    <ul class="sub_nav">
+                                        <!-- 관리자 -->
+                                        <!-- <li class="sub_nav_first_line"><a href="javascript:void(0);">대시보드(관리자)</a></li>
+                                        <li><a href="javascript:void(0);">점검항목 관리</a></li> -->
+                                        <!-- //관리자 -->
+                                        
+                                        <!-- 협력사 -->
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">대시보드(협력사)</a></li>
+                                        <li><a href="javascript:void(0);">점검등록</a></li>
+                                        <li><a href="javascript:void(0);">서약서/교육 등록</a></li>
+                                        <!-- //협력사 -->
+                                    </ul>
+                                </li> <!-- 230614 추가 -->
+                            </ul>
+                        </div>
+                        <div class="nav_bg"></div>
+                    </div>
+                </div>
+                <!-- //wrap_inner -->
+            </div>
+            <!-- //header_nav -->
+        </div>
+        <!-- //header_wrap -->
+    </div>
+    <!-- //header -->
+    
+    <!-- content -->
+    <div class="prd_division_wrap manual_wrap contents_wrap dashboard_wrap p_dashboard_wrap">
+        <div class="prd_division_top">
+            <p class="prd_division_tit">정보보안점검</p>
+            <p class="prd_division_subtit">협력사 정보보안 점검현황을 확인할 수 있습니다.</p>
+        </div>
+        <!-- //prd_division_top -->
+        <div class="wrap_inner">
+            <div class="prd_division">
+                <div class="prd_division_button_box">
+                    <a href="javascript:void(0);" class="prd_division_tab_button prd_division_tab_button01 button_r_line">대시보드(협력사)</a>  
+                    <a href="javascript:void(0);" class="prd_division_tab_button prd_division_tab_button02 button_r_line active">점검등록</a>  
+                    <a href="javascript:void(0);" class="prd_division_tab_button prd_division_tab_button03">서약서/교육 등록</a>    
+                </div>
+                <div class="wrap_inner_path">
+                    <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/path_home_icon.png" alt="">
+                    <span>Home ></span>
+                    <span>정보보안점검 ></span>
+                    <span class="path_change_text">점검등록</span>
+                </div>
+                <div class="prd_division_tab_box">
+                    <div class="prd_division_tab prd_division_tab_01">
+                        <h2 class="tab_tit">대시보드(협력사)</h2>		
+                    </div>
+                    <!-- //대시보드(관리자) prd_division_tab_01 -->
+                    <div class="prd_division_tab prd_division_tab_02 active">
+                        <div class="board_edit">
+                            <table summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width: 150px;">
+                                    <col style="width: 250px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 250px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 250px;">
+                                </colgroup>	
+                                <tbody>
+                                    <tr>
+                                        <td class="board_edit_head">점검연도</td>
+                                        <td>
+                                            <div class="contents_select_box">
+                                                <span class="contents_select_text">2023</span>
+                                                <div class="contents_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">전체</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">2023</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- //점검연도 -->
+                                        <td class="board_edit_head">협력사</td>
+                                        <td>
+                                            <div class="search_box">
+                                                <a href="javascript:void(0);" class="search_btn_img">
+                                                    <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/partner_search_icon.png" alt="검색 돋보기">
+                                                </a>
+                                                <input type="text" name="" id="" onclick="" class="search" placeholder="">
+                                            </div>
+                                        </td>
+                                        <!-- //협력사 -->
+                                        <td class="board_edit_head">점검결과</td>
+                                        <td>
+                                            <div class="radio_box radio_box_mr">
+                                                <input type="radio" id="radio01" name="radio_01" checked>
+                                                <label for="radio01" class="radio_txt">완료</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input type="radio" id="radio02" name="radio_01">
+                                                <label for="radio02" class="radio_txt">미완료</label>
+                                            </div>
+                                        </td>
+                                        <!-- //교육수료 -->
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="contents_search_item contents_search_btn">
+                                                <a href="javascript:void(0);" class="search_reset">초기화</a>
+                                                <a href="javascript:void(0);" class="search_select">조회</a>
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </div>
+    
+                        <div class="dashboard_edit_top clearfix p_inspection_edit_top">
+                            <p class="edit_top_tit">
+                                총 <span>3</span>건
+                            </p>
+                            <p class="edit_date">
+                                <span>최종제출일 : </span>
+                                <span>2023</span>
+                                <span>-</span>
+                                <span>06</span>
+                                <span>-</span>
+                                <span>23</span>
+                            </p>
+                            <div class="edit_top_right">
+                                <a href="javascript:void(0);" class="dashboard_btn p_inspection_btn">보안점검 가이드</a>
+                                <a href="javascript:void(0);" class="dashboard_btn p_inspection_btn p_inspection_btn02">최종 제출</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contents_edit p_inspection_edit">
+                            <table summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width: 66px;">
+                                    <col style="width: 106px;">
+                                    <col style="width: 403px;">
+                                    <col style="width: 115px;"> 
+                                    <col style="width: 510px;">
+                                </colgroup>
+                                <thead></thead>
+                                <tbody>
+                                    <tr class="table_head">
+                                        <td rowspan="2" class="edit_list_bt">NO</td>
+                                        <td colspan="4" class="edit_list_br">점검항목</td>                                                                                                  
+                                    </tr>
+                                    <tr class="table_head table_head_bt">
+                                        <td>점검연도</td>                                                                                                  
+                                        <td>점검문항</td>
+                                        <td>점검결과</td>
+                                        <td class="edit_list_br">점검의견(협력사)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+    
+                        <div class="dashboard_no_result">
+                            <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/dashboard_no_reult.png" alt="">
+                            <p class="no_result_tit">검색결과 없음</p>
+                            <p class="no_result_subtit">검색조건에 맞는 결과가 없습니다.</p>
+                        </div>
+                    </div>
+                    <!-- //점검등록 prd_division_tab_02 -->
+                    <div class="prd_division_tab prd_division_tab_03"> 
+                        <h2 class="tab_tit">서약서/교육 등록</h2>
+                    </div>
+                    <!-- //서약서/교육 등록 prd_division_tab_03 -->
+                </div>
+            </div>
+            <!-- //prd_division -->
+        </div>
+        <!-- //wrap_inner -->
+    </div>
+    <!-- //prd_division_wrap -->
+    <!-- //content -->
+
+    <!-- footer -->
+    <div id="footer_wrapper" class="footer_wrapper">
+        <div class="wrap_inner">
+            <div class="footer_wrap">
+                <div class="footer_logo leftBox">
+                    <a href="javascript:void(0);">
+                        <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/partner_footer_logo.jpg" alt="하단 로고">
+                    </a>
+                </div>
+                <div class="footer_text leftBox">
+                    <p>
+                        <a href="javascript:void(0);" target="_blank">㈜ 현대이지웰 
+                            <span>KOSDAQ. 코스닥상장법인</span>
+                        </a>
+                    </p>
+                    <p>
+                        서울시 서대문구 충정로 23 현대이지웰
+                        <span class="pl20">사업자번호 : 101-81-90575</span>
+                        <span class="pl20">대표이사 : 장영순</span>
+                    </p>
+                    <p>
+                        <span>고객센터 : 02-3282-0579 (평일 09~18시) / 
+                            <a href="javascript:void(0);">ezhelp@hyundaiezwel.com</a>
+                        </span> 
+                    </p>
+                    <p class="footer_text_last">Copyright ©HYUNDAI EZWEL CO., LTD. &nbsp;&nbsp;All rights reserved</p>
+                </div>
+            </div>
+        </div>
+        <!-- //wrap_inner -->
+    </div>
+    <!-- //footer -->
+
+    <!-- 협력사 검색결과 X 팝업 -->
+    <div class="dashboard_popup dashboard_no_pp">
+        <a href="javascript:void(0);" class="dashboard_popup_close">
+            <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/dashboard_popup_close.png" alt="팝업 닫기">
+        </a>
+        <p class="dashboard_poup_tit">협력사 검색</p>
+
+        <div class="search_box">
+            <a href="javascript:void(0);" class="search_btn_img">
+                <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/partner_search_icon.png" alt="검색 돋보기">
+            </a>
+            <input type="text" name="" id="" onclick="" class="search" placeholder="협력사명 또는 코드를 입력한 후 Enter키를 누르세요.">
+        </div>
+
+        <div class="popup_list_box">
+            <div class="popup_list_top">
+                <span class="list_top list_top_01">서비스 구분</span>
+                <span class="list_top list_top_02">협력사 코드</span>
+                <span class="list_top list_top_03">협력사명</span>
+            </div>
+            <div class="popup_list_line">
+                <!-- 검색결과 없을 경우 -->
+                <div class="dashboard_no_result">
+                    <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/dashboard_no_reult.png" alt="">
+                    <p class="no_result_tit">검색결과 없음</p>
+                    <p class="no_result_subtit">검색조건에 맞는 결과가 없습니다.</p>
+                </div>
+                <!-- //검색결과 없을 경우 -->
+            </div>
+        </div>
+        <!-- //popup_list_box -->
+
+        <div class="dashboard_popup_close02">
+            <a href="javascript:void(0);">닫기</a>
+        </div>
+    </div>
+
+    <!-- 팝업 bg -->
+    <div class="dashboard_popup_bg"></div>
+    <!-- //팝업 bg -->
+    <!-- //협력사 검색결과 X 팝업 -->
+
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/jquery.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/swiper.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/partner_pc.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //팝업 열기
+            $(".dashboard_wrap .search_btn_img").on("click", function(){
+                $(".dashboard_no_pp").addClass("on");
+                $(".dashboard_popup_bg").addClass("on");
+            });
+            //팝업 닫기
+            $(".dashboard_no_pp .dashboard_popup_close").on("click", function(){
+                $(".dashboard_no_pp").removeClass("on");
+                $(".dashboard_popup_bg").removeClass("on");
+            });
+            $(".dashboard_no_pp .dashboard_popup_close02").on("click", function(){
+                $(".dashboard_no_pp").removeClass("on");
+                $(".dashboard_popup_bg").removeClass("on");
+            });
+        });
+    </script>
+</body>
+</html>

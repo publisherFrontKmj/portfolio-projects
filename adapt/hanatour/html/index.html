@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나투어 해외패키지 메인</title>
+
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/reset.css">
+	<link rel="stylesheet" type="text/css" href="//img.ezwelfare.net/welfare_new/css/notokr_font.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/hanatour.css">
+</head>
+<body>
+
+<!-- container_wrap start -->
+
+<div id="container_wrap" class="mr_cont_wrapper">
+<!-- 검색 -->
+<div id="" class="overseas_package op_search clearfix" style="background: url(//img.ezwelfare.net/welfare_new/images/overseas/op_visual.jpg) no-repeat center top;">
+    <div class="w1140">
+        <div class="search_tit">해외패키지<em>어디로 떠나볼까요?</em><a href="#" class="search_tc">예약내역</a></div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="op_search_box">
+            <ul>
+                <li>
+                    <div class="input_label">
+                        <!-- 자동완성 기능 추가. 2019/03/11 by ong-->
+                        <input type="text" id="keyword" onfocus="" onkeydown="" onkeyup="" autocomplete="off">
+                        <input type="hidden" id="searchDiv">
+                        <input type="hidden" id="cityCd">
+                        <input type="hidden" id="areaCd">
+                        <input type="hidden" id="coordY">
+                        <input type="hidden" id="coordX">
+                        <label>가고 싶은 여행지, 여행 종류를 입력하세요.</label>
+                        <div id="popNautoDiv" class="op_area_list" style="display: none;">
+                            <div class="op-search-panel">
+
+                                <!-- 첫번째 -->
+                                <table class="op_area_list_table">
+                                    <caption>주요도시 선택 리스트</caption>
+                                    <colgroup>
+                                        <col width="14.28571428571429%">
+                                        <col width="14.28571428571429%">
+                                        <col width="14.28571428571429%">
+                                        <col width="14.28571428571429%">
+                                        <col width="14.28571428571429%">
+                                        <col width="14.28571428571429%">
+                                        <col width="14.28571428571429%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="ellipsis">일본</th>
+                                            <th class="ellipsis">동남/서남아시아</th>
+                                            <th class="ellipsis">중국/홍콩/대만/몽골</th>
+                                            <th class="ellipsis">북미/하와이/중남미</th>
+                                            <th class="ellipsis">남태평양/호주</th>
+                                            <th class="ellipsis">유럽</th>
+                                            <th class="ellipsis">중동/아프리카</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <ul class="list">
+                                                    <li><a class="ellipsis">전체</a></li>
+                                                    <li><a class="ellipsis">도쿄</a></li>
+                                                </ul>
+                                                <ul class="list"><li><a class="ellipsis">오사카/교토/고베</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">후쿠오카/유후인</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">삿포로/후라노/비에이</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">오키나와</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">시즈오카</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">미야자키/가고시마</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">나고야/다카야마</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">벳부</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">다카마츠/나오시마</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">나가사키</a></li></ul>
+                                            </td>
+                                            <td>
+                                                <ul class="list">
+                                                    <li><a class="ellipsis">전체</a></li>
+                                                    <li><a class="ellipsis">싱가포르</a></li>
+                                                </ul>
+                                                <ul class="list"><li><a class="ellipsis">방콕/파타야/푸켓</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">치앙마이/치앙라이</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">코사무이</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">다낭/호이안</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">나트랑/달랏</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">푸꾸옥</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">하노이/하롱베이/호치민</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">세부/보라카이</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">보홀/클락/마닐라</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">코타키나발루</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">브루나이</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">캄보디아/라오스</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">발리</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">인도/네팔</a></li></ul>
+                                            </td>
+                                            <td>
+                                                <ul class="list">
+                                                    <li><a class="ellipsis">전체</a></li>
+                                                    <li><a class="ellipsis">중국</a></li>
+                                                </ul>
+                                                <ul class="list"><li><a class="ellipsis">대만</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">홍콩/마카오</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">북경</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">청도/대련</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">서안/정주</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">하문</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">장가계</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">성도/구채구</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">백두산/연길</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">계림</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">몽골/중앙아시아</a></li></ul>
+                                            </td>
+                                            <td>
+                                                <ul class="list">
+                                                    <li><a class="ellipsis">전체</a></li>
+                                                    <li><a class="ellipsis">미서부</a></li>
+                                                </ul>
+                                                <ul class="list"><li><a class="ellipsis">미동부</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">캐나다</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">중남미</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">멕시코/칸쿤</a></li></ul>
+                                            </td>
+                                            <td>
+                                                <ul class="list">
+                                                    <li><a class="ellipsis">전체</a></li>
+                                                    <li><a class="ellipsis">괌</a></li>
+                                                </ul>
+                                                <ul class="list"><li><a class="ellipsis">사이판</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">뉴질랜드</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">호주</a></li></ul>
+                                            </td>
+                                            <td>
+                                                <ul class="list">
+                                                    <li><a class="ellipsis">전체</a></li>
+                                                    <li><a class="ellipsis">영국/프랑스</a></li>
+                                                </ul>
+                                                <ul class="list"><li><a class="ellipsis">스위스</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">이탈리아</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">독일</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">오스트리아</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">체코</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">헝가리</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">북유럽</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">네덜란드/벨기에</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">발칸 (크로아티아)</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">스페인/포르투갈/모로코</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">튀르키예(터키)/그리스</a></li></ul>
+                                            </td>
+                                            <td>
+                                                <ul class="list">
+                                                    <li><a class="ellipsis">전체</a></li>
+                                                    <li><a class="ellipsis">이집트</a></li>
+                                                </ul>
+                                                <ul class="list"><li><a class="ellipsis">사우디아라비아</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">요르단</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">두바이</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">케냐</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">남아프리카 공화국</a></li></ul>
+                                                <ul class="list"><li><a class="ellipsis">모리셔스</a></li></ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- 두번째 -->
+                                <div class="op_area_sub_list">
+                                    <div class="list">
+                                        <div class="op_list_items">
+                                            <p class="tit">지역</p>
+                                            <ul class="op_list_area">
+                                                <li><a><span>일본,&nbsp;<em>도쿄</em></span></a></li>
+                                                <li><a><span>일본,&nbsp;<em>오사카</em></span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="op_list_items">
+                                            <p class="tit">상품</p>
+                                            <ul>
+                                                <li><a><span class="txt ellipsis"><em>도쿄</em>/가와고에/요코하마 4일 #자유석식 #고즈넉한가와고에 #시내숙박</span></a></li>
+                                                <li><a><span class="txt ellipsis"><em>도쿄</em>/야마나시 3일 #후지산파노라마로프웨이 #온천호텔숙박♨ #가성비최고</span></a></li>
+                                                <li><a><span class="txt ellipsis">[가족여행픽!/<em>도쿄</em>디즈니] <em>도쿄</em>/디즈니 3일(준특급/포켓몬센터/시티관광/원데이패스 포함)</span></a></li>
+                                                <li><a><span class="txt ellipsis">[4인출발/실속TOKYO] <em>도쿄</em>/오다이바 3일(1일자유/세미더블/현지드라이빙 가이드)</span></a></li>
+                                                <li><a><span class="txt ellipsis"><em>도쿄</em>/가와고에 4일 #1일자유 #자유석식 #고즈넉한가와고에 #시내숙박</span></a></li>
+                                                <li><a><span class="txt ellipsis">[청주출발]<em>도쿄</em> 4일 #1일자유 #디즈니랜드 #가족여행추천</span></a></li>
+                                                <li><a><span class="txt ellipsis"><em>도쿄</em>/가와고에/요코하마 4일 #1일자유 #고즈넉한 가와고에 숙박 #온천체험♨ #호텔업그레이드🧡</span></a></li>
+                                                <li><a><span class="txt ellipsis"><em>도쿄</em>/하코네/아타미 4일 #단독패키지 #소도시여행 #온천호텔♨ #후지산감상</span></a></li>
+                                                <li><a><span class="txt ellipsis">[벚꽃여행] <em>도쿄</em>/가와고에/하코네/아타미 4일 #소도시여행 #온천호텔숙박♨ #후지산감상</span></a></li>
+                                                <li><a><span class="txt ellipsis">[홈쇼핑에디션] <em>도쿄</em>/시즈오카/하코네 4일 #소도시여행 #온천호텔숙박♨ #후지산감상</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="no-list">검색 결과가 없습니다.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkin_startday">
+                        <input type="text" name="daterange" value="원하시는 출발일을 선택하세요." placeholder="원하시는 출발일을 선택하세요."/>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="check_rooms">검색</a>
+                </li>
+            </ul>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    </div>
+</div>
+
+<!-- 혹시 이런 패키지 상품을 찾고 계신가요? -->
+<div id="" class="overseas_package up-transition op_ico pt50">
+    <div class="w1140">
+        <h3 class="op_title">혹시 이런 패키지 상품을<br>찾고 계신가요?</h3>
+        <ul>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="ico_img"><img src="//img.ezwelfare.net/welfare_new/images/overseas/op_ico01.png" alt="img alt"/></div>
+                    <span>프리미엄</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="ico_img"><img src="//img.ezwelfare.net/welfare_new/images/overseas/op_ico02.png" alt="img alt"/></div>
+                    <span>에어텔</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="ico_img"><img src="//img.ezwelfare.net/welfare_new/images/overseas/op_ico03.png" alt="img alt"/></div>
+                    <span>골프</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="ico_img"><img src="//img.ezwelfare.net/welfare_new/images/overseas/op_ico04.png" alt="img alt"/></div>
+                    <span>허니문</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="ico_img"><img src="//img.ezwelfare.net/welfare_new/images/overseas/op_ico05.png" alt="img alt"/></div>
+                    <span>크루즈</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 현대이지웰 해외패키지 프로모션 -->
+<div id="" class="overseas_package up-transition op_swiper">
+    <div class="w1140">
+        <h2 class="op_title pt50 mb30"><em>현대이지웰</em> 해외패키지 프로모션</h2>
+        <div class="op_swiper_box">
+            <div class="swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#">
+                        <div class="hoverImg"><img class="lazyImg" src="//img.ezwelfare.net/welfare_new/images/overseas/op_slider1.jpg" alt=""></div>
+                        <p class="op_sb_t1">대한민국 28년 전통, 호텔 예약의 리더</p>
+                        <p class="op_sb_t2">그린트리인 서귀포<br>한정특가</p>
+                        <p class="op_sb_t3">해외호텔 : 4% 할인<br>일본호텔 : 박당 500엔 할인</p>
+                    </a></li>
+                    <li class="swiper-slide"><a href="#">
+                        <div class="hoverImg"><img class="lazyImg" src="//img.ezwelfare.net/welfare_new/images/overseas/op_slider2.jpg" alt=""></div>
+                        <p class="op_sb_t1">대한민국 28년 전통, 호텔 예약의 리더</p>
+                        <p class="op_sb_t2">그린트리인 서귀포<br>한정특가</p>
+                        <p class="op_sb_t3">해외호텔 : 4% 할인<br>일본호텔 : 박당 500엔 할인</p>
+                    </a></li>
+                    <li class="swiper-slide"><a href="#">
+                        <div class="hoverImg"><img class="lazyImg" src="//img.ezwelfare.net/welfare_new/images/overseas/op_slider1.jpg" alt=""></div>
+                        <p class="op_sb_t1">대한민국 28년 전통, 호텔 예약의 리더</p>
+                        <p class="op_sb_t2">그린트리인 서귀포<br>한정특가</p>
+                        <p class="op_sb_t3">해외호텔 : 4% 할인<br>일본호텔 : 박당 500엔 할인</p>
+                    </a></li>
+                    <li class="swiper-slide"><a href="#">
+                        <div class="hoverImg"><img class="lazyImg" src="//img.ezwelfare.net/welfare_new/images/overseas/op_slider2.jpg" alt=""></div>
+                        <p class="op_sb_t1">대한민국 28년 전통, 호텔 예약의 리더</p>
+                        <p class="op_sb_t2">그린트리인 서귀포<br>한정특가</p>
+                        <p class="op_sb_t3">해외호텔 : 4% 할인<br>일본호텔 : 박당 500엔 할인</p>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="swiper-tools">
+                <div class="swiper-pagination">
+                </div>
+                <div class="swiper-button-prev type3"></div>
+                <div class="mr_bar">
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="swiper-button-next type3"></div>
+                <button type="button" class="btn-swiper-play stop"><span></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 고객님만을 위해 준비한 특가 코너 -->
+<div id="" class="overseas_package up-transition user_corner">
+    <div class="w1140">
+        <h2 class="op_title pt90">고객님만을 위해 준비한 특가 코너</h2>
+        <div class="op_tabs">
+            <div class="clearfix">
+                <ul class="op_title_tab"> 
+                    <li class="on" value="1"><a href="javascript:void(0);">동남아<i>></i></a></li>
+                    <li value="2"><a href="javascript:void(0);">미주/하와이/중남미<i>></i></a></li>
+                    <li value="3"><a href="javascript:void(0);">일본<i>></i></a></li>
+                    <li value="4"><a href="javascript:void(0);">홍콩/중국소<i>></i></a></li>
+                    <li value="5"><a href="javascript:void(0);">남태평양<i>></i></a></li>
+                    <li value="6"><a href="javascript:void(0);">유럽/아프리카<i>></i></a></li>
+                </ul>
+            </div>
+            <div class="op_tabs_view js-tab-cont fadein on">
+                <div class="op_cyc1">			
+                    <ul class="op_slide-list">
+                        <li class="op_item_box list4">
+                            <div class="op_item_pd">
+                                <!-- sample FORM -->
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample05.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종</div><!-- 제목 -->
+                                    <div class="tab_price">853,000<em>원 ~</em></div>
+                                </a>
+                                <!-- //sample FORM -->
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample06.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">BESPOKE 4도어 냉장고 2종 더블실버/글램화이트</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample07.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">자동혈압계 HEM-8712</div>
+                                    <div class="tab_price">853,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample05.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종</div><!-- 제목 -->
+                                    <div class="tab_price">853,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample06.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">BESPOKE 4도어 냉장고 2종 더블실버/글램화이트</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample07.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">자동혈압계 HEM-8712</div>
+                                    <div class="tab_price">853,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul><!-- // op_slide-list -->
+                </div>
+            </div>
+            <div class="op_tabs_view js-tab-cont fadein">
+                <div class="op_cyc2">
+                    <ul class="op_slide-list">
+                        <li class="op_item_box list4">
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample05.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종</div><!-- 제목 -->
+                                    <div class="tab_price">253,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample06.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">BESPOKE 4도어 냉장고 2종 더블실버/글램화이트</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample07.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">자동혈압계 HEM-8712</div>
+                                    <div class="tab_price">853,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul><!-- // op_slide-list -->
+                </div>
+            </div>
+            <div class="op_tabs_view js-tab-cont fadein">
+                <div class="op_cyc3">
+                    <ul class="op_slide-list">
+                        <li class="op_item_box list4">
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample05.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종</div><!-- 제목 -->
+                                    <div class="tab_price">353,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample06.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">BESPOKE 4도어 냉장고 2종 더블실버/글램화이트</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample07.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">자동혈압계 HEM-8712</div>
+                                    <div class="tab_price">853,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul><!-- // op_slide-list -->
+                </div>		
+            </div>
+            <div class="op_tabs_view js-tab-cont fadein">
+                <div class="op_cyc4">
+                    <ul class="op_slide-list">
+                        <li class="op_item_box list4">
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample05.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종</div><!-- 제목 -->
+                                    <div class="tab_price">453,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample06.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">BESPOKE 4도어 냉장고 2종 더블실버/글램화이트</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample07.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">자동혈압계 HEM-8712</div>
+                                    <div class="tab_price">853,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul><!-- // op_slide-list -->
+                </div>
+            </div>
+            <div class="op_tabs_view js-tab-cont fadein">
+                <div class="op_cyc5 swiper">
+                    <ul class="op_slide-list">
+                        <li class="op_item_box list4">
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample05.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종</div><!-- 제목 -->
+                                    <div class="tab_price">553,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample06.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">BESPOKE 4도어 냉장고 2종 더블실버/글램화이트</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample07.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">자동혈압계 HEM-8712</div>
+                                    <div class="tab_price">853,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul><!-- // op_slide-list -->
+                </div>
+            </div>
+            <div class="op_tabs_view js-tab-cont fadein">
+                <div class="op_cyc6">
+                    <ul class="op_slide-list">
+                        <li class="op_item_box list4">
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample05.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종 울트라hd TV AI ThinQ 70인치/75인치 2종</div><!-- 제목 -->
+                                    <div class="tab_price">653,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample06.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">BESPOKE 4도어 냉장고 2종 더블실버/글램화이트</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample07.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">자동혈압계 HEM-8712</div>
+                                    <div class="tab_price">853,000<em>원 ~</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                            <div class="op_item_pd">
+                                <a href="#none">
+                                    <div class="tab_img h178"><img src="//img.ezwelfare.net/welfare_new/images/category/main/2021/ca_sample08.jpg" alt="img alt"/></div>
+                                    <div class="tab_tag"><span>관광</span></div>
+                                    <div class="tab_title line2">삼성 BESPOKE 12인용 식기세척기 3종</div>
+                                    <div class="tab_price">853,000<em>원</em></div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul><!-- // op_slide-list -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 자주하는 질문 & 공지사항 -->
+<div id="" class="overseas_package op_info pt90 mb30">
+    <div class="w1140">
+        <div class="faq">
+            <h2 class="op_title"><a href="javascript:void(0);">자주하는 질문<i>></i></a></h2>
+            <div class="clearfix">
+                <ul class="op_title_tab"> 
+                    <li class="on" value="1"><a href="javascript:void(0);">전체</a></li>
+                    <li value="2"><a href="javascript:void(0);">상품</a></li>
+                    <li value="3"><a href="javascript:void(0);">예약/결제</a></li>
+                    <li value="4"><a href="javascript:void(0);">변경/취소</a></li>
+                    <li value="5"><a href="javascript:void(0);">기타</a></li>
+                </ul>
+            </div>
+            <div class="js-tab-cont op_faq_list fadein on">
+                <ul class="ui-tab-cont" id="faqList1"><li><a>현대카드 PRIVIA 이용권 사용 안내</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>여행 상품 예약은 어떻게 하나요 ?</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>예약금을 낸 후 나머지 잔액은 언제까지 내야 하나요?</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>패키지 일정을 함께 관광하고 돌아올 때 일정을 변경하여 추가 일정을 즐길 수 있나요?</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>혼자서 패키지여행을 떠나고 싶은데, 이럴 경우 추가 비용이 있나요?</a></li></ul>
+            </div>
+            <div class="js-tab-cont op_faq_list fadein"> 
+                <ul class="ui-tab-cont" id="faqList1"><li><a>2현대카드 PRIVIA 이용권 사용 안내</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>여행 상품 예약은 어떻게 하나요 ?</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>예약금을 낸 후 나머지 잔액은 언제까지 내야 하나요?</a></li></ul>
+            </div>
+            <div class="js-tab-cont op_faq_list fadein"> 
+                <ul class="ui-tab-cont" id="faqList1"><li><a>3현대카드 PRIVIA 이용권 사용 안내</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>여행 상품 예약은 어떻게 하나요 ?</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>예약금을 낸 후 나머지 잔액은 언제까지 내야 하나요?</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>마일리지가 있어 무료로 항공을 이용할 수 있는데 현지 관광에만 참여할 수 있나요?</a></li></ul>
+            </div>
+            <div class="js-tab-cont op_faq_list fadein"> 
+                <ul class="ui-tab-cont" id="faqList1"><li><a>4현대카드 PRIVIA 이용권 사용 안내</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>마일리지가 있어 무료로 항공을 이용할 수 있는데 현지 관광에만 참여할 수 있나요?</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>PRIVIA 해외패키지 예약 시 할인 혜택은 어떻게 되나요?</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>패키지 일정을 함께 관광하고 돌아올 때 일정을 변경하여 추가 일정을 즐길 수 있나요?</a></li></ul>
+            </div>
+            <div class="js-tab-cont op_faq_list fadein"> 
+                <ul class="ui-tab-cont" id="faqList1"><li><a>5현대카드 PRIVIA 이용권 사용 안내</a></li></ul>
+                <ul class="ui-tab-cont" id="faqList1"><li><a>여행 상품 예약은 어떻게 하나요 ?</a></li></ul>
+            </div>
+        </div>
+        <div class="notice">
+            <h2 class="op_title"><a href="javascript:void(0);">공지사항<i>></i></a></h2>
+            <ul>
+                <li><a href="javascript:void(0);">현대이지웰 해외패키지 이용 안내 현대이지웰 해외패키지 이용 안내</a><span>2024.01.24</span></li>
+                <li><a href="javascript:void(0);">금융상품 판매대리 중개업자 증서 금융상품 판매대리 중개업자 증서</a><span>2024.01.24</span></li>
+                <li><a href="javascript:void(0);">부문별 인턴사원 채용공고</a><span>2024.01.24</span></li>
+                <li><a href="javascript:void(0);">[시스템공지] 2024.2.21 02:00</a><span>2024.01.24</span></li>
+                <li><a href="javascript:void(0);">현대이지웰 해외패키지 이용 안내</a><span>2024.01.24</span></li>
+                <li><a href="javascript:void(0);">금융상품 판매대리 중개업자 증서</a><span>2024.01.24</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- container_wrap End -->
+
+
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/jquery.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/swiper.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/hanatour.js"></script>
+</body>
+</html>

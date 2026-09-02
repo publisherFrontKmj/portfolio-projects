@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+.golf_header.on .golf_gnb a:hover{color:#67b700;border-bottom:4px solid #67b700;box-sizing: border-box;}
+
+.golf_header{background:#fff;position:relative;}
+.golf_header .golf_hd{position:relative;}
+.golf_header .lxr_topgnb{position:absolute;top:0;left:0;overflow: hidden;}
+.golf_header .lxr_topgnb li{float:left;}
+.golf_header .lxr_topgnb li a{font-family:"Malgun Gothic";font-size:12px;color:#666;height:30px;display:inline-block;padding:0 10px 0 20px;line-height:30px;font-family:'Malgun Gothic';}
+.golf_header .lxr_topgnb li .all{padding:0 20px 0 10px;}
+.golf_header .golf_h1{text-align:center;padding:38px 0 34px 0;}
+.golf_header .golf_gnb_wrap{text-align:center;}
+.golf_header .golf_gnb{display:inline-block;font:0/0 arial;}
+.golf_header .golf_gnb li{display:inline-block;padding:0 25px;}
+.golf_header .golf_gnb li a{font-family:'notokr-medium';font-size:16px;color:#000;display:block;height:54px;line-height:54px;}
+
+.golf_header .golf_gnb .menu_type02{position: relative;padding: 0;}
+.golf_header .golf_gnb .menu_type02.menu_type02_ml{padding-left: 25px;}
+.golf_header .golf_gnb .menu_type02.menu_type02_ml::before{content: "";position: absolute;top: 17px;left: 0;width: 1px;height: 19px;background-color: #bfbfbf;}
+.golf_header .golf_gnb .menu_type02.menu_type02_ml::after{content: "";position: absolute;top: 50%;transform: translateY(-50%);right: -1px;width: 3px;height: 3px;border-radius: 50%;background-color: #444;}
+.golf_header .golf_gnb .menu_type02 > a{margin: 0 7px;}
+.golf_header .golf_gnb .menu_type02:hover > a{color:#67b700;}
+.golf_header .golf_gnb .menu_type02 .type02_submenu{display: none;position: absolute;top: 40px;left: 0;z-index: 300;width: 135px;padding: 10px;background-color: #fff;border-radius: 20px;box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);}
+.golf_header .golf_gnb .menu_type02 .type02_submenu.w75{width: 75px;}
+.golf_header .golf_gnb .menu_type02 .type02_submenu li{display:block;text-align: left;padding: 0 0 0 10px;}
+.golf_header .golf_gnb .menu_type02 .type02_submenu li a{display:block;color: #666;font-size:14px;font-family:'notokr-regular';line-height: 1;height: auto;margin: 10px 0;}
+.golf_header .golf_gnb .menu_type02 .type02_submenu li a:hover{color:#67b700;}
+
+.golf_header .golf_gnb_lyr_wrap{position:absolute;top:167px;left:0;width:100%;background:#fff url(//img.ezwelfare.net/welfare_mall/luxuryZone/bg_gnb_lyr.jpg) repeat-x left top;z-index:300;display:none;}
+.golf_header .golf_gnb_lyr{width:1140px;margin:0 auto;padding:40px 0 40px 115px;box-sizing: border-box;display:none;}
+.golf_header .golf_gnb_tmenu{font-size:14px;font-family:'notokr-regular';padding:0 0 0 52px;}
+.golf_header .golf_gnb_tmenu li{margin:10px 20px 10px 0;display:inline-block;width: 120px;}
+.golf_header .golf_gnb_tmenu li:first-child{padding:0;}
+.golf_header .golf_gnb_tmenu li a:hover{color:#67b700;} */
+
+.golf_zone .golf_dim_left:after,.golf_zone .golf_dim_right:after{display:block;content:'';position:absolute;top:0;z-index:20;height:500px;background-color:rgba(247, 247, 247, 0.7);right:0;left:0;}
+.golf_zone .golf_dim_left{position:absolute;top:0;z-index:20;height:500px;left:0;right:50%;margin-right:620px;border-top-right-radius:50px;border-bottom-right-radius:50px;background-position:right top;overflow:hidden;}
+.golf_zone .golf_dim_right{position:absolute;top:0;z-index:20;height:500px;left:50%;right:0;margin-left:620px;border-top-left-radius:50px;border-bottom-left-radius:50px;overflow:hidden;}
+
+/* 메인 슬라이드 변경  */
+.golf_zone .golf_zone_main_con{margin:0;}
+.golf_zone .golf_zone_main_con.lgzs{height:585px;position:relative;}
+.golf_zone .golf_zone_main_con .lgzm_vtxt1{top:65px;}
+.golf_zone .golf_zone_main_con .lgzm_vtxt2{top:110px;}
+.golf_zone .golf_zone_obj_slide_wrap{width:1140px;height:500px;margin:0 auto;position:relative;}
+.golf_zone .golf_zone_obj_slide{/*overflow:hidden;*/width:880px;padding:540px 0 0 0;height:50px;margin:0 auto;text-align:center;font:0/0 arial;}
+.golf_zone .golf_zone_obj_slide li{width:220px;display:inline-block;vertical-align: top;}
+.golf_zone .golf_zone_obj_slide li img{width:1140px;height:500px;border-radius:50px;}
+.golf_zone .golf_zone_obj_slide li a{width:100%;display:block;overflow:hidden;}
+
+.golf_zone .golf_zone_obj_slide .golf_slide_tbox{position:absolute;top:70px;right:0;width:470px;height:360px;background:#FFF;padding:48px 50px;box-sizing:border-box;letter-spacing:-1px;border-radius:20px 0 0 20px;}
+.golf_zone .golf_zone_obj_slide .golf_slide_t0{font-size:16px;font-family:'notokr-regular';color:#5aa402;line-height:16px;text-align:left;}
+.golf_zone .golf_zone_obj_slide .golf_slide_t1{font-size:42px;font-family:'notokr-regular';color:#222;margin-top:20px;line-height:48px;text-align:left;height:96px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.golf_zone .golf_zone_obj_slide .golf_slide_t2{font-size:20px;font-family:'notokr-regular';color:#999;margin-top:23px;line-height:26px;text-align:left;height:52px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+.golf_zone .golf_zone_obj_slide li .lzs_list{position:relative;z-index:2;display:block;width:180px;height:39px;margin:0 20px;font-size:16px;color:#444;line-height:39px;letter-spacing:-1px;font-family:'notokr-regular';box-sizing: border-box;text-align:center;}
+.golf_zone .golf_zone_obj_slide li.on .lzs_list{overflow:hidden;height:38px;position:relative;top:-2px;font-size:20px;border-bottom:2px solid #5aa402 ;font-family:'notokr-medium';}
+.golf_zone .golf_zone_obj_slide li .lzs_bg{position:absolute;top:0;left:0;right:0;bottom:0;display:none;}
+.golf_zone .golf_zone_obj_slide li.on .lzs_bg{display:block;animation: fadein 2s ease 0s;z-index:16;}
+.golf_zone .golf_zone_obj_slide li.off .lzs_bg{display:block;animation: fadeout 2s ease 0s;z-index:15;}
+.golf_zone .golf_zone_obj_slide li .lzs_list:before{content:"";display:block;position:absolute;top:18px;left:-18px;width:2px;height:2px;background:#b1b1b1;}
+.golf_zone .golf_zone_obj_slide li:first-child .lzs_list:before{display:none;}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.golf_zone .btn_area{position:absolute;width:1140px;margin:0 auto;bottom:0;}
+.golf_zone .btn_area .num_cnt{font-size:12px;color:#707072;font-weight:bold;position:absolute;top:15px;left:175px;}
+.golf_zone .btn_area .num_cnt .now{color:#212121;}
+.golf_zone .btn_area .left_btn{position:absolute;font:0/0 arial;}
+.golf_zone .btn_area .right_btn{position:absolute;font:0/0 arial;}
+
+.golf_zone .btn_area .left_btn{width:35px;height:28px;top:46px;left:50%;margin-left:-485px;background:url('//img.ezwelfare.net/welfare_mall/golfZone/arr_left.png') no-repeat left top;}
+.golf_zone .btn_area .left_btn:hover{width:35px;height:28px;background:url('//img.ezwelfare.net/welfare_mall/golfZone/arr_left_on.png') no-repeat left top;}
+.golf_zone .btn_area .right_btn{width:35px;height:28px;top:46px;right:50%;margin-right:-485px;background:url('//img.ezwelfare.net/welfare_mall/golfZone/arr_right.png') no-repeat right top;}
+.golf_zone .btn_area .right_btn:hover{width:35px;height:28px;background:url('//img.ezwelfare.net/welfare_mall/golfZone/arr_right_on.png') no-repeat right top;}
+
+/* 230913 golf */
+/* common */
+.golf_box{width: 1140px;margin: 85px auto 0 auto;position: relative;}
+.golf_box .box_tit{font-size:30px;font-family:'notokr-medium';color:#222;margin-bottom: 30px;}
+
+/* 월클딜 */
+.golf_deal{border-bottom:2px solid #f5f5f5;}
+.golf_deal .deal_top{text-align: center;margin-bottom: 85px;}
+.golf_deal .deal_top .top_tit{font-size:30px;font-family:'notokr-medium';color:#222;margin-bottom: 10px;}
+.golf_deal .deal_top .top_subtit{font-size:20px;font-family:'notokr-medium';color:#a6a6a6;}
+.golf_deal .deal_list{padding-bottom: 100px;}
+.golf_deal .deal_list ul{font-size:0;}
+.golf_deal .deal_list ul li{display:inline-block;margin-right: 30px;}
+.golf_deal .deal_list ul li:last-child{margin-right: 0;}
+.golf_deal .deal_list ul li a{text-align: center;display:block;width: 360px;position: relative;}
+.golf_deal .deal_list ul li a::after{content: "";position: absolute;top: -43px;left: 50%;transform: translateX(-50%);width: 123px;height: 87px;background: url('//img.ezwelfare.net/welfare_mall/golfZone/golf_deal_icon.png') no-repeat 100%/cover;}
+.golf_deal .deal_list ul li a .deal_img_box {margin-bottom: 40px;width: 360px;height: 360px;overflow: hidden;border-radius: 50%;}
+.golf_deal .deal_list ul li a .deal_img_box .deal_list_img{display:block;width: 100%;transition: all 0.3s;}
+.golf_deal .deal_list ul li:hover a .deal_img_box .deal_list_img{transform: scale(1.08);}
+.golf_deal .deal_list ul li a .list_tit{font-size:22px;font-family:'notokr-bold';color:#222;margin-bottom: 15px;}
+.golf_deal .deal_list ul li a .list_desc{font-size:18px;font-family:'notokr-regular';color:#444;margin-bottom: 40px;line-height: 24px;height: 48px;text-overflow:ellipsis;overflow: hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+.golf_deal .deal_list ul li a .list_price{font-size:24px;font-family:'notokr-bold';color:#222;}
+.golf_deal .deal_list ul li a .list_price span{font-size:18px;font-family:'notokr-medium';color:#4ca208;display:inline-block;margin-right: 5px;}
+
+/* 핫딜 */
+.hot_deal .golf_common_slide{padding-bottom: 70px;}
+.hot_deal .golf_common_slide li{width: 270px;}
+.hot_deal .golf_common_slide li a{display:block;}
+.hot_deal .golf_common_slide li a .hot_slide_img{display:block;width: 270px;height: 270px;margin-bottom: 30px;border-radius: 10px;}
+.hot_deal .golf_common_slide li a .hot_slide_desc{font-size:14px;font-family:'notokr-regular';color:#444;margin-bottom: 30px;padding-left: 20px;line-height: 20px;height: 40px;text-overflow:ellipsis;overflow: hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+.hot_deal .golf_common_slide li a .hot_slide_price{font-size:16px;font-family:'notokr-bold';color:#222;padding-left: 20px;}
+
+.hot_deal .golf_common_slide .swiper-button-prev,
+.hot_deal .golf_common_slide .swiper-button-next{width: 60px;height: 60px;top: 105px;margin: 0;}
+.hot_deal .golf_common_slide .swiper-button-prev{background: url("//img.ezwelfare.net/welfare_mall/golfZone/hot_slide_arr_left.png");left: 0;}
+.hot_deal .golf_common_slide .swiper-button-next{background: url("//img.ezwelfare.net/welfare_mall/golfZone/hot_slide_arr_right.png");right: 0;}
+
+.hot_deal .golf_common_slide .swiper-pagination{position: absolute;bottom: 0;left: 0;display: inline-block;width: 66px;font-size:18px;font-family: "arial";color:#666;text-align: left;}
+.hot_deal .golf_common_slide .swiper-pagination .swiper-pagination-current{color: #5aa402;}
+
+.hot_deal .mr_navi{width:100%;height:18px;position:absolute;bottom: 0;right: 0;}
+.hot_deal .mr_navi .mr_bar{position:absolute;top:7px;left:76px;height:2px;width:1064px;background:#e8e8e8;}
+.hot_deal .mr_navi .mr_bar progress{position:absolute;top:-1px;left:0;height:4px;width:1064px;border:0;color:#222;}
+.hot_deal .mr_navi .mr_bar progress::-webkit-progress-bar{transition:width 1s ease-out;padding:0px;background:none;border:0;border-radius:0 ;-webkit-border-radius:0;-moz-border-radius:0;width:100%}
+.hot_deal .mr_navi .mr_bar progress::-webkit-progress-value{transition:width 1s ease-out;border-radius:0 0 0 0;background:#5aa402;/*-webkit-animation:move 5s linear 0 infinite;*/border-radius:3px;}
+.hot_deal .mr_navi .mr_bar progress[value="100"]::-webkit-progress-value{background:#5aa402;border-radius:0 0 0 0}
+
+/* MD 추천테마 */
+.md_theme{padding-bottom: 100px;position: relative;background: linear-gradient(to top, #f7f7f7 42%, #fff 43%);}
+.md_theme .theme_tab_btn{position: absolute;bottom: 0;right: 0;}
+.md_theme .theme_tab_btn ul{font-size: 0;}
+.md_theme .theme_tab_btn ul li{display: inline-block;margin-right: 10px;width: 124px;height: 124px;position: relative;cursor: pointer;}
+.md_theme .theme_tab_btn ul li:last-child{margin-right: 0;}
+.md_theme .theme_tab_btn ul li::after{content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;box-sizing: border-box;border: 4px solid #fff;box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);border-radius: 10px;background-color: rgba(0,0,0,0.3);display: none;}
+.md_theme .theme_tab_btn ul li.on::after{display: block;}
+.md_theme .theme_tab_btn ul li img{display:inline-block;width: 100%;height: 100%;border-radius: 10px;}
+.md_theme .theme_tab_contents .md_slide_box{display:none;overflow: hidden;}
+.md_theme .theme_tab_contents .md_slide_box.on{display: block;}
+.md_theme .theme_tab_contents .md_slide_box .md_slide_img{float: left;width: 570px;height: 553px;border-radius: 10px;margin-right: 50px;}
+.md_theme .theme_tab_contents .md_slide_box .md_slide_img img{width: 100%;}
+.md_theme .theme_tab_contents .md_slide_box .md_slide_txt{float: left;width: 520px;}
+.md_theme .theme_tab_contents .md_slide_box .md_slide_txt .slide_txt01{display: inline-block;font-size:16px;font-family:'notokr-medium';color:#333;margin-top: 30px;position: relative;}
+.md_theme .theme_tab_contents .md_slide_box .md_slide_txt .slide_txt01::before{content: "";position: absolute;bottom: -4px;left: 0;width: 100%;height: 1px;background-color: #000;}
+.md_theme .theme_tab_contents .md_slide_box .md_slide_txt .slide_txt01 span{color:#5aa402;}
+.md_theme .theme_tab_contents .md_slide_box .md_slide_txt .slide_txt02{font-size:36px;font-family:'notokr-medium';color:#333;margin-top: 50px;line-height: 37px;height: 72px;text-overflow:ellipsis;overflow: hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+.md_theme .theme_tab_contents .md_slide_box .md_slide_txt .slide_txt03{font-size:16px;font-family:'notokr-regular';color:#999;margin-top: 50px;line-height: 24px;}
+
+/* BRAND SALE */
+.brand_sale{padding-bottom: 100px;}
+.brand_sale .brand_sale_box{overflow: hidden;}
+.brand_sale .brand_sale_box .sale{float: left;width: 536px;margin-right: 66px;}
+.brand_sale .brand_sale_box .sale:last-child{margin-right: 0;}
+.brand_sale .brand_sale_box .sale .sale_top{position: relative;margin-bottom: 10px;}
+.brand_sale .brand_sale_box .sale .sale_top a{display: block;}
+.brand_sale .brand_sale_box .sale .sale_top .sale_b_img{display:block;width: 536px;height: 329px;}
+.brand_sale .brand_sale_box .sale .sale_top .sale_txt_box{position: absolute;left: 0;bottom: 0;padding: 50px 25px;background-color: #fff;border-radius: 0 20px 0 0;}
+.brand_sale .brand_sale_box .sale .sale_top .sale_txt_box .sale_txt{font-size:22px;font-family:'notokr-bold';color:#333;margin-bottom: 15px;}
+.brand_sale .brand_sale_box .sale .sale_top .sale_txt_box .sale_subtxt01{font-size:16px;font-family:'notokr-regular';color:#999;margin-bottom: 5px;}
+.brand_sale .brand_sale_box .sale .sale_top .sale_txt_box .sale_subtxt02{font-size:14px;font-family:'notokr-regular';color:#999;}
+
+.brand_sale .brand_sale_box .sale .sale_bottom ul{font-size:0;}
+.brand_sale .brand_sale_box .sale .sale_bottom ul li{display:inline-block;width: 170px;margin-right: 13px;}
+.brand_sale .brand_sale_box .sale .sale_bottom ul li:last-child{margin-right: 0;}
+.brand_sale .brand_sale_box .sale .sale_bottom ul li a{display:block;}
+.brand_sale .brand_sale_box .sale .sale_bottom ul li a .sale_s_img_box{width: 170px;border-radius: 10px;margin-bottom: 20px;position: relative;}
+.brand_sale .brand_sale_box .sale .sale_bottom ul li a .sale_s_img_box .sale_s_img{display:block;width: 100%;}
+.brand_sale .brand_sale_box .sale .sale_bottom ul li a .sale_s_img_box .sale_s_img_txt{display: none;position: absolute;top: 0;left: 0;border-radius: 10px;width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);line-height: 20px;}
+.brand_sale .brand_sale_box .sale .sale_bottom ul li a .sale_s_img_box .sale_s_img_txt span{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);display:block;width: 100%;font-size:14px;font-family:'notokr-regular';color: #fff;}
+.brand_sale .brand_sale_box .sale .sale_bottom ul li a:hover .sale_s_img_box .sale_s_img_txt{display:block;}
+.brand_sale .brand_sale_box .sale .sale_bottom ul li a span{display:block;text-align: center;font-size:16px;font-family:'notokr-medium';color:#222;}
+
+/* 새로운 발견 */
+.hot_deal.new_discovery{padding: 15px 0 100px 0;background-color: #f5f5f5;}
+
+/* 이달의 HOT BRAND */
+.month_hot ul{font-size: 0;}
+.month_hot ul li{display:inline-block;width: 176px;margin-right: 65px;}
+.month_hot ul li:last-child{margin-right: 0;}
+.month_hot ul li a{display:block;transition: all 0.3s;}
+.month_hot ul li a:hover{transform: scale(1.08);}
+.month_hot ul li a .hot_img_box{width: 176px;height: 176px;margin-bottom: 35px;}
+.month_hot ul li a .hot_img_box img{display:block;width: 100%;border-radius: 50%;}
+.month_hot ul li a .hot_txt{display:block;text-align: center;font-size:18px;font-family:'notokr-bold';color:#333;}
+
+/* ranking top 6 */
+.ranking .tab_box{position: relative;}
+
+.ranking .tab_box .tab_btn{position: absolute;top: -46px;right: 0;}
+.ranking .tab_box .tab_btn ul{font-size:0;}
+.ranking .tab_box .tab_btn ul li{display:inline-block;margin-right: 50px;}
+.ranking .tab_box .tab_btn ul li:last-child{margin-right: 0;}
+.ranking .tab_box .tab_btn ul li a{display:block;font-size:16px;font-family:'notokr-regular';color:#bfbfbf;}
+.ranking .tab_box .tab_btn ul li.on a{color:#5aa402;}
+
+.ranking .tab_box .tab_contents .cont{display:none;}
+.ranking .tab_box .tab_contents .cont.on{display:block;}
+.ranking .tab_box .tab_contents .cont ul{font-size:0;}
+.ranking .tab_box .tab_contents .cont ul li{display:inline-block;margin: 0 27px 27px 0;}
+.ranking .tab_box .tab_contents .cont ul li:nth-of-type(3n){margin: 0 0 27px 0;}
+.ranking .tab_box .tab_contents .cont ul li a{text-align: center;display:block;width: 362px;position: relative;}
+.ranking .tab_box .tab_contents .cont ul li a .ranking_num{position: absolute;top: 0;left: 0;display:block;font-size:28px;font-family:'notokr-bold';color:#fff;padding: 11px 17px;border-radius: 20px 0 20px 0;background-color: #333;}
+.ranking .tab_box .tab_contents .cont:nth-of-type(2n) ul li a .ranking_num,
+.ranking .tab_box .tab_contents .cont:nth-of-type(4n) ul li a .ranking_num,
+.ranking .tab_box .tab_contents .cont:nth-of-type(6n) ul li a .ranking_num{background-color: #999;}
+.ranking .tab_box .tab_contents .cont ul li a .ranking_list_img{display:block;width: 362px;height: 362px;border-radius: 20px;margin-bottom: 40px;}
+.ranking .tab_box .tab_contents .cont ul li a .ranking_desc{font-size:18px;font-family:'notokr-regular';color:#444;margin-bottom: 40px;line-height: 24px;height: 48px;text-overflow:ellipsis;overflow: hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+.ranking .tab_box .tab_contents .cont ul li a .ranking_price{font-size:24px;font-family:'notokr-bold';color:#222;}
+/* //230913 golf */
+
+footer{text-align: center;padding: 100px 0 90px 0;background-color: #fff;border-top: 2px solid #000;}
+footer p{font-size:18px;font-family:'notokr-bold';color:#222;padding-bottom: 10px;}

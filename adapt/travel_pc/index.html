@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자체개선 해외여행 종합혜택</title>
+   
+	<!--style-->
+	<link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/reset.css">
+	<link rel="stylesheet" type="text/css" href="//img.ezwelfare.net/welfare_new/css/notokr_font.css">
+
+	<style type="text/css">
+		/* web event 기본소스 */
+		#footer_wrapper .foot_menu {margin-top: 0;}
+		.travel_evt,
+		.travel_evt * {box-sizing: border-box;}
+		.travel_evt .blind {visibility:hidden;overflow:hidden;position:fixed;top:-999px;left:-999px;width:0;height:0;font-size:0;line-height:0;}
+		.travel_evt img {display: block; margin: 0 auto; border: 0;}
+		.travel_evt .e_width {width: 980px; margin: 0 auto; position: relative;}
+		.travel_evt .pos_re {position: relative;}
+		.travel_evt map area {outline: none;}
+		/* web event 기본소스 */
+		
+		.travel_evt .visual {background: url("//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_visual_bg.jpg") no-repeat center top;}
+		.travel_evt .cont01 {background: url("//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_img1_bg.jpg") no-repeat center top;}
+		.travel_evt .cont02 {background: #fff;}
+		.travel_evt .cont03 {background: #fff;}
+		.travel_evt .cont04 {background: #fff;}
+		.travel_evt .cont05 {background: #f0f0f0;}
+		.travel_evt .cont06 {background: #f0f0f0;}
+		.travel_evt .cont07 {background: #fff;}
+		.travel_evt .cont08 {background: #fff;}
+		.travel_evt .cont09 {background: #000;}
+		.travel_evt .cont10 {background: #495fa6;}
+
+		.travel_evt .cont02 ul{font-size:0;width: 920px;margin: 0 auto;padding-bottom: 20px;}
+		.travel_evt .cont02 ul li{display:inline-block;width: 300px;height: 160px;max-height:160px;padding-top: 20px;border:1px solid #cfcfcf;border-radius:10px;text-align: center;margin: 0 10px 10px 0;}
+		.travel_evt .cont02 ul li:nth-of-type(3n){margin: 0 0 10px 0;}
+		.travel_evt .cont02 ul li p{font-size:16px;color:#999;font-family:"notokr-light";margin-bottom: 25px;}
+		
+		.travel_evt .cont03 .travel_receipt{position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);width: 500px;height: 543px;}
+		.travel_evt .cont03 .travel_receipt img{width: 100%;}
+
+		.travel_evt .cont04 .travel_btn{text-align: center;padding: 50px 0 130px 0;}
+		.travel_evt .cont04 .travel_btn a{display:inline-block;padding: 25px;font-size:30px;color:#fff;font-family:"notokr-medium";background:#000;transition:all 0.3s;}
+		.travel_evt .cont04 .travel_btn a:hover{background:#2f8a76;}
+		.travel_evt .cont04 .travel_btn a img{display:inline-block;margin-left: 20px;}
+
+		.travel_evt .list_wrap ul{font-size:0;width: 920px;margin: 0 auto;padding-bottom: 90px;}
+		.travel_evt .list_wrap ul li{display:inline-block;text-align: center;margin: 0 10px 10px 0;}
+		.travel_evt .list_wrap ul li:nth-of-type(3n){margin: 0 0 10px 0;}
+		.travel_evt .list_wrap ul li a{display:block;width: 300px;height: 300px;padding-top: 40px;background:#fff;border-radius: 10px;border:1px solid #cfcfcf;transition:all 0.3s;}
+		.travel_evt .list_wrap ul li a:hover{transform: translateY(-10px);box-shadow: 2px 2px 10px 0px rgba(4, 0, 0, 0.2);}
+		.travel_evt .list_wrap ul li .free_trip_icon{margin-bottom: 16px;}
+		.travel_evt .list_wrap ul li .free_trip_img{margin-bottom: 25px;}
+		.travel_evt .list_wrap ul li .free_trip_txt01{font-size:20px;font-family:"notokr-bold";margin-bottom: 10px;}
+		.travel_evt .list_wrap ul li .free_trip_txt02{font-size:16px;color:#999;font-family:"notokr-light";}
+		.travel_evt .list_wrap ul li.free_list_hotel a:hover{border-color: #e95565;}
+		.travel_evt .list_wrap ul li.free_list_airplane a:hover{border-color: #d49850;}
+		.travel_evt .list_wrap ul li.free_list_tour a:hover{border-color: #719ed5;}
+		.travel_evt .list_wrap ul li.free_list_rent a:hover{border-color: #2a8484;}
+		.travel_evt .list_wrap ul li.free_list_hotel .free_trip_txt01{color:#e95565;}
+		.travel_evt .list_wrap ul li.free_list_airplane .free_trip_txt01{color:#d49850;}
+		.travel_evt .list_wrap ul li.free_list_tour .free_trip_txt01{color:#719ed5;}
+		.travel_evt .list_wrap ul li.free_list_rent .free_trip_txt01{color:#2a8484;}
+
+		.travel_evt .cont08.list_wrap ul li a{height: 224px;}
+		.travel_evt .cont08.list_wrap ul li a:hover{border-color: #2f3a8a;}
+		.travel_evt .list_wrap ul li .free_trip_txt01{color: #2f3a8a;}
+
+		/* nav */
+		.evt_dl_nav{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 10;margin-left: 618px;display: none;}
+		.evt_dl_nav::after{content:"";position: absolute;top: 18px;left: 5px;width: 1px;height: 135px;background-color:#999;}
+		.evt_dl_nav.on{display: block;}
+		.evt_dl_nav ul li:nth-of-type(2){margin: 40px 0;}
+		.evt_dl_nav ul li a{font-size: 16px;font-family:"notokr-Light";color: #999;position: relative;display:inline-block;padding: 7px 0;width: 103px;margin-left: 20px;text-align: center;}
+		.evt_dl_nav ul li.on a{font-size: 18px;font-family:"notokr-medium";color: #fff;background-color:#2f8a76;border-radius: 5px;}
+		.evt_dl_nav ul li a:before,
+		.evt_dl_nav ul li a:after{content: '';position: absolute;top:50%;transform: translateY(-50%);border-radius: 50%;}
+		.evt_dl_nav ul li a:before{left: -19px;width: 9px;height: 9px;background: #999;z-index: 1;}
+		.evt_dl_nav ul li.on a:before{background: #2f8a76;}
+		.evt_dl_nav ul li a:after{left: -22px;width:15px;height:15px;background: rgba(47,138,118,0.3);display:none;}
+		.evt_dl_nav ul li.on a:after{display:block;}
+	</style>
+</head>
+<body>
+	<div class="travel_evt">
+		<!-- s: visual -->
+		<div class="visual pos_re">
+			<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_visual.jpg" alt="">
+		</div>
+		<!-- e: visual -->
+		<!-- s: contents -->
+		<!-- nav -->
+		<div class="evt_dl_nav">
+			<ul>
+				<li class="dl_nav01 on"><a href="#evtCont1">해외패키지</a></li>
+				<li class="dl_nav02"><a href="#evtCont2">자유여행</a></li>
+				<li class="dl_nav03"><a href="#evtCont3">단독혜택</a></li>
+			</ul>
+		</div>
+		<!-- //nav -->
+
+		<!-- cont01 -->
+		<div id="evtCont1" class="cont cont01">
+			<div class="e_width">
+				<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_img1.jpg"alt="">
+			</div>
+		</div>
+		<!-- //cont01 -->
+
+		<!-- cont02 -->
+		<div class="cont cont02">
+			<div class="e_width">
+				<ul>
+					<li>
+						<p>대한민국 1등 여행사</p>
+						<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo01.jpg"alt="">
+					</li>
+					<li>
+						<p>소비자 만족도 1위!</p>
+						<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo02.jpg"alt="">
+					</li>
+					<li>
+						<p>개별여행 전문</p>
+						<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo03.jpg"alt="">
+					</li>
+					<li>
+						<p>47년 노하우!</p>
+						<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo04.jpg"alt="">
+					</li>
+					<li>
+						<p>품격있고 편안한</p>
+						<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo05.jpg"alt="">
+					</li>
+					<li>
+						<p>좋은날, 좋은여행</p>
+						<img src="//img.ezwelfare.net/welfare_upload/event/img/2024/06/240619_travel_logo01.jpg"alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //cont02 -->
+
+		<!-- cont03 -->
+		<div class="cont cont03">
+			<div class="e_width pos_re">
+				<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_img3.jpg"alt="">
+				<div class="travel_receipt">
+					<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_receipt.png"alt="">
+				</div>
+			</div>
+		</div>
+		<!-- //cont03 -->
+
+		<!-- cont04 -->
+		<div class="cont cont04">
+			<div class="e_width">
+				<div class="travel_btn">
+					<a href="/gate/tourMain.ez?gateCd=1241">복지포인트로 해외여행 예약하기<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_btn_arrow.png"alt=""></a>
+				</div>
+			</div>
+		</div>
+		<!-- //cont04 -->
+
+		<!-- cont05 -->
+		<div id="evtCont2" class="cont cont05">
+			<div class="e_width">
+				<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_img5.jpg"alt="">
+			</div>
+		</div>
+		<!-- //cont05 -->
+
+		<!-- cont06 -->
+		<div class="cont cont06 list_wrap">
+			<div class="e_width">
+				<ul>
+					<li class="free_list_hotel">
+						<a href="/asp/asp_link.ez?cspCd=hotelpass01">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_hotel.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo06.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최대 4% 할인</p>
+							<p class="free_trip_txt02">29년 전통 호텔 예약 전문</p>
+						</a>
+					</li>
+					<li class="free_list_hotel">
+						<a href="/asp/asp_link.ez?cspCd=naeiltour_hotel">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_hotel.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo07.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최대 4% 할인</p>
+							<p class="free_trip_txt02">전세계 호텔 실시간 예약</p>
+						</a>
+					</li>
+					<li class="free_list_hotel">
+						<a href="/asp/asp_link.ez?cspCd=hanatour&goUrl=/hyundai-ezwel/hotel/overseas">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_hotel.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo08.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최대 3% 할인</p>
+							<p class="free_trip_txt02">호텔 예약 하나만 믿고</p>
+						</a>
+					</li>
+					<li class="free_list_hotel">
+						<a href="/asp/asp_link.ez?cspCd=monkeytravel">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_hotel.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo09.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">태국 전문</p>
+							<p class="free_trip_txt02">태국여행 단연 1등</p>
+						</a>
+					</li>
+					<li class="free_list_hotel">
+						<a href="/asp/asp_link.ez?cspCd=staynmore">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_hotel.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo10.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">동남아 전문</p>
+							<p class="free_trip_txt02">프리미엄 호텔 & 리조트</p>
+						</a>
+					</li>
+					<li class="free_list_hotel">
+						<a href="/asp/asp_main.ez?cspCd=tourbell23">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_hotel.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2024/06/240619_travel_logo03.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">베트남 전문</p>
+							<p class="free_trip_txt02">최고의 해변 리조트 예약</p>
+						</a>
+					</li>
+					<li class="free_list_hotel">
+						<a href="/asp/asp_main.ez?cspCd=chaletkorea">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_hotel.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2024/06/240619_travel_logo02.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">&nbsp;</p>
+							<p class="free_trip_txt02">전세계 해외호텔 예약</p>
+						</a>
+					</li>
+					<li class="free_list_hotel">
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=X9IPWGBKTO4623L0XIA3ROVB">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_hotel.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo11.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최대 3% 할인</p>
+							<p class="free_trip_txt02">실시간 호텔 예약</p>
+						</a>
+					</li>
+					<!-- //호텔 -->
+					<li class="free_list_airplane">
+						<a href="/asp/asp_link.ez?cspCd=naeiltour_air">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_airplane.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo12.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">&nbsp;</p>
+							<p class="free_trip_txt02">실시간 할인 항공</p>
+						</a>
+					</li>
+					<li class="free_list_airplane">
+						<a href="/asp/asp_link.ez?cspCd=onlinetour">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_airplane.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo13.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">&nbsp;</p>
+							<p class="free_trip_txt02">쉽고 빠른 항공 예약</p>
+						</a>
+					</li>
+					<li class="free_list_airplane">
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=X9IPWGBKTO4623L0XIA3ROVB">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_airplane.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo14.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">&nbsp;</p>
+							<p class="free_trip_txt02">실시간 할인 항공</p>
+						</a>
+					</li>
+					<!-- //항공 -->
+					<%-- <li class="free_list_tour">
+						<a href="/asp/asp_link.ez?cspCd=naeilstore">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_tour.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo15.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">&nbsp;</p>
+							<p class="free_trip_txt02">교통패스부터 액티비티까지 !</p>
+						</a>
+					</li> --%>
+					<li class="free_list_tour">
+						<a href="/asp/asp_link.ez?cspCd=monkeytravel">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_tour.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo16.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">&nbsp;</p>
+							<p class="free_trip_txt02">태국여행 단연 1등</p>
+						</a>
+					</li>
+					<li class="free_list_tour">
+						<a href="/authsupport/linkTo.ez?cspCd=agl">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_tour.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2024/06/240619_travel_logo06.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">티타임 및 예약즉시확정</p>
+							<p class="free_trip_txt02">실시간 골프 예약</p>
+						</a>
+					</li>
+					<!-- //투어, 패스 -->
+					<li class="free_list_rent">
+						<a href="/asp/asp_link.ez?cspCd=naturemobility">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_rent.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo17.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최대 2% 할인</p>
+							<p class="free_trip_txt02">해외렌터카 가격 비교</p>
+						</a>
+					</li>
+					<li class="free_list_rent">
+						<a href="/asp/asp_link.ez?cspCd=movv">
+							<div class="free_trip_icon">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_icon_rent.png"alt="">
+							</div>
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo18.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최대 2% 할인</p>
+							<p class="free_trip_txt02">전용기사 & 차량 예약</p>
+						</a>
+					</li>
+					<!-- //렌터카 -->
+				</ul>
+			</div>
+		</div>
+		<!-- //cont06 -->
+
+		<!-- cont07 -->
+		<div id="evtCont3" class="cont cont07">
+			<div class="e_width">
+				<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_img7.jpg"alt="">
+			</div>
+		</div>
+		<!-- //cont07 -->
+
+		<!-- cont08 -->
+		<div class="cont cont08 list_wrap">
+			<div class="e_width">
+				<ul>
+					<li>
+						<a href="/cuser/event/twayEventW.ez">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo19.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최대 10% 할인</p>
+							<p class="free_trip_txt02">항공권 예약</p>
+						</a>
+					</li>
+					<li>
+						<a href="/event/eventFullProcess.ez?id=20200512jinairevent">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo20.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최대 7% 할인</p>
+							<p class="free_trip_txt02">항공권 예약</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=6QMBT17RUB3040FZN7VBM64P">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo21.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">5% 할인</p>
+							<p class="free_trip_txt02">해외유심 와이파이</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=X9IPWGBKTO4623L0XIA3ROVB">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo22.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최저가</p>
+							<p class="free_trip_txt02">패키지여행</p>
+						</a>
+					</li>
+					<li>
+						<a href="/gate/promotion/eventUrlForm.ez?eventBean.eventId=190125_bking_event">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo23.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">2% 적립</p>
+							<p class="free_trip_txt02">전세계 숙소 특가</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/rentalCars.ez">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo24.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">5% 할인</p>
+							<p class="free_trip_txt02">해외렌터카 최저가 비교</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=TQNZNHCYET33119MZODMUXUR">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo25.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">단독특가</p>
+							<p class="free_trip_txt02">해외에서 데이터 고플땐?</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/owaugEvent.ez">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo26.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">깜짝쿠폰</p>
+							<p class="free_trip_txt02">액티비티 예약 NO.1</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=6352PX2S7X1498TGMADHENO6">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo27.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">호텔 5% 할인</p>
+							<p class="free_trip_txt02">글로벌 항공호텔 예약</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=P3ITKAF3OO1524PTDHKS2WS0">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo28.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">10% 할인</p>
+							<p class="free_trip_txt02">글로벌 해외렌터카 예약</p>
+						</a>
+					</li>
+					<li>
+						<a href="/gate/promotion/eventUrlForm.ez?eventBean.eventId=190130_kkday_event">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo29.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최대 7% 할인</p>
+							<p class="free_trip_txt02">현지투어/패스/입장권</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=Y8OQQNTUW93867TCZOH6X9Z">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo30.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">6% 할인</p>
+							<p class="free_trip_txt02">전세계 호텔 예약</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=86DNFMD56H4313T5S62VY4AD">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo31.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">2% 적립</p>
+							<p class="free_trip_txt02">해외호텔 실시간 비교</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=HDWKOAKF2I4315R2T78A2LGY">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo32.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">적립금 지급</p>
+							<p class="free_trip_txt02">항공/호텔/렌터카</p>
+						</a>
+					</li>
+					<li>
+						<a href="/gate/travelSkyscannerSearch.ez">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_logo33.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">적립금 지급</p>
+							<p class="free_trip_txt02">항공/호텔/렌터카</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=44VBVV9L8R5270FZG74YAW0R">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2024/06/240619_travel_logo04.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">투어, 티켓 할인쿠폰 증정</p>
+							<p class="free_trip_txt02">항공, 숙소, 교통, 투어와 액티비티까지!</p>
+						</a>
+					</li>
+					<li>
+						<a href="/cuser/event/mgrEventPageCenter.ez?eventCd=UENK0PN1KV54137O2X8FLNC4">
+							<div class="free_trip_img">
+								<img src="//img.ezwelfare.net/welfare_upload/event/img/2024/06/240619_travel_logo05.jpg"alt="">
+							</div>
+							<p class="free_trip_txt01">최저가</p>
+							<p class="free_trip_txt02">전세계 유심, 와이파이 구매</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //cont08 -->
+
+		<!-- cont09 -->
+		<div class="cont cont09">
+			<div class="e_width">
+				<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_img9.jpg"alt="">
+			</div>
+		</div>
+		<!-- //cont09 -->
+
+		<!-- cont10 -->
+		<div class="cont cont10">
+			<div class="e_width">
+				<a href="/event/happyCarrierEvent.ez" target="_blank">
+					<img src="//img.ezwelfare.net/welfare_upload/event/img/2023/09/230907_travel_img10.jpg"alt="">
+				</a>
+			</div>
+		</div>
+		<!-- //cont10 -->
+
+		<!-- e: contents -->
+	</div>
+
+	<!--js-->
+	<script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//scroll
+			$(window).on("scroll", function() {
+				var winScroll = $(this).scrollTop(),
+					evtVisual = $(".travel_evt .visual").offset().top,
+					evtCont1 = $(".travel_evt .cont01").offset().top - 101,
+					evtCont2 = $(".travel_evt .cont05").offset().top - 101,
+					evtCont3 = $(".travel_evt .cont07").offset().top - 101;
+
+				$('.evt_dl_nav li a').click(function(){
+					_top = $($(this).attr('href')).position().top - 100;
+					$('html, body').stop().animate({scrollTop: _top },700);
+					return false
+				});
+
+				if(winScroll >= evtCont1){
+					$('.evt_dl_nav').fadeIn(200);
+				}else{
+					$('.evt_dl_nav').fadeOut(200);
+				}
+
+				if (winScroll > evtCont1 && winScroll <= evtCont2) {
+					$('.evt_dl_nav li').removeClass('on');
+					$('.evt_dl_nav .dl_nav01').addClass('on');
+				} else if(winScroll > evtCont2 && winScroll <= evtCont3){
+					$('.evt_dl_nav li').removeClass('on');
+					$('.evt_dl_nav .dl_nav02').addClass('on');
+				} else if(winScroll > evtCont3){
+					$('.evt_dl_nav li').removeClass('on');
+					$('.evt_dl_nav .dl_nav03').addClass('on');
+				}
+			});
+		});
+	</script>
+</body>
+</html>

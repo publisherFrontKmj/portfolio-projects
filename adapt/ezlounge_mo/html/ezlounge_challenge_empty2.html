@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>챌린지 - 진행 중인 챌린지(작성된 챌린지X)</title>
+
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/reset.css">
+	<link rel="stylesheet" type="text/css" href="//img.ezwelfare.net/welfare_new/css/notokr_font.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/ezlounge_mo.css">
+</head>
+<body>
+    <div class="ezlounge_zone">
+        <div class="ezlounge_top">
+            <h1 class="ezlounge_logo">
+                <a href="javascript:void(0);"><img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_logo.png" alt="ezlounge logo"></a>
+                <span class="ezlounge_logo_txt">이지웰의 새로운 소식을 가장 빠르게! 업데이트</span>
+            </h1>
+
+            <div class="ezlounge_menu">
+                <ul>
+                    <li><a href="javascript:void(0);">이지웰소식</a></li>
+                    <li><a href="javascript:void(0);">우리회사소식</a></li>
+                    <li><a href="javascript:void(0);">홍보게시판</a></li>
+                    <li class="on">
+                        <span class="challenge_mark" style="display:blcok;">진행중</span>
+                        <a href="javascript:void(0);">챌린지</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="ezlounge_search">
+                <input type="text" placeholder="검색어를 입력하세요.">
+                <a href="javascript:void(0);" class="search_reset">초기화</a>
+                <a href="javascript:void(0);"><img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_search_icon.png" alt="돋보기"></a>
+            </div>
+        </div>
+        <!-- //ezlounge_top -->
+        
+        <div class="ezlounge_main_banner">
+            <div class="challenge_ban"><img src="//img.ezwelfare.net/welfare_mobile/real/images/ezlounge/ezlounge_challenge_banner_m.jpg" alt=""></div>
+        </div>
+        <!-- //ezlounge_main_banner -->
+
+        <div class="challenge_tab">
+            <ul>
+                <li class="on"><a href="javascript:void(0);">진행 중인 챌린지</a></li>
+                <li><a href="javascript:void(0);">지난 챌린지</a></li>
+                <li><a href="javascript:void(0);">참여한 챌린지</a></li>
+            </ul>
+        </div>
+        <!-- //challenge_tab -->
+
+        <div class="challenge_info">
+            <p class="info_t1">이 달의 챌린지이 달의 챌린지이 달의 챌린지이 달의 챌린지이 달의 챌린지</p>
+            <p class="info_t2">34평을 40평대처럼 만드는 마법!34평을 40평대처럼 만드는 마법!34평을 40평대처럼 만드는 마법!</p>
+            <p class="info_t3">안녕하세요! 저는 귀여운 포메라니안 심바의 집사이자 인테리어 디자인 스튜디오 언커먼그레이 @uncommon_gray안녕하세요! 저는 귀여운 포메라니안 심바의 집사이자 인테리어 디자인 스튜디오 언커먼그레이 @uncommon_gray</p>
+            <p class="info_date">2024.11.01 ~ 2024.11.31</p>
+            <a href="javascript:void(0);" class="attend_pop_button">
+                <img src="//img.ezwelfare.net/welfare_mobile/real/images/ezlounge/ezlounge_attend_icon.png" alt="">
+                <span>참여하기</span>
+            </a>
+        </div>
+        <!-- //challenge_info -->
+
+        <div class="ezlounge_filter_top">
+            <p class="top_t1"><span>0</span>건의 챌린지</p>
+            <div class="filter_top">
+                <div class="filter_txt">
+                    <span><img src="//img.ezwelfare.net/welfare_mobile/real/images/ezlounge/ezlounge_array_icon.png" alt=""></span>
+                    <span>최신순</span>
+                </div>
+                <ul>
+                    <li><a href="javascript:void(0);">최신순</a></li>
+                    <li><a href="javascript:void(0);">인기순</a></li>
+                    <li><a href="javascript:void(0);">조회순</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //ezlounge_filter_top -->
+
+        <p class="empty_txt">작성된 챌린지가 없습니다.</p>
+    </div>
+    <div class="ezlounge_popup_bg">dim</div><!-- ezlounge dim -->
+
+	<!-- 참여하기 팝업 -->
+	<div class="ezlounge_popup ezlounge_attend_popup">
+		<a href="javascript:void(0);" class="pop_top_close pop_close">close</a>
+		<div class="layer_top">
+			<p class="top_t1">챌린지 참여하기</p>
+			<p class="top_t2">사진 첨부 및 내용을 작성하세요.</p>
+		</div>
+		<div class="layer_cont">
+			<div class="layer_file_box">
+				<ul>
+					<li>
+						<img id="uploadPreview1" src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_file_icon.png">
+						<input id="uploadImage1" type="file" name="p1" onchange="PreviewImage(1);" />
+						<a href="javascript:void(0);" onClick="deleteit(1);">Remove</a>
+					</li>
+					<li>
+						<img id="uploadPreview2" src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_file_icon.png">
+						<input id="uploadImage2" type="file" name="p2" onchange="PreviewImage(2);" />
+						<a href="javascript:void(0);" onClick="deleteit(2);">Remove</a>
+					</li>
+					<li>
+						<img id="uploadPreview3" src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_file_icon.png">
+						<input id="uploadImage3" type="file" name="p3" onchange="PreviewImage(3);" />
+						<a href="javascript:void(0);" onClick="deleteit(3);">Remove</a>
+					</li>
+					<li>
+						<img id="uploadPreview4" src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_file_icon.png">
+						<input id="uploadImage4" type="file" name="p4" onchange="PreviewImage(4);" />
+						<a href="javascript:void(0);" onClick="deleteit(4);">Remove</a>
+					</li>
+					<li>
+						<img id="uploadPreview5" src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_file_icon.png">
+						<input id="uploadImage5" type="file" name="p5" onchange="PreviewImage(5);" />
+						<a href="javascript:void(0);" onClick="deleteit(5);">Remove</a>
+					</li>
+				</ul>
+				<p class="layer_notice03">※ 첫번째 사진이 썸네일로 노출됩니다.</p>
+			</div>
+			
+			<p class="layer_notice01">내용 작성</p>
+			<div class="layer_textarea">
+				<textarea name="" id="" cols="" rows="" placeholder="내용을 입력해주세요"></textarea>
+			</div>
+			<p class="layer_notice01">유의사항</p>
+			<p class="layer_notice02">
+				챌린지 참여는 챌린지 당 1인 1회만 가능합니다. <br>
+				베스트 챌린저 선정은 이벤트 종료 후 7일 이내 개별 안내드립니다. <br>
+				선정된 베스트 챌린저는 ‘지난 챌린지’에서 확인 가능합니다. <br>
+				베스트 챌린저로 선정된 게시글은 수정/삭제 불가합니다.
+			</p>
+		</div>
+		<div class="layer_bottom">
+			<a href="javascript:void(0);" class="layer_bottom_btn01 pop_close">취소</a>
+			<a href="javascript:void(0);" class="layer_bottom_btn02">참여하기</a>
+		</div>
+	</div>
+	<!-- //참여하기 팝업 -->
+
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/jquery.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/swiper.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/ezlounge_mo.js"></script>
+</body>
+</html>

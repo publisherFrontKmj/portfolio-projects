@@ -1,0 +1,310 @@
+@charset "euc-kr";
+
+html,body{background-color: #fff;}
+img{width: 100%;display: block;}
+.text_hidden {font-size:0; text-indent: -9999px}
+
+/* header */
+.header_wrap{padding: 15px;overflow: hidden;}
+.header_wrap .header_logo{float: left;}
+.header_wrap .header_logo a{display: inline-block;}
+.header_wrap .header_logo a img{display: block;width: 100%;}
+.header_wrap .header_login{float: right;margin: 15px 15px 0 0;display: block;width: 20px;height: 22px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/scivoucher/m_sc_login_icon.png")no-repeat 100% / cover;}
+.header_wrap .header_menu{float: right;margin-top: 18px;display: block;width: 21px;height: 16px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/scivoucher/m_sc_ham_icon.png")no-repeat 100% / cover;}
+
+.gnb_wrap{position: fixed;top: 0;right: 0;z-index: 2;width: 260px;padding: 50px 30px 0 60px;height: 100%;background-color: #fff;display: none;}
+.gnb_wrap.on{display: block;}
+.gnb_wrap .gnb_close_icon{position: absolute;top: 20px;right: 15px;width: 21px;height: 20px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/scivoucher/m_sc_ham_close.png")no-repeat 100%/cover;}
+.gnb_wrap .gnb_box ul li{padding: 15px 0;border-top: 1px solid #f5f5f5;}
+.gnb_wrap .gnb_box ul li:first-child{border-top: none;}
+.gnb_wrap .gnb_box ul li .main_gnb{display: block;font-family:"notokr-bold";font-size:15px;color:#444;position: relative;}
+.gnb_wrap .gnb_box ul li .main_gnb.on{color: #00c3b3;}
+.gnb_wrap .gnb_box ul li .main_gnb::before{content: "";position: absolute;top: 50%;right: 0;transform: translateY(-50%);width: 6px;height: 2px;background-color: #444;}
+.gnb_wrap .gnb_box ul li .main_gnb::after{content: "";position: absolute;top: 50%;right: 0;transform: translateY(-50%) rotate(90deg);width: 6px;height: 2px;background-color: #444;display: none;}
+.gnb_wrap .gnb_box ul li .main_gnb.on::before{background-color: #00c3b3;}
+.gnb_wrap .gnb_box ul li .main_gnb.on::after{background-color: #00c3b3;display: block;}
+.gnb_wrap .gnb_box ul li .sub_gnb{display: none;}
+.gnb_wrap .gnb_box ul li .sub_gnb.on{display: block;}
+.gnb_wrap .gnb_box ul li .sub_gnb li{padding: 5px 0;border-top: none;}
+.gnb_wrap .gnb_box ul li .sub_gnb li:first-child{padding: 10px 0 5px 0;}
+.gnb_wrap .gnb_box ul li .sub_gnb li a{font-family:"notokr-medium";font-size:13px;color:#666;}
+
+.gnb_bg{position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index: 1;background-color: rgba(0,0,0,0.8);display: none;}
+.gnb_bg.on{display: block;}
+
+/* footer */
+.footer_wrap{padding-bottom: 25px;}
+.footer_wrap .ft_top{margin-top: 60px;padding: 16px 0;text-align: center;border-top: 1px solid #f5f5f5;border-bottom: 1px solid #f5f5f5;}
+.footer_wrap .ft_top ul{font-size: 0;}
+.footer_wrap .ft_top ul li{display: inline-block;margin-left: 25px;}
+.footer_wrap .ft_top ul li:first-child{margin-left: 0;}
+.footer_wrap .ft_top ul li a{display: block;font-family:"notokr-bold";font-size:12px;color:#666;}
+.footer_wrap .ft_top ul li.on a{color:#00c3b3;}
+.footer_wrap .ft_mid{text-align: center;}
+.footer_wrap .ft_mid .ft_mid01 .ft_mid_txt01{font-family:"notokr-regular";font-size:12px;color:#999;margin-top: 25px;}
+.footer_wrap .ft_mid .ft_mid01 .ft_mid_txt02{font-family:"notokr-regular";font-size:12px;color:#444;margin-top: 20px;}
+.footer_wrap .ft_mid .ft_mid02{margin-top: 20px;}
+.footer_wrap .ft_mid .ft_mid02 img{display: inline-block;margin-left: 20px;width: 17vw;}
+.footer_wrap .ft_mid .ft_mid02 img:first-child{margin-left: 0;width: 18vw;}
+.footer_wrap .ft_bottom{text-align: center;margin: 30px 15px 0 15px;padding: 20px 35px;background-color: #f5f5f5;}
+.footer_wrap .ft_bottom span{font-family:"notokr-regular";font-size:12px;color:#444;}
+.footer_wrap .ft_bottom img{display: inline-block;width: 11.5vw;margin-top: 10px;}
+.footer_wrap .ft_select_box{width: 182px;height: 36px;padding: 0 5px;border: 1px solid #c1c1c1;color: #666;margin-top: 20px;}
+
+/* page nav */
+div.page_nav { margin: 25px 0 0 0; text-align: center;}
+div.page_nav a { text-align: center; font-size: 16px; font-family:"notokr-regular"; margin: 0 6px; display: inline-block; color: #c5c5c5;}
+div.page_nav strong { text-align: center; font-size: 16px; font-family:"notokr-regular"; margin: 0 12px; display: inline-block; color: #00c3b3;text-decoration: underline;}
+div.page_nav a.page_first { text-indent: -2000px; overflow: hidden; width: 11px;height: 12px; background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/partner_page_first.jpg") no-repeat;}
+div.page_nav a.page_prev { text-indent: -2000px; overflow: hidden; width: 7px;height: 12px; background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/partner_page_prev.jpg") no-repeat;}
+div.page_nav a.page_next { text-indent: -2000px;  overflow: hidden; width: 7px;height: 12px; background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/partner_page_next.jpg") no-repeat;}
+div.page_nav a.page_end { text-indent: -2000px; overflow: hidden; width: 11px;height: 12px; background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/partner_page_end.jpg") no-repeat;}
+
+/* banner */
+.banner_box{padding: 0 25px;}
+.banner_box .banner_txt_box{text-align: center;}
+.banner_box .banner_txt_box .txt01{font-family:"notokr-bold";font-size:30px;color:#201444;margin-top: 40px;}
+.banner_box .banner_txt_box .txt02{font-family:"notokr-regular";font-size:12px;color:#666;padding-top: 15px;line-height: 16px;}
+.banner_box .banner_txt_box a{display: inline-block;padding: 10px 23px;background-color: #1d1645;color:#fff;font-family:"notokr-bold";font-size:12px;border-radius: 20px;margin-top: 20px;}
+.banner_box .banner_img_box img{display: block;width: 100%;margin-top: 20px;}
+
+/* link */
+.link_box {padding: 0 25px;}
+.link_box .link_item{position: relative;display: block;width: 100%;margin-top: 10px;}
+.link_box .link_item img{display: block;width: 100%;}
+.link_box .link_item .link_txt{position: absolute;top: 15%;left: 5%;}
+.link_box .link_item .link_txt .txt01{font-family:"notokr-bold";font-size:16px;color:#222;margin-bottom: 10px;}
+.link_box .link_item .link_txt .txt02{font-family:"notokr-regular";font-size:12px;color:#666;line-height: 20px;margin-bottom: 10px;}
+.link_box .link_item .link_txt .txt03{font-family:"notokr-regular";font-size:13px;color:#fff;}
+
+/* info */
+.info_box{margin: 60px 0;text-align: center;}
+.info_box .info_tit{font-family:"notokr-bold";font-size:25px;color:#222;margin-bottom: 15px;padding: 0 25px;}
+.info_box .info_subtit{font-family:"notokr-regular";font-size:12px;color:#666;line-height: 16px;padding: 0 25px;}
+.info_box .info_slide{margin: 0 0 0 25px;}
+.info_box .info_slide ul{width: 100%;padding: 25px 0 45px 0;}
+.info_box .info_slide ul li{width: 35%;}
+.info_box .info_slide ul li a{display: block;}
+.info_box .info_slide ul li a img{display: block;width: 100%;}
+.info_box .info_slide ul li a .icon_txt01{font-family:"notokr-bold";font-size:13px;color:#444;margin: 20px 0 10px 0;}
+.info_box .info_slide ul li a .icon_txt02{font-family:"notokr-regular";font-size:11px;color:#999;line-height: 12px;}
+.info_box .info_slide > .swiper-pagination-progressbar{top:unset;bottom: 0;left: 50%;transform:translateX(-50%);height: 3px;background-color: #ddd;width: 70%;}
+.info_box .info_slide > .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background-color: #2cbbab;}
+
+/* notice */
+.notice_box{position: relative;}
+.notice_box .notice01_item{width: 100%;text-align: center;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.notice_box .notice01_item .notice_txt01{font-family:"notokr-medium";font-size:21px;color:#000;line-height: 26px;margin-bottom: 20px;}
+.notice_box .notice01_item .notice_txt02{font-family:"notokr-regular";font-size:12px;color:#000;margin-bottom: 75px;}
+.notice_box .notice01_item ul{font-size: 0;}
+.notice_box .notice01_item ul li{display: inline-block;margin-left: 5px;}
+.notice_box .notice01_item ul li:first-child{margin-left: 0;}
+.notice_box .notice01_item ul li a{display: block;font-family:"notokr-bold";font-size:12px;color:#fff;padding: 10px 15px;border-radius: 20px;}
+.notice_box .notice01_item ul li.notice_menu01 a{background-color: #1d1645;}
+.notice_box .notice01_item ul li.notice_menu02 a{background-color: #00c3b3;}
+.notice_box .notice01_item ul li.notice_menu03 a{background-color: #ff9e1a;}
+
+.notice_box.notice02 .tab_btn_box{margin: 60px 0 30px 0;text-align: center;}
+.notice_box.notice02 .tab_btn_box ul{font-size: 0;}
+.notice_box.notice02 .tab_btn_box ul li{display: inline-block;margin-left: 25px;position: relative;}
+.notice_box.notice02 .tab_btn_box ul li::before{content: "";position: absolute;bottom: -10px;left: 0;width: 100%;height: 2px;background-color: #00c3b3;display: none;}
+.notice_box.notice02 .tab_btn_box ul li.on::before{display: block;}
+.notice_box.notice02 .tab_btn_box ul li:first-child{margin-left: 0;}
+.notice_box.notice02 .tab_btn_box ul li a{display: block;font-family:"notokr-medium";font-size:16px;color:#999;}
+.notice_box.notice02 .tab_btn_box ul li.on a{font-family:"notokr-bold";color:#222;}
+
+.notice_box.notice02 .tab_cont .tab_cont_box{display: none;margin-bottom: 30px;} 
+.notice_box.notice02 .tab_cont .tab_cont_box.on{display: block;} 
+.notice_box.notice02 .tab_cont .tab_cont_box ul li{padding: 10px;margin: 0 25px;border-top: 1px solid #ddd;} 
+.notice_box.notice02 .tab_cont .tab_cont_box ul li:first-child{border-top: none;} 
+.notice_box.notice02 .tab_cont .tab_cont_box ul li a{display: block;font-family:"notokr-regular";font-size:13px;color:#666;text-overflow:ellipsis;white-space:nowrap;overflow: hidden;} 
+
+.notice_box.notice02 .more_btn{padding: 0 25px;text-align: center;}
+.notice_box.notice02 .more_btn a{display: block;padding: 12px 0;border: 1px solid #ddd;}
+
+/* sub_top_wrap */
+.sub_top_wrap .sub_top_txt01{margin-top: 40px;font-family:"notokr-bold";font-size:27px;color:#222;padding: 0 15px;}
+.sub_top_wrap .sub_top_txt02{margin-top: 15px;font-family:"notokr-regular";font-size:12px;color:#666;padding: 0 15px;}
+.sub_top_wrap .sub_tab_box{margin-top: 30px;padding-left: 15px;}
+.sub_top_wrap .sub_tab_box ul{font-size: 0;overflow-x: auto;white-space: nowrap;padding-right: 15px;}
+.sub_top_wrap .sub_tab_box ul::-webkit-scrollbar{display: none;}
+.sub_top_wrap .sub_tab_box ul li{display: inline-block;margin-left: 10px;/*width: 140px;*/width: 42vw;}
+.sub_top_wrap .sub_tab_box ul li:first-child{margin-left: 0;}
+.sub_top_wrap .sub_tab_box ul li a{display: block;font-family:"notokr-medium";font-size: 12px;padding: 10px 15px;box-sizing: border-box;border-radius: 5px;color: #999;background-color: #f5f5f5;position: relative;}
+.sub_top_wrap .sub_tab_box ul li a::after{content: "";position: absolute;top: 50%;right: 15px;transform: translateY(-50%);width: 5px;height: 8px;background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_notice_arrow_off.png")no-repeat 100%/cover;}
+.sub_top_wrap .sub_tab_box ul li a.on::after{background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_notice_arrow_on.png")no-repeat 100%/cover;}
+.sub_top_wrap .sub_tab_box ul li a.on{color: #fff;background-color: #00c3b3;}
+
+/* table_wrap */
+.table_box{margin-top: 30px;padding: 0 15px;}
+.table_box ul li{padding: 15px 0;border-bottom: 1px solid #f5f5f5;}
+.table_box ul li a{display: block;overflow: hidden;}
+.table_box ul li a .list_num{float: left;width: 50px;text-align: center;font-family:"notokr-regular";font-size:14px;color:#666;line-height: 19px;}
+.table_box ul li a .list_cont{float: left;width: calc(100% - 50px);}
+.table_box ul li a .list_cont .list_txt{font-family:"notokr-regular";font-size:14px;color:#666;line-height: 19px;}
+.table_box ul li a .list_cont .list_txt span{display: inline-block;width: 7px;height: 9px;margin-left: 5px;background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_notice_file_icon.png")no-repeat 100%/cover;}
+.table_box ul li a .list_cont .list_sub_txt{margin-top: 15px;}
+.table_box ul li a .list_cont .list_sub_txt span{display: inline-block;}
+.table_box ul li a .list_cont .list_sub_txt .list_date{font-family:"notokr-regular";font-size:12px;color:#999;margin-right: 20px;}
+.table_box ul li a .list_cont .list_sub_txt .list_views{font-family:"notokr-regular";font-size:12px;color:#999;}
+
+/* detail box */
+.detail_box{margin-top: 30px;padding: 0 15px;}
+.detail_box .subtit_date{font-size: 12px;font-family:"notokr-regular";color: #666;margin-bottom: 10px;}
+.detail_box .detail_tit{font-size: 14px;font-family:"notokr-bold";color: #222;margin-bottom: 15px;line-height: 20px;}
+.detail_box .detail_cont{padding: 20px 0 0 0;border-top: 1px solid #999;border-bottom: 1px solid #999;}
+.detail_box .detail_cont .cont_line{margin-bottom: 20px;font-size: 14px;font-family:"notokr-regular";color: #666;line-height: 20px;padding: 0 10px;}
+.detail_box .detail_cont .detail_file{display: block;width: 100%;padding: 20px 0;border-top: 1px solid #f5f5f5;}
+.detail_box .detail_cont .detail_file .file_icon{display: inline-block;width: 14px;height: 18px;margin-right: 10px;vertical-align: middle;background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_notice_file_icon.png")no-repeat 100%/cover;font-size: 0;text-indent: -9999px;}
+.detail_box .detail_cont .detail_file .file_txt{display: inline-block;font-size: 14px;font-family:"notokr-regular";color: #999;line-height: 20px;padding: 0 10px;}
+.detail_box .detail_nav{overflow: hidden;padding: 0 10px;margin-top: 25px;}
+.detail_box .detail_nav .nav_box a{display: inline-block;padding: 10px 0;width: 80px;text-align: center;border: 1px solid #999;border-radius: 20px;font-size: 12px;font-family:"notokr-medium";color: #666;}
+.detail_box .detail_nav .nav_left{float: left;}
+.detail_box .detail_nav .nav_left a{margin-left: 5px;}
+.detail_box .detail_nav .nav_left a:first-child{margin-left: 0;}
+.detail_box .detail_nav .nav_right{float: right;}
+.detail_box .detail_nav .nav_right a{border: 1px solid #00c3b3;color: #00c3b3;}
+
+/* faq_wrap */
+.faq_wrap .table_box ul li.on{padding: 15px 0 0 0;}
+.faq_wrap .table_box ul li:first-child{border-top: 1px solid #999;}
+.faq_wrap .table_box ul li a{position: relative;}
+.faq_wrap .table_box ul li a::after{content: "";position: absolute;top: 7px;right: 20px;width: 10px;height: 6px;background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_faq_down.jpg")no-repeat 100%/cover;}
+.faq_wrap .table_box ul li.on a::after{background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_faq_up.jpg")no-repeat 100%/cover;}
+.faq_wrap .table_box ul li a .list_cont{width: calc(100% - 100px);padding-right: 50px;}
+.faq_wrap .table_box ul li.on a .list_num{color: #00c3b3;}
+.faq_wrap .table_box ul li.on a .list_cont .list_txt{color: #00c3b3;}
+.faq_wrap .table_box ul li .faq_a{margin-top: 15px;padding: 20px 50px;background-color: #f5f5f5;display: none;}
+.faq_wrap .table_box ul li .faq_a .faq_a_tit{font-size: 12px;font-family:"notokr-bold";color: #00c3b3;margin-bottom: 10px;}
+.faq_wrap .table_box ul li .faq_a .faq_a_cont{font-size: 12px;font-family:"notokr-regular";color: #666;line-height: 19px;}
+
+.faq_wrap .table_box ul li .faq_a .table_type02{margin-top: 10px;}
+.faq_wrap .table_box ul li .faq_a .table_type02 thead tr th{padding: 12px 3px;background-color: #00c3b3;color: #fff;border-right: 1px solid #fff;font-size: 13px;text-align: center;}
+.faq_wrap .table_box ul li .faq_a .table_type02 thead tr th:last-child{border-right: none;}
+.faq_wrap .table_box ul li .faq_a .table_type02 tbody tr td{padding: 5px;text-align: center;background-color: #fff;border-right: 1px solid #f5f5f5;border-bottom: 1px solid #f5f5f5;font-family:"notokr-regular";font-size: 12px;line-height: 20px;}
+.faq_wrap .table_box ul li .faq_a .table_type02 tbody tr td:last-child{border-right: none;}
+.faq_wrap .table_box ul li .faq_a .table_type02 tbody tr td span.line{text-decoration: underline;}
+.faq_wrap .table_box ul li .faq_a .table_type02 tbody tr td.left{text-align: left;}
+
+/* business box */
+.business_box{padding: 0 15px;}
+.business_box .bs_main_tit{font-size: 22px;font-family:"notokr-medium";color: #222;margin-top: 40px;}
+.business_box .bs_main_cont{font-size: 13px;font-family:"notokr-regular";color: #666;line-height: 16px;margin-top: 20px;}
+.business_box .bs_sub_tit{font-size: 16px;font-family:"notokr-medium";color: #222;margin: 40px 0 20px 0;line-height: 20px;}
+.business_box .bs_sub_tit span{color: #ff9e1a;}
+
+.business_box .bs_sub_cont01 ul{overflow: hidden;}
+.business_box .bs_sub_cont01 ul li{float: left;text-align: center;width: 30%;}
+.business_box .bs_sub_cont01 ul li:nth-child(2){margin: 0 5%;}
+.business_box .bs_sub_cont01 ul li img{display: block;margin: 0 auto 10px auto;width: 60px;height: 60px;}
+.business_box .bs_sub_cont01 ul li .cont01_txt01{font-size: 12px;font-family:"notokr-medium";color: #444;margin-bottom: 8px;}
+.business_box .bs_sub_cont01 ul li .cont01_txt02{font-size: 11px;font-family:"notokr-regular";color: #666;line-height: 12px;}
+
+.business_box .bs_sub_cont02 ul{overflow: hidden;}
+.business_box .bs_sub_cont02 ul li{float: left;text-align: center;width: 32%;height: 42vw;border: 5px solid #eee;border-radius:20px;box-sizing: border-box;background-color: #fff;}
+.business_box .bs_sub_cont02 ul li:nth-child(2){margin: 0 2%;}
+.business_box .bs_sub_cont02 ul li img{display: block;margin: 10px auto 5px auto;width: 25px;height: 25px;}
+.business_box .bs_sub_cont02 ul li .cont02_txt01{font-size: 12px;font-family:"notokr-medium";color: #444;margin-bottom: 5px;}
+.business_box .bs_sub_cont02 ul li .cont02_txt02{font-size: 10px;font-family:"notokr-regular";color: #999;line-height: 12px;padding: 0 5px;}
+
+.business_box .bs_dash_bg img{width: 70%;margin: 5px auto;}
+
+.business_box .bs_sub_cont02_last{width: 60%;padding: 10px 40px;margin: 0 auto;background-color: #00c3b3;border-radius: 50px;text-align: center;}
+.business_box .bs_sub_cont02_last img{display: block;margin: 0 auto 5px auto;width: 25px;height: 25px;}
+.business_box .bs_sub_cont02_last .cont02_txt01{font-size: 14px;font-family:"notokr-medium";color: #fff;margin-bottom: 5px;}
+.business_box .bs_sub_cont02_last .cont02_txt02{font-size: 12px;font-family:"notokr-regular";color: #fff;line-height: 14px;padding: 0 5px;}
+
+.business_box .bs_sub_cont03 .bs_sub_cont03_list{overflow: hidden;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list:nth-child(2){margin: 10px 0;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list .cont03_txt01{float: left;width: 28%;height: 160px;font-size: 14px;font-family:"notokr-bold";color: #fff;padding: 20px 0 0 15px;border-radius: 20px 0 0 20px;box-sizing: border-box;position: relative;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list .cont03_txt01::after{content: "";position: absolute;left: 50%;bottom: 20px;transform: translateX(-50%) rotate(90deg);width: 10px;height: 16px;background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_notice_arrow_on.png")no-repeat 100%/cover;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list:nth-child(3) .cont03_txt01::after{display: none;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list:nth-child(1) .cont03_txt01{background-color: #ff9e1a;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list:nth-child(2) .cont03_txt01{background-color: #00c3b3;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list:nth-child(3) .cont03_txt01{background-color: #1d1645;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list .cont03_txt02{float: left;width: 72%;height: 160px;background-color: #f5f5f5;padding: 15px 20px;border-radius: 0 20px 20px 0; box-sizing: border-box;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list .cont03_txt02 span{font-size: 14px;font-family:"notokr-medium";display: inline-block;margin-bottom: 10px;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list .cont03_txt02 ul li{position: relative;font-size: 12px;font-family:"notokr-regular";color: #666;padding-left: 5px;margin-top: 5px;line-height: 13px;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list .cont03_txt02 ul li:first-child{margin-top: 0;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list .cont03_txt02 ul li::before{content: "";position: absolute;top: 6px;left: 0;width: 2px;height: 2px;border-radius: 50%;background-color: #666;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list:nth-child(1) .cont03_txt02{color: #ff9e1a;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list:nth-child(2) .cont03_txt02{color: #00c3b3;}
+.business_box .bs_sub_cont03 .bs_sub_cont03_list:nth-child(3) .cont03_txt02{color: #1d1645;}
+
+.business_box .bs_sub_cont04 ul li{position: relative;font-size: 13px;font-family:"notokr-regular";color: #666;padding-left: 5px;margin-top: 5px;line-height: 15px;}
+.business_box .bs_sub_cont04 ul li:first-child{margin-top: 0;}
+.business_box .bs_sub_cont04 ul li::before{content: "";position: absolute;top: 6px;left: 0;width: 2px;height: 2px;border-radius: 50%;background-color: #666;}
+
+.business_box .bs_step_box{text-align: center;margin-top: 30px;}
+.business_box .bs_step_box .step_num{font-size: 15px;font-family:"notokr-bold";color: #666;margin-bottom: 10px;position: relative;}
+.business_box .bs_step_box .step_num::after{content: "";position: absolute;top: -29px;left: 50%;transform: translateX(-50%);width: 16px;height: 14px;background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_step_arrow.png")no-repeat 100%/cover;}
+.business_box .bs_step_box .step_num:first-child::after{display: none;}
+.business_box .bs_step_box .step_num span{color: #ff9e1a;}
+.business_box .bs_step_box .step_cont{font-size: 12px;font-family:"notokr-regular";color: #666;padding: 15px;background-color: #f5f5f5;border: 1px solid #ddd;border-radius: 20px;margin-bottom: 45px;}
+.business_box .bs_step_box .step_cont_last{font-size: 15px;font-family:"notokr-bold";color: #666;background-color: #fffbf6;border-color: #ff9e1a;margin-top: 45px;position: relative;}
+.business_box .bs_step_box .step_cont_last::after{content: "";position: absolute;top: -29px;left: 50%;transform: translateX(-50%);width: 16px;height: 14px;background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_step_arrow.png")no-repeat 100%/cover;}
+.business_box .bs_step_box .step_cont_last span{color: #ff9e1a;}
+.business_box .bs_step_box .step_img_box{overflow: hidden;}
+.business_box .bs_step_box .step_img_box img{display: block;width: calc(50% - 5px);}
+.business_box .bs_step_box .step_img_box img.step_img1{float: left;}
+.business_box .bs_step_box .step_img_box img.step_img2{float: right;}
+
+.business_box .bs_point_tit{font-size: 13px;}
+.business_box .bs_point_tit em{font-family:"notokr-medium";color: #fff;display: inline-block;padding: 5px 0;width: 105px;text-align: center;border-radius: 15px;margin: 0 10px 0 0;box-sizing: border-box;}
+.business_box .bs_point_tit span{font-family:"notokr-regular";color: #444;display: inline-block;width: calc(100% - 115px);vertical-align: middle;}
+.business_box .bs_point_tit.bs_point_tit01 em{border: 1px solid #666;color: #666;}
+.business_box .bs_point_tit.bs_point_tit02 em{border: 1px solid #00c3b3;color: #00c3b3;}
+.business_box .bs_point_tit.bs_point_tit03 em{border: 1px solid #ff9e1a;color: #ff9e1a;}
+.business_box .bs_point_subtit{font-size: 13px;font-family:"notokr-regular";color: #666;margin-top: 10px;}
+.business_box .bs_point_subtit.bs_point_subtit02{color: #00c3b3;}
+.business_box .bs_point_subtit.bs_point_subtit03{color: #999;}
+
+.business_box .point_list{margin: 8px 0 20px 0;}
+.business_box .point_list li{position: relative;font-size: 12px;font-family:"notokr-regular";color: #999;padding-left: 5px;margin-top: 5px;line-height: 14px;}
+.business_box .point_list li:first-child{margin-top: 0;}
+.business_box .point_list li::before{content: "";position: absolute;top: 6px;left: 0;width: 2px;height: 2px;border-radius: 50%;background-color: #999;}
+
+.business_box .point_table{margin-top: 10px;width: 100%;}
+.business_box .point_table thead tr th{padding: 10px;font-size: 12px;font-family:"notokr-medium";color: #444;background-color: #f5f5f5;border-top: 1px solid #999;border-bottom: 1px solid #ddd;}
+.business_box .point_table thead tr th:first-child{border-right: 1px solid #ddd;}
+.business_box .point_table tbody tr td{text-align: center;padding: 10px;font-size: 12px;font-family:"notokr-regular";color: #666;border-bottom: 1px solid #ddd;}
+.business_box .point_table tbody tr td:first-child{border-right: 1px solid #ddd;}
+
+/* ac_cont_box */
+.ac_cont_box .ac_cont{overflow: hidden;padding: 10px;border: 1px solid #ddd;border-radius: 15px;}
+.ac_cont_box .ac_cont .ac_cont01{float: left;width: 95px;}
+.ac_cont_box .ac_cont:nth-child(2){margin: 5px 0;}
+.ac_cont_box .ac_cont .ac_cont01 img{display: inline-block;width: 20px;height: 20px;vertical-align: middle;margin-right: 5px;}
+.ac_cont_box .ac_cont .ac_cont01 span{display: inline-block;font-size: 12px;font-family:"notokr-bold";color: #444;}
+.ac_cont_box .ac_cont .ac_cont02{float: left;width: calc(100% - 95px);}
+.ac_cont_box .ac_cont .ac_cont02 span{display: inline-block;font-size: 11px;font-family:"notokr-regular";color: #666;margin-top: 5px;}
+.ac_cont_box .ac_cont .ac_cont02 ul li{font-size: 11px;font-family:"notokr-regular";color: #666;position: relative;padding: 0 0 0 5px;margin-top: 2px;}
+.ac_cont_box .ac_cont .ac_cont02 ul li::before{content: "";position: absolute;top: 4px;left: 0;width: 2px;height: 2px;border-radius: 50%;background-color: #666;}
+.ac_cont_box .ac_cont .ac_cont02 em{font-size: 11px;font-family:"notokr-regular";color: #999;padding-left: 5px;}
+
+/* point */
+.business_box .point_step{margin-top: 20px;font-size: 0;text-align: center;}
+.business_box .point_step li{text-align: center;width: 33.33%;display: inline-block;margin-bottom: 5px;}
+.business_box .point_step li img{display: block;width: 90px;height: 90px;margin: 0 auto;}
+.business_box .point_step li span{display: inline-block;margin-top: 10px;font-size: 12px;font-family:"notokr-medium";color: #444;}
+
+.business_box .sci_link_btn{margin-top: 20px;display: inline-block;padding: 10px 40px 10px 20px;background-color: #1d1645;font-size: 12px;font-family:"notokr-bold";color: #fff;position: relative;border-radius: 20px;}
+.business_box .sci_link_btn::after{content: "";position: absolute;top: 50%;right: 20px;transform: translateY(-50%);width: 5px;height: 8px;background: url("//img.ezwelfare.net/welfare_new/images/customer/scivoucher/sc_notice_arrow_off.png")no-repeat 100%/cover;}
+
+.business_box .point_desc{margin-top: 20px;padding: 20px 25px;background-color: #f5f5f5;border-radius: 15px;}
+.business_box .desc_tit{font-size: 14px;font-family:"notokr-medium";color: #444;}
+.business_box .desc_subtit{font-size: 12px;font-family:"notokr-regular";color: #ff9e1a;margin: 15px 0 10px 0;}
+.business_box .desc_list li{font-size: 11px;font-family:"notokr-regular";color: #666;margin-top: 5px;padding-left: 5px;position: relative;}
+.business_box .desc_list li::before{content: "";position: absolute;top: 4px;left: 0;width: 2px;height: 2px;border-radius: 50%;background-color: #666;}
+.business_box .desc_list li:first-child{margin-top: 0;}
+
+.business_box .point_table.desc_table thead tr th{border-left: 1px solid #ddd;}
+.business_box .point_table.desc_table thead tr th:first-child{border-left: none;}
+.business_box .point_table.desc_table tbody tr td{border-left: 1px solid #ddd;padding: 10px;}
+.business_box .point_table.desc_table tbody tr td.left{text-align: left;}
+.business_box .point_table.desc_table tbody tr td:first-child{border-left: none;}
+
+.business_box .desc_table2{margin-top: 20px;width: 100%;}
+.business_box .desc_table2 tr:first-child{border-top: 1px solid #999;}
+.business_box .desc_table2 tr th{padding: 10px;font-size: 12px;font-family:"notokr-medium";color: #444;background-color: #f5f5f5;border-bottom: 1px solid #ddd;}
+.business_box .desc_table2 tr td{padding: 10px 20px;font-size: 12px;font-family:"notokr-regular";color: #666;border-bottom: 1px solid #ddd;}

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 - 게시글 상세(공유하기/신고하기 팝업)</title>
+
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/reset.css">
+	<link rel="stylesheet" type="text/css" href="//img.ezwelfare.net/welfare_new/css/notokr_font.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/ezlounge_pc.css">
+</head>
+<body>
+
+	<!-- 241022 ezlounge contents -->
+	<!-- ezlounge 헤더 -->
+	<div class="ezlounge_header">
+		<div class="ezlounge_inner">
+			<h1 class="ezlounge_logo">
+				<a href="javascript:void(0);"><img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_logo.png" alt="ezlounge logo"></a>
+				<span class="ezlounge_logo_txt">이지웰의 새로운 소식을 가장 빠르게! 업데이트</span>
+			</h1>
+		</div>
+	</div>
+	<!-- //ezlounge 헤더 -->
+	<div class="ezlounge_zone">
+		<div class="ezlounge_wrap">
+			<div class="ezlounge_top ezlounge_inner">
+				<div class="ezlounge_menu">
+					<ul>
+						<li class="on"><a href="javascript:void(0);">이지웰소식</a></li>
+						<li><a href="javascript:void(0);">우리회사소식</a></li>
+						<li><a href="javascript:void(0);">홍보게시판</a></li>
+						<li>
+							<span class="challenge_mark" style="display:blcok;">진행중</span>
+							<a href="javascript:void(0);">챌린지</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="ezlounge_search">
+					<input type="text" placeholder="검색어를 입력하세요.">
+					<a href="javascript:void(0);" class="search_reset">검색 초기화</a>
+					<a href="javascript:void(0);"><img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_search_icon.png" alt="돋보기"></a>
+				</div>
+			</div>
+			<!-- //ezlounge_top -->
+
+			<div class="ezlounge_detail_wrap">
+				<div class="detail_wrap_bg" style="background-image:url(//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_desc_img.jpg);">배경이미지</div><!-- //상세 배경이미지 -->
+
+				<div class="ezlounge_inner">
+					<!-- 퀵메뉴 -->
+					<div class="ezlounge_quick">
+						<ul>
+							<li>
+								<a href="javascript:void(0);" class="quick_like">
+									<span class="quick_img"><img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_quick01_icon.png" alt=""></span>
+									<span class="quick_num">7,999</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="quick_share">
+									<span class="quick_img"><img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_quick02_icon.png" alt=""></span>
+									<span class="quick_num">1</span>
+								</a>
+							</li>
+							<li>
+								<a href="#replyTop">
+									<span class="quick_img"><img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_quick03_icon.png" alt=""></span>
+									<span class="quick_num">13</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="quick_back">
+									<span class="quick_img"><img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_quick04_icon.png" alt=""></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //퀵메뉴 -->
+
+					<!-- detail_cont -->
+					<div class="detail_cont">
+						<p class="detail_tit">2024 친환경 기술 진흥, <br>소비촉진 유공 환경부 장관 표창 수상!</p>
+						<p class="detail_c_name">현대이지웰</p>
+						<p class="detail_date">2024. 10. 22 ~ 2024.11.30<span>조회수 324</span></p>
+						<div class="detail_desc">
+							<div class="desc_img">
+								<img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_desc_img.jpg" alt="">
+							</div>
+							<p class="desc_txt">
+								현대이지웰이 친환경 노력으로 정부로부터 상을 받았어요! <br><br>
+								2024 친환경 기술 진흥 및 소비 촉진 유공에서 녹색소비 부문으로 환경부 장관 표창을받았습니다.<br>
+								이 상은 탄소중립 생활을 실천한 기업이나 개인에게 주는거에요,<br><br>
+								그리고 올해 3월에는 환경부와 협력해 ‘온라인 녹색 매장’으로 지정되고 했고,<br>
+								지난 2022년에는 업계 최초로 복지몰에 친환경 상품 전문관인 ‘리그린’전문관도 오픈했습니다.<br>
+								친환경 소비에 대한 현대이지웰의 노력이 정말 돋보이네요!<br><br>
+								오늘 부터 ‘리그린’ 친환경 상품 전문관에서 지구를 지키는 녹색 소비 함께하기 어때요? 
+							</p>
+						</div>	
+
+						<!-- 댓글영역 -->
+						<div class="reply_wrap">
+							<div id="replyTop" class="reply_top">
+								<div class="reply_top_l">
+									<span class="reply_count">댓글수 3,456</span>
+									<div class="push_box">
+										<span class="push_txt">내가 쓴 댓글 보기</span>
+										<span class="push_chk"><i>btn</i></span>
+									</div>
+								</div>
+								<div class="reply_top_r report_pop_button"><a href="javascript:void(0);">신고하기</a></div>
+							</div>
+
+							<!-- 댓글쓰기 -->
+							<div class="reply_textarea">
+								<textarea name="" id="" cols="" rows="" placeholder="댓글을 입력하세요"></textarea>
+								<div class="textarea_btn_box"><a href="javascript:void(0);" class="textarea_btn01">등록</a></div>
+							</div>
+							<!-- //댓글쓰기 -->
+
+							<div class="reply_list">
+								<!-- 내가 쓴 댓글일 경우 -->
+								<div class="reply">
+									<div class="reply_box01">
+										<span class="reply_name">선*미</span>
+										<div class="reply_btn">
+											<a href="javascript:void(0);">수정</a>
+											<a href="javascript:void(0);">삭제</a>
+											<a href="javascript:void(0);" class="report_pop_button">신고</a>
+										</div>
+									</div>
+									<p class="reply_box02">
+										따뜻하게 마사지 할 수 있는게 장점입니다. <br>
+										얼굴 혈액순환에도 도움이 되고 얼굴이 펴지고 하예지는 느낌입니다. <br>
+										강추합니다.~^
+									</p>
+									<p class="reply_box03">
+										<a href="javascript:void(0);">2024.12.01</a>
+										<a href="javascript:void(0);">답글쓰기</a>
+										<a href="javascript:void(0);" class="reply_like on">234</a>
+									</p>
+								</div>
+								<!-- //내가 쓴 댓글일 경우 -->
+
+								<!-- 수정하기 -->
+								<div class="reply_modify">
+									<span class="reply_modify_name">선*미</span>
+									<div class="reply_textarea">
+										<textarea name="" id="" cols="" rows="" placeholder="댓글을 입력하세요"></textarea>
+										<div class="textarea_btn_box">
+											<a href="javascript:void(0);" class="textarea_btn02">취소</a>
+											<a href="javascript:void(0);" class="textarea_btn01">수정</a>
+										</div>
+									</div>
+								</div>
+								<!-- //수정하기 -->
+							</div>
+							
+							<div class="reply_list">
+								<!-- 삭제된 댓글 -->
+								<div class="reply">
+									<p class="delete_reply">댓글이 신고로 숨김처리 되었습니다.</p>
+								</div>
+								<!-- //삭제된 댓글 -->
+							</div>
+
+							<div class="reply_list">
+								<!-- 내가 쓴 댓글이 아닌 경우 -->
+								<div class="reply">
+									<div class="reply_box01">
+										<span class="reply_name">유*규</span>
+										<div class="reply_btn">
+											<a href="javascript:void(0);" class="report_pop_button">신고</a>
+										</div>
+									</div>
+									<p class="reply_box02">
+										따뜻하게 마사지 할 수 있는게 장점입니다. <br>
+										얼굴 혈액순환에도 도움이 되고 얼굴이 펴지고 하예지는 느낌입니다. <br>
+										강추합니다.~^
+									</p>
+									<p class="reply_box03">
+										<a href="javascript:void(0);">2024.12.01</a>
+										<a href="javascript:void(0);">답글쓰기</a>
+										<a href="javascript:void(0);" class="reply_like">234</a>
+									</p>
+								</div>
+								<!-- //내가 쓴 댓글이 아닌 경우 -->
+							</div>
+
+							<div class="reply_list">
+								<!-- 내가 쓴 댓글이 아닌 경우 -->
+								<div class="reply">
+									<div class="reply_box01">
+										<span class="reply_name">유*규</span>
+										<div class="reply_btn">
+											<a href="javascript:void(0);" class="report_pop_button">신고</a>
+										</div>
+									</div>
+									<p class="reply_box02">
+										따뜻하게 마사지 할 수 있는게 장점입니다. <br>
+										얼굴 혈액순환에도 도움이 되고 얼굴이 펴지고 하예지는 느낌입니다. <br>
+										강추합니다.~^
+									</p>
+									<p class="reply_box03">
+										<a href="javascript:void(0);">2024.12.01</a>
+										<a href="javascript:void(0);">답글쓰기</a>
+										<a href="javascript:void(0);" class="reply_like">234</a>
+									</p>
+								</div>
+								<!-- //내가 쓴 댓글이 아닌 경우 -->
+							</div>
+
+							<div class="reply_list">
+								<!-- 내가 쓴 댓글이 아닌 경우 -->
+								<div class="reply">
+									<div class="reply_box01">
+										<span class="reply_name">유*규</span>
+										<div class="reply_btn">
+											<a href="javascript:void(0);" class="report_pop_button">신고</a>
+										</div>
+									</div>
+									<p class="reply_box02">
+										따뜻하게 마사지 할 수 있는게 장점입니다. <br>
+										얼굴 혈액순환에도 도움이 되고 얼굴이 펴지고 하예지는 느낌입니다. <br>
+										강추합니다.~^
+									</p>
+									<p class="reply_box03">
+										<a href="javascript:void(0);">2024.12.01</a>
+										<a href="javascript:void(0);">답글쓰기</a>
+										<a href="javascript:void(0);" class="reply_like">234</a>
+									</p>
+								</div>
+								<!-- //내가 쓴 댓글이 아닌 경우 -->
+							</div>
+
+							<div class="reply_list">
+								<!-- 수정된 댓글 -->
+								<div class="reply">
+									<div class="reply_box01">
+										<span class="reply_name">유*규</span>
+										<div class="reply_btn">
+											<a href="javascript:void(0);" class="report_pop_button">신고</a>
+										</div>
+									</div>
+									<p class="reply_box02">
+										따뜻하게 마사지 할 수 있는게 장점입니다. <br>
+										얼굴 혈액순환에도 도움이 되고 얼굴이 펴지고 하예지는 느낌입니다. <br>
+										강추합니다.~^
+									</p>
+									<p class="reply_box03">
+										<a href="javascript:void(0);">2024.12.01(수정됨)</a>
+										<a href="javascript:void(0);">답글쓰기</a>
+										<a href="javascript:void(0);" class="reply_like">234</a>
+									</p>
+								</div>
+								<!-- //수정된 댓글 -->
+							</div>
+							
+							<div class="reply_list">
+								<!-- 삭제된 댓글 -->
+								<div class="reply">
+									<p class="delete_reply">댓글이 삭제되었습니다.</p>
+								</div>
+								<!-- //삭제된 댓글 -->
+							</div>
+							
+							<div class="reply_list">
+								<!-- 내가 쓴 댓글이 아닌 경우 -->
+								<div class="reply">
+									<div class="reply_box01">
+										<span class="reply_name">유*규</span>
+										<div class="reply_btn">
+											<a href="javascript:void(0);" class="report_pop_button">신고</a>
+										</div>
+									</div>
+									<p class="reply_box02">
+										따뜻하게 마사지 할 수 있는게 장점입니다. <br>
+										얼굴 혈액순환에도 도움이 되고 얼굴이 펴지고 하예지는 느낌입니다. <br>
+										강추합니다.~^
+									</p>
+									<p class="reply_box03">
+										<a href="javascript:void(0);">2024.12.01</a>
+										<a href="javascript:void(0);">답글쓰기</a>
+										<a href="javascript:void(0);" class="reply_like">234</a>
+									</p>
+								</div>
+								<!-- //내가 쓴 댓글이 아닌 경우 -->
+
+								<!-- 답글쓰기 -->
+								<div class="reply_respon">
+									<span class="reply_respon_name">선*미</span>
+									<div class="reply_textarea">
+										<textarea name="" id="" cols="" rows="" placeholder="댓글을 입력하세요"></textarea>
+										<div class="textarea_btn_box">
+											<a href="javascript:void(0);" class="textarea_btn02">취소</a>
+											<a href="javascript:void(0);" class="textarea_btn01">등록</a>
+										</div>
+									</div>
+								</div>
+								<!-- //답글쓰기 -->
+
+								<!-- 답글쓰기 완료 -->
+								<div class="reply_respon">
+									<div class="reply">
+										<div class="reply_box01">
+											<span class="reply_name">유*규</span>
+											<div class="reply_btn">
+												<a href="javascript:void(0);">수정</a>
+												<a href="javascript:void(0);">삭제</a>
+												<a href="javascript:void(0);" class="report_pop_button">신고</a>
+											</div>
+										</div>
+										<p class="reply_box02">
+											따뜻하게 마사지 할 수 있는게 장점입니다. <br>
+											얼굴 혈액순환에도 도움이 되고 얼굴이 펴지고 하예지는 느낌입니다. <br>
+											강추합니다.~^
+										</p>
+										<p class="reply_box03">
+											<a href="javascript:void(0);">2024.12.01</a>
+											<a href="javascript:void(0);">답글쓰기</a>
+											<a href="javascript:void(0);" class="reply_like">234</a>
+										</p>
+									</div>
+								</div>
+								<!-- //답글쓰기 완료 -->
+
+								<!-- 답글쓰기 완료 -->
+								<div class="reply_respon">
+									<div class="reply">
+										<div class="reply_box01">
+											<span class="reply_name">유*규</span>
+											<div class="reply_btn">
+												<a href="javascript:void(0);" class="report_pop_button">신고</a>
+											</div>
+										</div>
+										<p class="reply_box02">
+											따뜻하게 마사지 할 수 있는게 장점입니다. <br>
+											얼굴 혈액순환에도 도움이 되고 얼굴이 펴지고 하예지는 느낌입니다. <br>
+											강추합니다.~^
+										</p>
+										<p class="reply_box03">
+											<a href="javascript:void(0);">2024.12.01</a>
+											<a href="javascript:void(0);">답글쓰기</a>
+											<a href="javascript:void(0);" class="reply_like">234</a>
+										</p>
+									</div>
+								</div>
+								<!-- //답글쓰기 완료 -->
+
+								<!-- 답글쓰기 완료 -->
+								<div class="reply_respon">
+									<div class="reply">
+										<div class="reply_box01">
+											<span class="reply_name">유*규</span>
+											<div class="reply_btn">
+												<a href="javascript:void(0);" class="report_pop_button">신고</a>
+											</div>
+										</div>
+										<p class="reply_box02">
+											따뜻하게 마사지 할 수 있는게 장점입니다. <br>
+											얼굴 혈액순환에도 도움이 되고 얼굴이 펴지고 하예지는 느낌입니다. <br>
+											강추합니다.~^
+										</p>
+										<p class="reply_box03">
+											<a href="javascript:void(0);">2024.12.01(수정됨)</a>
+											<a href="javascript:void(0);">답글쓰기</a>
+											<a href="javascript:void(0);" class="reply_like">234</a>
+										</p>
+									</div>
+								</div>
+								<!-- //답글쓰기 완료 -->
+
+								<!-- 신고된 답글 -->
+								<div class="reply_respon">
+									<div class="reply">
+										<p class="delete_reply">댓글이 신고로 숨김처리 되었습니다.</p>
+									</div>
+								</div>
+								<!-- //신고된 답글 -->
+
+								<!-- 삭제된 답글 -->
+								<div class="reply_respon">
+									<div class="reply">
+										<p class="delete_reply">댓글이 삭제되었습니다.</p>
+									</div>
+								</div>
+								<!-- //삭제된 답글 -->
+							</div>
+						</div>
+						<!-- //댓글영역 -->
+					</div>
+					<!-- //detail_cont -->
+				</div>
+				
+			</div>
+			<!-- //ezlounge_detail_wrap -->
+
+		</div>
+		<!-- //ezlounge_wrap -->
+	</div>	
+	<div class="page_list page_list_rn">
+		<a href="javascript:void(0);"><img src="//img.ezwelfare.net/welfare_new/images/btn/btn_page_2024_first.png" alt="첫페이지"></a>
+		<a href="javascript:void(0);"><img src="//img.ezwelfare.net/welfare_new/images/btn/btn_page_2024_prev.png" alt="이전페이지"></a>
+		<a href="javascript:void(0);" class="page_on">1</a>
+		<a href="javascript:void(0);">2</a> 
+		<a href="javascript:void(0);" class="btn_next"><img src="//img.ezwelfare.net/welfare_new/images/btn/btn_page_2024_next.png" alt="다음페이지"></a>		
+		<a href="javascript:void(0);" class="btn_next_block"><img src="//img.ezwelfare.net/welfare_new/images/btn/btn_page_2024_last.png" alt="끝페이지"></a>
+	</div>
+	<!-- // 241022 ezlounge contents -->
+	<div class="ezlounge_popup_bg">dim</div><!-- ezlounge dim -->
+
+	<!-- 공유하기 팝업 -->
+	<div class="ezlounge_popup ezlounge_share_popup">
+		<a href="javascript:void(0);" class="pop_top_close pop_close">close</a>
+		<div class="layer_top">
+			<p class="top_t1">공유하기</p>
+			<p class="layer_notice04">1. 지인의 회사명 또는 복지몰 URL을 입력해주세요</p>
+		</div>
+		<div class="layer_cont">
+			<div class="layer_tab_btn">
+				<ul>
+					<li class="on"><a href="javascript:void(0);">회사명</a></li>
+					<li><a href="javascript:void(0);">URL</a></li>
+				</ul>
+			</div>
+			<!--//layer_tab_btn-->
+			<div class="layer_tab_contents">
+				<div class="layer_tab_cont on">
+					<div class="input_line">
+						<input type="text" placeholder="회사명을 입력하세요" style="width:270px;">
+						<a href="javascript:void(0);" class="input_btn">입력</a>
+					</div>
+				</div>
+				<div class="layer_tab_cont">
+					<div class="input_line">
+						<input type="text" placeholder="URL을 입력하세요" style="width:270px;">
+						<a href="javascript:void(0);" class="input_btn">입력</a>
+					</div>
+					<p class="layer_notice02">URL의 경우 PC에서 접속하는 복지사이트의 URL을 입력</p>
+					<p class="layer_notice03">ex) abcd.ezwel.com인 경우 'abcd'입력</p>
+				</div>
+			</div>
+			<!--//layer_tab_contents-->
+			<div class="layer_url_box">
+				<p class="layer_notice04">2. URL 복사 후 지인에게 공유하세요.</p>
+				<div class="input_line">
+					<input type="text" placeholder="URL" style="width: 100%;;">
+				</div>
+			</div>
+			<!--//layer_url_box-->
+		</div>
+		<div class="layer_bottom">
+			<a href="javascript:void(0);" class="layer_bottom_btn01">URL 복사</a>
+			<a href="javascript:void(0);" class="layer_bottom_btn03"><img src="//img.ezwelfare.net/welfare_mall/ezlounge/ezlounge_kakao_icon.jpg" alt="">카카오톡</a>
+		</div>
+	</div>
+	<!-- //공유하기 팝업 -->
+
+	<!-- 신고하기 팝업 -->
+	<div class="ezlounge_popup ezlounge_report_popup">
+		<a href="javascript:void(0);" class="pop_top_close pop_close">close</a>
+		<div class="layer_top">
+			<p class="top_t1">신고하기</p>
+			<p class="top_t2">신고 사유를 선택해 주세요.</p>
+		</div>
+		<div class="layer_cont">
+			<ul class="layer_choice">
+				<li>
+					<input type="radio" id="listId01" name="list01">
+					<label for="listId01">주제와 맞지 않음</label>
+				</li>
+				<li>
+					<input type="radio" id="listId02" name="list01">
+					<label for="listId02">정보가 부정확함</label>
+				</li>
+				<li>
+					<input type="radio" id="listId03" name="list01">
+					<label for="listId03">지나친 광고성 게시물</label>
+				</li>
+				<li>
+					<input type="radio" id="listId04" name="list01">
+					<label for="listId04">도배 및 중복 게시물</label>
+				</li>
+				<li>
+					<input type="radio" id="listId05" name="list01">
+					<label for="listId05">저작권 침해가 우려됨</label>
+				</li>
+				<li>
+					<input type="radio" id="listId06" name="list01">
+					<label for="listId06">욕설, 비방이 심함</label>
+				</li>
+				<li>
+					<input type="radio" id="listId07" name="list01">
+					<label for="listId07">외설적인 게시물</label>
+				</li>
+				<li>
+					<input type="radio" id="listId08" name="list01">
+					<label for="listId08">개인정보 노출</label>
+				</li>
+				<li>
+					<input type="radio" id="listId09" name="list01">
+					<label for="listId09">기타</label>
+					<input type="text">
+				</li>
+			</ul>
+			<p class="layer_notice01">유의사항</p>
+			<p class="layer_notice02">
+				게시판 이용 수칙에 맞지 않는 글을 신고하는 기능으로, <br>
+				반대의견에 표시하는 것이 아닙니다. <br>
+				허위 신고의 경우 신고자가 제제받을 수 있음을 유의하세요.
+			</p>
+		</div>
+		<div class="layer_bottom">
+			<a href="javascript:void(0);" class="layer_bottom_btn01 pop_close">취소</a>
+			<a href="javascript:void(0);" class="layer_bottom_btn02">신고하기</a>
+		</div>
+	</div>
+	<!-- //신고하기 팝업 -->
+
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/jquery.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/swiper.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/ezlounge_pc.js"></script>
+	<script>
+		$(document).ready(function(){
+			//scroll
+			$(window).on("scroll", function(){
+				var winScrollTop = $(this).scrollTop();
+				var ezloungeQuickTop = $(".ezlounge_zone .ezlounge_detail_wrap").offset().top + 380;
+
+				if(winScrollTop >= ezloungeQuickTop){
+					$(".ezlounge_zone .ezlounge_quick").addClass("on");
+				}else{
+					$(".ezlounge_zone .ezlounge_quick").removeClass("on");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

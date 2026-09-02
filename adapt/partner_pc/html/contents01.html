@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컨텐츠관리(공지사항,FAQ,메인배너)</title>
+
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/reset.css">
+	<link rel="stylesheet" type="text/css" href="//img.ezwelfare.net/welfare_new/css/notokr_font.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="http://rlaalswo22.dothome.co.kr/hd_css/partner_pc.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="header_wrapper" class="header_wrapper">
+        <div class="header_wrap">
+            <div class="header_top right">
+                <div class="wrap_inner">
+                    <ul class="header_top_wrap">
+                        <li>
+                            <a href="javascript:void(0);" class="header_top_go">
+                                <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/header_top_go.png" alt="어드민 바로가기">
+                                어드민 바로가기
+                            </a>
+                            <a href="javascript:void(0);" class="header_top_go header_contents_menu">
+                                <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/cotents_manage_icon.png" alt="컨텐츠 관리">
+                                컨텐츠 관리
+                            </a> 
+                            <a href="javascript:void(0);" class="header_top_logout">
+                                <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/header_top_logout.png" alt="로그아웃">
+                                로그아웃
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //wrap_inner -->
+            </div>
+            <!-- //header_top -->
+            <div class="header_nav">
+                <div class="wrap_inner">
+                    <div class="header_nav_wrap clearfix">
+                        <h1 class="leftBox">
+                            <a href="javascript:void(0);">
+                                <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/partner_logo.png" alt="로고">
+                                협력사 지원센터
+                            </a>
+                        </h1>
+                        <div class="gnb rightBox center">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="javascript:void(0);">입점안내</a>
+                                    <ul class="sub_nav">
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">입점 신청</a></li>
+                                        <li><a href="javascript:void(0);">상품 분류 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">매뉴얼</a>
+                                    <ul class="sub_nav">
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">입점 신청</a></li>
+                                        <li><a href="javascript:void(0);">입점 계약</a></li>
+                                        <li><a href="javascript:void(0);">운영 매뉴얼</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">공지/FAQ</a>
+                                    <ul class="sub_nav">
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">자주 묻는 질문</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">사업소개</a>
+                                    <ul class="sub_nav">
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">서비스 소개</a></li>
+                                        <li><a href="javascript:void(0);">제휴&광고</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">정보보안점검</a>
+                                    <ul class="sub_nav">
+                                        <!-- 관리자 -->
+                                        <!-- <li class="sub_nav_first_line"><a href="javascript:void(0);">대시보드(관리자)</a></li>
+                                        <li><a href="javascript:void(0);">점검항목 관리</a></li> -->
+                                        <!-- //관리자 -->
+                                        
+                                        <!-- 협력사 -->
+                                        <li class="sub_nav_first_line"><a href="javascript:void(0);">대시보드(협력사)</a></li>
+                                        <li><a href="javascript:void(0);">점검등록</a></li>
+                                        <li><a href="javascript:void(0);">서약서/교육 등록</a></li>
+                                        <!-- //협력사 -->
+                                    </ul>
+                                </li> <!-- 230614 추가 -->
+                            </ul>
+                        </div>
+                        <div class="nav_bg"></div>
+                    </div>
+                </div>
+                <!-- //wrap_inner -->
+            </div>
+            <!-- //header_nav -->
+        </div>
+        <!-- //header_wrap -->
+    </div>
+    <!-- //header -->
+    
+    <!-- content -->
+    <div class="prd_division_wrap manual_wrap contents_wrap"> <!-- contents_wrap class추가 -->
+        <div class="prd_division_top">
+            <p class="prd_division_tit">컨텐츠 관리</p>
+        </div>
+        <!-- //prd_division_top -->
+        <div class="wrap_inner">
+            <div class="prd_division">
+                <div class="prd_division_button_box">
+                    <a href="javascript:void(0);" class="prd_division_tab_button prd_division_tab_button01 button_r_line active">공지사항</a>  
+                    <a href="javascript:void(0);" class="prd_division_tab_button prd_division_tab_button02 button_r_line">FAQ</a>  
+                    <a href="javascript:void(0);" class="prd_division_tab_button prd_division_tab_button03">메인배너</a>  
+                </div>
+                <div class="wrap_inner_path">
+                    <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/path_home_icon.png" alt="">
+                    <span>Home ></span>
+                    <span>공지/FAQ ></span>
+                    <span class="path_change_text">공지사항</span>
+                </div>
+                <div class="prd_division_tab_box">
+                    <div class="prd_division_tab prd_division_tab_01 active">
+                        <h2 class="tab_tit">공지사항 관리</h2>
+                        <div class="board_edit">
+                            <table summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width: 150px;">
+                                    <col style="width: 300px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 600px;">
+                                </colgroup>	
+                                <tbody>
+                                    <tr>
+                                        <td class="board_edit_head">상태</td>
+                                        <td>
+                                            <div class="contents_select_box">
+                                                <span class="contents_select_text">전체</span>
+                                                <div class="contents_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">전체</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">공개</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">비공개</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="board_edit_head">기간</td>
+                                        <td>
+                                            <label for="startDt" class="blind" style="display: none;">시작일 예:2015-01-01</label><input type="text" name="startDt" id="startDt" size="20" class="date">~
+                                            <label for="endDt" class="blind" style="display: none;">종료일 예:2015-01-31</label><input type="text" name="endDt" id="endDt" size="20" class="date">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="board_edit_head">상단공지</td>
+                                        <td colspan="3">
+                                            <div class="contents_select_box">
+                                                <span class="contents_select_text">전체</span>
+                                                <div class="contents_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">전체</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">상단공지 함</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">상단공지 안함</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="board_edit_head">검색</td>
+                                        <td colspan="3" class="contents_search_line">
+                                            <div class="contents_search_item contents_select_box">
+                                                <span class="contents_select_text">전체</span>
+                                                <div class="contents_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">전체</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">제목</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">내용</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="contents_search_item contents_search">
+                                                <input type="text" name="" id="" onclick="" class="search" placeholder="검색어를 입력하세요.">
+                                            </div>
+                                            <div class="contents_search_item contents_search_btn">
+                                                <a href="javascript:void(0);" class="search_reset">초기화</a>
+                                                <a href="javascript:void(0);" class="search_select">조회</a>
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="contents_btn">
+                            <a href="javascript:void(0);" class="contents_btn_new">신규등록</a>
+                            <a href="javascript:void(0);" class="contents_btn_remove">삭제</a>
+                        </div>
+                        <div class="contents_edit">
+                            <table summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width: 65px;">
+                                    <col style="width: 110px;">
+                                    <col style="width: 765px;">
+                                    <col style="width: 130px;">
+                                    <col style="width: 130px;">
+                                </colgroup>
+                                <thead></thead>
+                                <tbody>
+                                    <tr class="table_head">
+                                        <td>
+                                            <input type="checkbox" name="allChk" onclick="allCheck()" id="allChk">
+                                            <label for="allChk" class="">선택</label>
+                                        </td>
+                                        <td>NO</td>                                                                                                  
+                                        <td>제목</td>
+                                        <td>등록일</td>
+                                        <td class="edit_list_br">상태</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="chk_0">
+                                            <label for="chk_0" class="">선택</label>
+                                        </td>
+                                        <td>10</td>
+                                        <td class="edit_list_tal">[공지] 협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">공개</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="chk_1">
+                                            <label for="chk_1" class="">선택</label>
+                                        </td>
+                                        <td>9</td>
+                                        <td class="edit_list_tal">[공지] 협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">비공개</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="chk_2">
+                                            <label for="chk_2" class="">선택</label>
+                                        </td>
+                                        <td>8</td>
+                                        <td class="edit_list_tal">[공지] 협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">공개</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="chk_3">
+                                            <label for="chk_3" class="">선택</label>
+                                        </td>
+                                        <td>7</td>
+                                        <td class="edit_list_tal">[공지] 협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">공개</td>
+                                    </tr>
+                                    <tr class="contents_edit_last">
+                                        <td>
+                                            <input type="checkbox" id="chk_4">
+                                            <label for="chk_4" class="">선택</label>
+                                        </td>
+                                        <td>6</td>
+                                        <td class="edit_list_tal">[공지] 협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">비공개</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="page_nav">
+                            <a href="" class="page_first">처음으로</a>
+                            <a href="" class="page_prev">이전으로</a>
+                            <strong title="현재페이지">1</strong>
+                            <a href="" class="page_link">2</a>
+                            <a href="" class="page_link">3</a>
+                            <a href="" class="page_link">4</a>
+                            <a href="" class="page_link">5</a>
+                            <a href="" class="page_link">6</a>
+                            <a href="" class="page_link">7</a>
+                            <a href="" class="page_link">8</a>
+                            <a href="" class="page_link">9</a>
+                            <a href="" class="page_link">10</a>
+                            <a href="" class="page_next">다음으로</a>
+                            <a href="" class="page_end">마지막으로</a>    
+                        </div> 		
+                    </div>
+                    <!-- //컨텐츠 관리 prd_division_tab_01 -->
+                    <div class="prd_division_tab prd_division_tab_02">
+                        <h2 class="tab_tit">FAQ 관리</h2>
+                        <div class="board_edit">
+                            <table summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width: 150px;">
+                                    <col style="width: 450px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 450px;">
+                                </colgroup>	
+                                <tbody>
+                                    <tr>
+                                        <td class="board_edit_head">구분</td>
+                                        <td>
+                                            <div class="contents_select_box">
+                                                <span class="contents_select_text">전체</span>
+                                                <div class="contents_select contents_faq_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">공통</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">복지 SHOP</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">컨텐츠/E쿠폰</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">여행숙박</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">WOW숙박/레저</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">광고</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">온누리 전통시장</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">지역몰</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="board_edit_head">상태</td>
+                                        <td>
+                                            <div class="contents_select_box">
+                                                <span class="contents_select_text">전체</span>
+                                                <div class="contents_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">전체</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">공개</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">비공개</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="board_edit_head">등록일</td>
+                                        <td colspan="3">
+                                            <label for="startDt" class="blind" style="display: none;">시작일 예:2015-01-01</label><input type="text" name="startDt" id="startDt" size="20" class="date">~
+                                            <label for="endDt" class="blind" style="display: none;">종료일 예:2015-01-31</label><input type="text" name="endDt" id="endDt" size="20" class="date">
+                                        </td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="board_edit_head">검색</td>
+                                        <td colspan="3" class="contents_search_line">
+                                            <div class="contents_search_item contents_select_box">
+                                                <span class="contents_select_text">전체</span>
+                                                <div class="contents_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">전체</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">제목</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">내용</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="contents_search_item contents_search">
+                                                <input type="text" name="" id="" onclick="" class="search" placeholder="검색어를 입력하세요.">
+                                            </div>
+                                            <div class="contents_search_item contents_search_btn">
+                                                <a href="javascript:void(0);" class="search_reset">초기화</a>
+                                                <a href="javascript:void(0);" class="search_select">조회</a>
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="contents_btn">
+                            <a href="javascript:void(0);" class="contents_btn_new">신규등록</a>
+                            <a href="javascript:void(0);" class="contents_btn_remove">삭제</a>
+                        </div>
+                        <div class="contents_edit">
+                            <table summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width: 65px;">
+                                    <col style="width: 110px;">
+                                    <col style="width: 130px;">
+                                    <col style="width: 625px;">
+                                    <col style="width: 135px;">
+                                    <col style="width: 135px;">
+                                </colgroup>
+                                <thead></thead>
+                                <tbody>
+                                    <tr class="table_head">
+                                        <td>
+                                            <input type="checkbox" name="allChk" onclick="allCheck()" id="allChk">
+                                            <label for="allChk" class="">선택</label>
+                                        </td>
+                                        <td>NO</td>                                                                                                  
+                                        <td>구분</td>
+                                        <td>제목</td>
+                                        <td>등록일</td>
+                                        <td class="edit_list_br">상태</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="faq_0">
+                                            <label for="faq_0" class="">선택</label>
+                                        </td>
+                                        <td>10</td>
+                                        <td>공통</td>
+                                        <td class="edit_list_tal">[공지] 협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">공개</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="faq_1">
+                                            <label for="faq_1" class="">선택</label>
+                                        </td>
+                                        <td>9</td>
+                                        <td>온누리 전통시장</td>
+                                        <td class="edit_list_tal">협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">비공개</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="faq_2">
+                                            <label for="faq_2" class="">선택</label>
+                                        </td>
+                                        <td>8</td>
+                                        <td>wow숙박/레저</td>
+                                        <td class="edit_list_tal">협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">공개</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="faq_3">
+                                            <label for="faq_3" class="">선택</label>
+                                        </td>
+                                        <td>7</td>
+                                        <td>컨텐츠/E쿠폰</td>
+                                        <td class="edit_list_tal">협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">공개</td>
+                                    </tr>
+                                    <tr class="contents_edit_last">
+                                        <td>
+                                            <input type="checkbox" id="faq_4">
+                                            <label for="faq_4" class="">선택</label>
+                                        </td>
+                                        <td>6</td>
+                                        <td>여행/숙박</td>
+                                        <td class="edit_list_tal">협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01</td>
+                                        <td class="edit_list_br">비공개</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="page_nav">
+                            <a href="" class="page_first">처음으로</a>
+                            <a href="" class="page_prev">이전으로</a>
+                            <strong title="현재페이지">1</strong>
+                            <a href="" class="page_link">2</a>
+                            <a href="" class="page_link">3</a>
+                            <a href="" class="page_link">4</a>
+                            <a href="" class="page_link">5</a>
+                            <a href="" class="page_link">6</a>
+                            <a href="" class="page_link">7</a>
+                            <a href="" class="page_link">8</a>
+                            <a href="" class="page_link">9</a>
+                            <a href="" class="page_link">10</a>
+                            <a href="" class="page_next">다음으로</a>
+                            <a href="" class="page_end">마지막으로</a>    
+                        </div> 		
+                    </div>
+                    <!-- //FAQ prd_division_tab_02 -->
+                    <div class="prd_division_tab prd_division_tab_03"> 
+                        <h2 class="tab_tit">메인배너 관리</h2>
+                        <div class="board_edit">
+                            <table summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width: 150px;">
+                                    <col style="width: 450px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 450px;">
+                                </colgroup>	
+                                <tbody>
+                                    <tr>
+                                        <td class="board_edit_head">메뉴</td>
+                                        <td>
+                                            <div class="contents_select_box">
+                                                <span class="contents_select_text">전체</span>
+                                                <div class="contents_select contents_faq_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">공통</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">복지 SHOP</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">컨텐츠/E쿠폰</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">여행숙박</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">WOW숙박/레저</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">광고</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">온누리 전통시장</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">지역몰</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="board_edit_head">상태</td>
+                                        <td>
+                                            <div class="contents_select_box">
+                                                <span class="contents_select_text">전체</span>
+                                                <div class="contents_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">전체</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">공개</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">비공개</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="board_edit_head">기간</td>
+                                        <td colspan="3">
+                                            <label for="startDt" class="blind" style="display: none;">시작일 예:2015-01-01</label><input type="text" name="startDt" id="startDt" size="20" class="date">~
+                                            <label for="endDt" class="blind" style="display: none;">종료일 예:2015-01-31</label><input type="text" name="endDt" id="endDt" size="20" class="date">
+                                        </td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="board_edit_head">검색</td>
+                                        <td colspan="3" class="contents_search_line">
+                                            <div class="contents_search_item contents_select_box">
+                                                <span class="contents_select_text">전체</span>
+                                                <div class="contents_select">
+                                                    <ul>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);" class="contents_select_list_bt">전체</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">제목</a>
+                                                        </li>
+                                                        <li class="contents_select_list">
+                                                            <a href="javascript:void(0);">내용</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="contents_search_item contents_search">
+                                                <input type="text" name="" id="" onclick="" class="search" placeholder="검색어를 입력하세요.">
+                                            </div>
+                                            <div class="contents_search_item contents_search_btn">
+                                                <a href="javascript:void(0);" class="search_reset">초기화</a>
+                                                <a href="javascript:void(0);" class="search_select">조회</a>
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="contents_btn">
+                            <a href="javascript:void(0);" class="contents_btn_new">신규등록</a>
+                            <a href="javascript:void(0);" class="contents_btn_remove">삭제</a>
+                        </div>
+                        <div class="contents_edit">
+                            <table summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width: 65px;">
+                                    <col style="width: 65px;">
+                                    <col style="width: 75px;">
+                                    <col style="width: 85px;">
+                                    <col style="width: 600px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 110px;">
+                                </colgroup>
+                                <thead></thead>
+                                <tbody>
+                                    <tr class="table_head">
+                                        <td>
+                                            <input type="checkbox" name="allChk" onclick="allCheck()" id="allChk">
+                                            <label for="allChk" class="">선택</label>
+                                        </td>
+                                        <td>NO</td>                                                                                                  
+                                        <td>메뉴</td>
+                                        <td>상태</td>
+                                        <td>제목</td>
+                                        <td>시작일/종료일</td>
+                                        <td class="edit_list_br">우선순위</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="mainBan_0">
+                                            <label for="mainBan_0" class="">선택</label>
+                                        </td>
+                                        <td>10</td>
+                                        <td>전체</td>
+                                        <td>진행중</td>
+                                        <td class="edit_list_tal">[공지] 협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01/2023-01-02</td>
+                                        <td class="edit_list_br">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="mainBan_1">
+                                            <label for="mainBan_1" class="">선택</label>
+                                        </td>
+                                        <td>9</td>
+                                        <td>PC</td>
+                                        <td>종료</td>
+                                        <td class="edit_list_tal">협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01/2023-01-02</td>
+                                        <td class="edit_list_br">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="mainBan_2">
+                                            <label for="mainBan_2" class="">선택</label>
+                                        </td>
+                                        <td>8</td>
+                                        <td>전체</td>
+                                        <td>진행중</td>
+                                        <td class="edit_list_tal">협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01/2023-01-02</td>
+                                        <td class="edit_list_br">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="mainBan_3">
+                                            <label for="mainBan_3" class="">선택</label>
+                                        </td>
+                                        <td>7</td>
+                                        <td>PC</td>
+                                        <td>종료</td>
+                                        <td class="edit_list_tal">협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01/2023-01-02</td>
+                                        <td class="edit_list_br">4</td>
+                                    </tr>
+                                    <tr class="contents_edit_last">
+                                        <td>
+                                            <input type="checkbox" id="mainBan_4">
+                                            <label for="mainBan_4" class="">선택</label>
+                                        </td>
+                                        <td>6</td>
+                                        <td>전체</td>
+                                        <td>종료</td>
+                                        <td class="edit_list_tal">협력사 신규 입점 프로세스 변경 안내</td>
+                                        <td>2023-01-01/2023-01-02</td>
+                                        <td class="edit_list_br">5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="page_nav">
+                            <a href="" class="page_first">처음으로</a>
+                            <a href="" class="page_prev">이전으로</a>
+                            <strong title="현재페이지">1</strong>
+                            <a href="" class="page_link">2</a>
+                            <a href="" class="page_link">3</a>
+                            <a href="" class="page_link">4</a>
+                            <a href="" class="page_link">5</a>
+                            <a href="" class="page_link">6</a>
+                            <a href="" class="page_link">7</a>
+                            <a href="" class="page_link">8</a>
+                            <a href="" class="page_link">9</a>
+                            <a href="" class="page_link">10</a>
+                            <a href="" class="page_next">다음으로</a>
+                            <a href="" class="page_end">마지막으로</a>    
+                        </div> 		
+                    </div>
+                    <!-- //메인배너 prd_division_tab_03 -->
+                </div>
+            </div>
+            <!-- //prd_division -->
+        </div>
+        <!-- //wrap_inner -->
+    </div>
+    <!-- //prd_division_wrap -->
+    <!-- //content -->
+
+    <!-- footer -->
+    <div id="footer_wrapper" class="footer_wrapper">
+        <div class="wrap_inner">
+            <div class="footer_wrap">
+                <div class="footer_logo leftBox">
+                    <a href="javascript:void(0);">
+                        <img src="//img.ezwelfare.net/welfare_new/images/customer/partner/partner_footer_logo.jpg" alt="하단 로고">
+                    </a>
+                </div>
+                <div class="footer_text leftBox">
+                    <p>
+                        <a href="javascript:void(0);" target="_blank">㈜ 현대이지웰 
+                            <span>KOSDAQ. 코스닥상장법인</span>
+                        </a>
+                    </p>
+                    <p>
+                        서울시 서대문구 충정로 23 현대이지웰
+                        <span class="pl20">사업자번호 : 101-81-90575</span>
+                        <span class="pl20">대표이사 : 장영순</span>
+                    </p>
+                    <p>
+                        <span>고객센터 : 02-3282-0579 (평일 09~18시) / 
+                            <a href="javascript:void(0);">ezhelp@hyundaiezwel.com</a>
+                        </span> 
+                    </p>
+                    <p class="footer_text_last">Copyright ©HYUNDAI EZWEL CO., LTD. &nbsp;&nbsp;All rights reserved</p>
+                </div>
+            </div>
+        </div>
+        <!-- //wrap_inner -->
+    </div>
+    <!-- //footer -->
+
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/jquery.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/swiper.js"></script>
+    <script type="text/javascript" src="http://rlaalswo22.dothome.co.kr/hd_js/partner_pc.js"></script>
+
+    <script type="text/javascript">
+        allCheck();
+        // Calendar();
+    </script>
+</body>
+</html>
