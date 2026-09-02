@@ -1,0 +1,360 @@
+@charset "euc-kr";
+
+/******************************************************************
+	reset
+*******************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	letter-spacing: -0.72px; 
+    /* psd: letter-spacing: -45px; */
+}
+a{text-decoration:none;color: #444;}
+.text_blind {font-size:0; text-indent: -9999px}
+img {vertical-align:top; width:100%; border:0;}
+ul, ol{list-style: none;}
+input{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+
+/******************************************************************
+	header
+*******************************************************************/
+.header_wrap{width: 100%;height: 52px;background-color: #fff;padding: 0 4%;;display: flex;align-items: center;justify-content: space-between;}
+.header_wrap .header_menu{width: 22px;height: 16px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/header_ham_m.jpg")no-repeat 100% / cover;}
+.header_wrap .header_logo{width: 200px;height: 52px;}
+.header_wrap .header_mypage{width: 20px;height: 20px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/header_mypage_m.jpg")no-repeat 100% / cover;}
+
+/******************************************************************
+	gnb_wrap
+*******************************************************************/
+.gnb_bg{position: fixed;top: 0;left: 0;z-index: 9;width: 100%;height: 100vh;background-color: rgba(0,0,0,0.3);display: none;}
+.gnb_bg.on{display: block;}
+.gnb_wrap{position: fixed;top: 0;left: 0;z-index: 10;width: 275px;height: 100%;overflow-y: scroll;background-color: #fff;box-shadow: 0px 5px 46px 0px rgba(0, 0, 0, 0.3);border-radius: 0 10px 10px 0;display: none;}
+.gnb_wrap.on{display: block;}
+.gnb_wrap .gnb_close_icon{position: absolute;top: 18px;right: 30px;z-index: 11;display: block;width: 18px;height: 17px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/partner_menu_close_m.png") no-repeat 100% / cover;}
+.gnb_wrap .gnb_login_box{width: 100%;height: 128px;padding: 50px 0 0 30px;background-color: #f5f5f5;}
+.gnb_wrap .gnb_login_box .login_cont{overflow: hidden;margin-bottom: 12px;}
+.gnb_wrap .gnb_login_box .login_cont .gnb_client_icon{float: left;display: block;width: 37px;height: 37px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/partner_client_img.png") no-repeat 100% / cover;}
+.gnb_wrap .gnb_login_box .login_cont .login_btn{float: left;display: block;margin: 3px 0 0 10px;width: 83px;padding: 7px 0;border-radius: 8px;box-shadow: 0px 2px 12px 0px rgba(82, 82, 82, 0.1);background-color: #26988a;font-size: 12px;font-family:"notokr-medium";color: #fff;text-align: center;}
+.gnb_wrap .gnb_login_box .login_text{font-size: 11px;font-family:"notokr-regular";color: #979797;}
+
+.gnb_wrap .gnb_login_box02{padding: 30px 0 0 30px;position: relative;}
+.gnb_wrap .gnb_login_box02 .login_cont{margin-bottom: 4px;}
+.gnb_wrap .gnb_login_box02 .login_client_name{margin-bottom: 4px;font-size: 17px;font-family:"notokr-medium";color: #26988a;}
+.gnb_wrap .gnb_login_box02 .login_client_time{font-size: 12px;font-family:"notokr-regular";color: #979797;}
+.gnb_wrap .gnb_login_box02 .logout_btn{position: absolute;bottom: 12px;right: 30px;border-radius: 8px;border: 1px solid #979797;}
+.gnb_wrap .gnb_login_box02 .logout_btn a{display: block;font-size: 11px;font-family:"notokr-medium";color: #979797;padding: 3px 10px;}
+
+.gnb_wrap .gnb_box{padding: 25px 30px;}
+.gnb_wrap .gnb_box ul{margin-bottom: 36px;}
+.gnb_wrap .gnb_box ul.gnb_last_box{margin-bottom: 0;}
+.gnb_wrap .gnb_box ul li .gnb_tit{display: block;font-size: 16px;font-family:"notokr-medium";color: #000;margin-bottom: 25px;position: relative;}
+.gnb_wrap .gnb_box ul li .gnb_tit::after{content: "";position: absolute;bottom: -12px;left: 0;width: 100%;height: 1px;background-color: #979797;}
+.gnb_wrap .gnb_box ul li .gnb_sub_box li a{display: block;font-size: 14px;font-family:"notokr-regular";color: #444;margin-bottom: 15px;}
+.gnb_wrap .gnb_box ul li .gnb_sub_box li a.gnb_sub_last_list{margin-bottom: 0;}
+
+/******************************************************************
+	main
+*******************************************************************/
+.banner .banner_slide_wrap .swiper-slide{width: 100%;padding: 15px 4%;}
+.banner .banner_slide_wrap .swiper-slide img{width: 100%;height: 100%;display: block;box-shadow: 0px 3px 16px 0px rgba(82, 82, 82, 0.4);border-radius: 17px;}
+.banner .banner_slide_wrap .swiper-pagination.swiper-pagination-bullets{bottom: 12%;left: 75%;width: auto;}
+.banner .banner_slide_wrap .swiper-pagination-bullet{width: 7px;height: 7px;background: #eee;opacity: 1;}
+.banner .banner_slide_wrap .swiper-pagination-bullet-active{background: #0a9882;}
+.banner .banner_slide_wrap .swiper-slide .slide_text_box{position: absolute;top: 50%;left: 10%;transform: translateY(-50%);}
+.banner .banner_slide_wrap .swiper-slide .slide_text_box .slide_text_tit{text-align: center;font-size: 15px;margin-bottom: 10px;font-family:"notokr-demilight";color: #efeeef;width: 54px;padding-top: 2px;border-radius: 10px;border: 1px solid #e8e8e9;}
+.banner .banner_slide_wrap .swiper-slide .slide_text_box .slide_text_cont{font-size: 27px;margin-bottom: 12px;font-family:"notokr-medium";color: #fff;}
+.banner .banner_slide_wrap .swiper-slide .slide_text_box .slide_text_date{font-size: 16px;font-family:"notokr-demilight";color: #fff;}
+
+.service_cont{text-align: center;padding: 0 4% 15px 4%;background-color: #fff;}
+.service_cont ul .service_cont_list{display: inline-block;vertical-align: top;width: 30%;height: 28vw;border-radius: 20px;box-shadow: 0px 3px 9px 0px rgba(51, 51, 51, 0.1);background-color: #fff;}
+.service_cont ul .service_cont_list:nth-child(2n){margin: 0 1%;}
+.service_cont ul .service_cont_list01,
+.service_cont ul .service_cont_list02,
+.service_cont ul .service_cont_list03{margin-bottom: 15px;}
+.service_cont ul .service_cont_list a{display: block;width: 100%;height: 100%;position: relative;}
+.service_cont ul .service_cont_list .service_list_text{display: block;width: 100%;font-size: 12px;font-family:"notokr-regular";color: #444;position: absolute;bottom: 8%;left: 50%;transform: translateX(-50%);}
+.service_cont ul .service_cont_list a::before{content: "";position: absolute;top: 40%;left: 50%;transform: translate(-50%,-50%);}
+.service_cont ul .service_cont_list.service_cont_list01 a::before{width: 64px;height: 25px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/service_icon_01_m.png")no-repeat 100% / cover;}
+.service_cont ul .service_cont_list.service_cont_list02 a::before{width: 35px;height: 34px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/service_icon_02_m.png")no-repeat 100% / cover;}
+.service_cont ul .service_cont_list.service_cont_list03 a::before{width: 27px;height: 34px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/service_icon_03_m.png")no-repeat 100% / cover;}
+.service_cont ul .service_cont_list.service_cont_list04 a::before{width: 34px;height: 30px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/service_icon_04_m.png")no-repeat 100% / cover;}
+.service_cont ul .service_cont_list.service_cont_list05 a::before{width: 41px;height: 32px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/service_icon_05_m.png")no-repeat 100% / cover;}
+.service_cont ul .service_cont_list.service_cont_list06 a::before{width: 32px;height: 34px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/service_icon_06_m.png")no-repeat 100% / cover;}
+
+.notice{background-color: #f5f5f5;}
+.notice .notice_wrap{padding: 25px 4%;}
+.notice .notice_wrap .notice_box{width: 100%;background-color: #fff;border-radius: 17px;box-shadow: 0 5px 16px 0px rgba(82, 82, 82, 0.1);padding: 20px;position: relative;}
+.notice .notice_wrap .notice_box .notice_box_tit{font-size: 17px;font-family:"notokr-bold";color: #000;margin-bottom: 15px;}
+.notice .notice_wrap .notice_box_01{margin-bottom: 15px;}
+.notice .notice_wrap .notice_box_01 .notice_box_01_more{position: absolute;top: 25px;right: 20px;width: 13px;height: 14px;}
+.notice .notice_wrap .notice_box_01 .notice_box_01_more a{display: block;}
+.notice .notice_wrap .notice_box_01 .notice_box_01_more a img{width: 100%;}
+.notice .notice_wrap .notice_box_01 ul .notice_box_01_text_line{overflow: hidden;margin-bottom: 5px;position: relative;}
+.notice .notice_wrap .notice_box_01 ul .notice_box_01_text_line::before{content: "";position: absolute;top: 7px;left: 3px;width: 2px;height: 2px;background-color: #444;border-radius: 50%;}
+.notice .notice_wrap .notice_box_01 ul .notice_box_01_text_line a{display: block;overflow: hidden;}
+.notice .notice_wrap .notice_box_01 ul .notice_box_01_text_line.notice_box_01_text_last_line{margin-bottom: 0;}
+.notice .notice_wrap .notice_box_01 ul .notice_box_01_text_line .text_line_cont{font-family:"notokr-demilight";font-size: 13px;color: #444;}
+.notice .notice_wrap .notice_box_01 ul .notice_box_01_text_line .text_line_tit{float: left;padding-left: 8px;width: calc(100% - 70px);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.notice .notice_wrap .notice_box_01 ul .notice_box_01_text_line .text_line_date{float: right;width: 60px;}
+.notice .notice_wrap .notice_box_02 .notice_box_02_cont{font-family:'notokr-medium';font-size: 13px;color: #444;line-height: 20px;margin-bottom: 15px;}
+.notice .notice_wrap .notice_box_02 .notice_box_02_more{width: 90px;border: 1px solid #b2b2b2;border-radius: 7px;}
+.notice .notice_wrap .notice_box_02 .notice_box_02_more a{font-size: 14px;padding: 10px 0 10px 15px;font-family:"notokr-regular";color: #444;display: block;}
+
+/******************************************************************
+	footer
+*******************************************************************/
+.footer_wrap{padding: 25px 4%;text-align: center;border-top: 1px solid #dfdfdf;}
+.footer_wrap .footer_top{margin-bottom: 15px;}
+.footer_wrap .footer_top ul li{display: inline-block;}
+.footer_wrap .footer_top ul li a{display: block;padding: 5px 10px;font-size: 14px;border: 1px solid #ddd;border-radius: 5px;color: #444;font-family:"notokr-regular";}
+
+.footer_wrap .footer_middle{margin-bottom: 15px;}
+.footer_wrap .footer_middle ul li{display: inline-block;}
+.footer_wrap .footer_middle ul li a{display: block;font-size: 14px;color: #323232;font-family:"notokr-bold";padding-right: 15px;position: relative;}
+.footer_wrap .footer_middle ul li a::after{content: "";position: absolute;top: 50%;right: 2px;transform: translateY(-50%);width: 3px;height: 3px;background-color: #aaa;border-radius: 50%;}
+.footer_wrap .footer_middle ul li a.footer_middle_last{padding-right: 0;}
+.footer_wrap .footer_middle ul li a.footer_middle_last::after{display: none;}
+
+.footer_bottom p{font-size: 12px;font-family:"notokr-regular";color: #444;line-height: 20px;}
+
+/******************************************************************
+	prd division
+*******************************************************************/
+.prd_division_wrap .prd_division_top{width: 100%;height: 158px;background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/partner_prd_division_bg.jpg") no-repeat 50% 50% / cover;position: relative;text-align: center;}
+.prd_division_wrap .prd_division_top .prd_division_tit{font-size: 18px;font-family:'notokr-medium';color: #fff;padding-top: 40px;}
+.prd_division_wrap .prd_division_top .prd_division_subtit{font-size: 14px;font-family:"notokr-regular";color: #fff;padding-top: 20px;}
+
+.prd_division_wrap .prd_select_wrap{height: 45px;border-bottom: 1px solid #c5c5c5;}
+.prd_division_wrap .prd_select_wrap .prd_select_box{width: 50%;position: relative;}
+.prd_division_wrap .prd_select_wrap .prd_select_box::before{content: "";position: absolute;top: 19px;right: 17px;z-index: 3;width: 14px;height: 8px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/partner_prd_arrow_down.png") no-repeat 100% / cover;}
+.prd_division_wrap .prd_select_wrap .prd_select_box.on::before{background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/partner_prd_arrow_up.png") no-repeat 100% / cover;}
+.prd_division_wrap .prd_select_wrap .prd_select_box::after{content: "";position: absolute;top: 12px;right: 0;width: 1px;height: 22px;background-color: #c5c5c5;}
+.prd_division_wrap .prd_select_wrap .prd_select_box span{line-height: 45px;margin-left: 25px;font-family:"notokr-regular";font-size: 13px;color: #444;}
+.prd_division_wrap .prd_select_wrap .prd_select_box .prd_select_option{display: none;position: absolute;top: 0;left: 0;z-index: 2;width: 100%;background-color: #fff;box-shadow: 0px 5px 9px 0.3px rgba(82, 82, 82, 0.1);border-radius: 0 0 20px 0;}
+.prd_division_wrap .prd_select_wrap .prd_select_box.on .prd_select_option{display: block;}
+.prd_division_wrap .prd_select_wrap .prd_select_box .prd_select_option p a{margin-left: 25px;padding: 15px 0;display: block;font-size: 13px;font-family:"notokr-regular";color: #444;}
+.prd_division_wrap .prd_select_wrap .prd_select_box .prd_select_option p a.on{color: #26988a;}
+
+.prd_division_wrap .prd_division{padding: 45px 25px;}
+.prd_division_wrap .prd_division .prd_division_list{margin-bottom: 35px;}
+.prd_division_wrap .prd_division .prd_division_list.prd_division_last_list{margin-bottom: 0;}
+.prd_division_wrap .prd_division .prd_division_list .list_tit{font-size: 15px;font-family:'notokr-medium';color: #26988a;padding-bottom: 7px;border-bottom: 1px solid #444;margin-bottom: 18px;}
+.prd_division_wrap .prd_division .prd_division_list .list_cont .list_depth_01{font-size: 14px;font-family:"notokr-regular";color: #444;position: relative;border-bottom: 1px solid #444;padding-bottom: 18px;}
+.prd_division_wrap .prd_division .prd_division_list .list_cont .list_depth_01::before{content: "";position: absolute;top: 13px;right: 0;width: 14px;height: 12px;background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/table_arrow_down.png");}
+.prd_division_wrap .prd_division .prd_division_list .list_cont .list_depth_01.on::before{background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/table_arrow_on_up.png");}
+.prd_division_wrap .prd_division .prd_division_list .list_cont ul{display: none;}
+.prd_division_wrap .prd_division .prd_division_list .list_cont ul.on{display: block;}
+.prd_division_wrap .prd_division .prd_division_list .list_cont ul li{border-bottom: 1px solid #c5c5c5;}
+.prd_division_wrap .prd_division .prd_division_list .list_cont ul li.last_list_bb{border-bottom: 1px solid #444;}
+.prd_division_wrap .prd_division .prd_division_list .list_cont ul li .list_depth_02{padding: 10px 0;font-size: 14px;font-family:"notokr-regular";color: #6c6c6c;position: relative;}
+.prd_division_wrap .prd_division .prd_division_list.prd_division_open .list_cont ul li .list_depth_02::before{content: "";position: absolute;top: 16px;right: 0;z-index: 2;width: 13px;height: 7px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/list_depth02_arrow_down.png") no-repeat 100% / cover;}
+.prd_division_wrap .prd_division .prd_division_list.prd_division_open .list_cont ul li .list_depth_02.on::before{background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/list_depth02_arrow_up.png") no-repeat 100% / cover;}
+.prd_division_wrap .prd_division .prd_division_list .list_cont ul li .list_depth_03{font-size: 12px;font-family:"notokr-regular";color: #909090;padding: 23px 7px;background-color: #f5f5f5;margin-bottom: 10px;border-radius: 5px;display: none;}
+.prd_division_wrap .prd_division .prd_division_list .list_cont ul li .list_depth_03.on{display: block;}
+
+.prd_division_wrap .prd_division .prd_division_list.prd_division_brand .list_depth_01.list_depth_01_mb{margin-bottom: 18px;}
+.prd_division_wrap .prd_division .prd_division_list.prd_division_brand .list_depth_01.list_depth_01_mb.on{margin-bottom: 0;}
+.prd_division_wrap .prd_division .prd_division_list.prd_division_brand li.list_depth_02_mb{margin-bottom: 18px;}
+.prd_division_wrap .prd_division .prd_division_list.prd_division_brand .list_cont .list_depth_01::before{top: 3px;}
+
+/******************************************************************
+	manual
+*******************************************************************/
+.manual_wrap .prd_division_top{background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/partner_manual_bg.jpg") no-repeat 50% 50% / cover;}
+
+.manual_wrap .prd_select_wrap .prd_select_box .prd_select_option p{margin-left: 25px;padding: 15px 0;font-size: 13px;font-family:"notokr-regular";color: #444;}
+.manual_wrap .prd_select_wrap .prd_select_box .prd_select_option p.on{color: #26988a;}
+
+.manual_wrap .prd_division .prd_division_tab{display: none;}
+.manual_wrap .prd_division .prd_division_tab.on{display: block;}
+
+.manual_wrap .prd_division .prd_division_tab .tab_tit{font-size: 17px;font-family:'notokr-medium';color: #000;margin-bottom: 18px;}
+.manual_wrap .prd_division .prd_division_tab .tab_bg_box{margin-bottom: 33px;}
+.manual_wrap .prd_division .prd_division_tab .tab_bg_box.tab_bg_box_02{margin-bottom: 12px;}
+
+.manual_wrap .prd_division .prd_division_tab .tab_download_box{margin-bottom: 28px;text-align: right;}
+.manual_wrap .prd_division .prd_division_tab .tab_download_box a{position: relative;display: inline-block;text-align: left;width: 125px; padding: 7px 0 7px 15px;background-color: #26988a;border-radius: 8px;box-shadow: 0px 5px 9px 0.3px rgba(82, 82, 82, 0.2);font-size: 12px;font-family:'notokr-regular';color: #fff;}
+.manual_wrap .prd_division .prd_division_tab .tab_download_box a::after{content: "";position: absolute;top: 10px;right: 15px;width: 13px;height: 10px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/manual_download_icon.png") no-repeat 100% / cover;}
+
+.manual_wrap .prd_division .prd_division_tab .tab_txt_list_box{padding: 0 15px;}
+.manual_wrap .prd_division .prd_division_tab .tab_txt_list_box li{margin-bottom: 37px;}
+.manual_wrap .prd_division .prd_division_tab .tab_txt_list_box .txt_list_tit{font-size: 15px;font-family:'notokr-medium';color: #26988a;margin-bottom: 23px;position: relative;}
+.manual_wrap .prd_division .prd_division_tab .tab_txt_list_box .txt_list_tit::after{content: "";position: absolute;bottom: -11px;right: 0;width: 100%;height: 1px;background-color: #909090;}
+.manual_wrap .prd_division .prd_division_tab .tab_txt_list_box .txt_list_cont{font-size: 15px;font-family:"notokr-regular";color: #444;padding-left: 10px;position: relative;}
+.manual_wrap .prd_division .prd_division_tab .tab_txt_list_box .txt_list_cont::before{content: "";position: absolute;top: 9px;left: 0;width: 2px;height: 2px;border-radius: 50%;background-color: #444;}
+.manual_wrap .prd_division .prd_division_tab .tab_txt_list_box .txt_list_sub_cont{font-size: 15px;font-family:"notokr-regular";color: #909090;padding-left: 10px;}
+
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_tit{font-size: 15px;font-family:'notokr-medium';color: #26988a;padding: 0 15px 10px 15px;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_cont{font-size: 14px;font-family:"notokr-regular";color: #444;padding: 23px 15px;background-color: #f5f5f5;border-radius: 20px;position: relative;margin-bottom: 70px;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_cont::after{content: "";position: absolute;bottom: -57px;left: 50%;transform: translateX(-50%);width: 26px;height: 44px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/desc_arrow_down_icon.png") no-repeat 100% / cover;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box{margin-bottom: 43px;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_cont_02{padding: 23px 15px;background-color: #f5f5f5;border-radius: 20px;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_cont_02 p{font-size: 14px;font-family:"notokr-regular";color: #444;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_cont_02 p.depth_02_pl{padding-left: 10px;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_cont_02 p.depth_02_mb{margin-bottom: 10px;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_cont_02 p.desc_cont_depth_01{margin-bottom: 5px;position: relative;padding-left: 10px;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_cont_02 p.desc_cont_depth_01::before{content: "";position: absolute;top: 8px;left: 0;width: 2px;height: 2px;border-radius: 50%;background-color: #444;}
+.manual_wrap .prd_division .prd_division_tab .tab_desc_box .desc_cont_02 p.desc_cont_depth_02{color: #909090;}
+
+.manual_wrap .prd_division .prd_division_tab .video_box{margin-bottom: 35px;}
+.manual_wrap .prd_division .prd_division_tab .video_box img{border-radius: 15px;}
+
+.manual_wrap .prd_division .prd_division_tab .tab_more_link a{display: block;text-align: center;width: 100%;padding: 14px 0;background-color: #26988a;border-radius: 8px;box-shadow: 0px 5px 9px 0.3px rgba(82, 82, 82, 0.2);font-size: 17px;font-family:'notokr-medium';color: #fff;}
+
+.manual_wrap .prd_division_tab_03 .tab3_select_box{position: relative;width: 100%;height: 40px;line-height: 35px;border-radius: 8px;border: 1px solid #cacaca;padding: 0 17px;margin-bottom: 30px;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box.on{border: none;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box::after{content: "";position: absolute;top: 14px;right: 17px;width: 14px;height: 12px;background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/table_arrow_down.png");}
+.manual_wrap .prd_division_tab_03 .tab3_select_box span{font-size: 15px;font-family:"notokr-regular";color: #444;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box span.tab3_select_more{font-size: 12px;font-family:"notokr-regular";color: #c5c5c5;position: absolute;top: 2px;right: 35px;}
+
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select{position: absolute;top: 0;left: 0;z-index: 1;width: 100%;height: 182px;background-color: #fff;border: 1px solid #c5c5c5;border-radius: 8px;box-shadow: 0px 5px 9px 0.3px rgba(82, 82, 82, 0.1);display: none;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select.on{display: block;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select .tab_03_select_list > span{position: relative;display: block;height: 40px;line-height: 37px;font-size: 15px;font-family:"notokr-regular";color: #444;padding: 0 17px;background-color: #fff;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select .tab_03_select_list > span.tab_03_bt{border-radius: 8px 8px 0 0;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select .tab_03_select_list > span::after{content: "";position: absolute;top: 13px;right: 17px;width: 14px;height: 12px;background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/table_arrow_down.png");}
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select .tab_03_select_list > span.on::after{background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/table_arrow_on_up.png") no-repeat;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select .tab_03_select_list .tab_03_hidden_list{position: relative;height: 35px;line-height: 35px;padding: 0 25px;display: none;background-color: #f5f5f5;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select .tab_03_select_list .tab_03_hidden_list.on{display: block;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select .tab_03_select_list .tab_03_hidden_list::before{content: "";position: absolute;top: 17px;left: 15px;width: 2px;height: 2px;border-radius: 50%;background-color: #26988a;}
+.manual_wrap .prd_division_tab_03 .tab3_select_box .tab_03_select .tab_03_select_list .tab_03_hidden_list span{display: block;font-size: 14px;font-family:"notokr-regular";color: #26988a;}
+
+.manual_wrap .prd_division .prd_division_tab_03 .tab_download_box{text-align: left;padding: 0 15px;}
+.manual_wrap .prd_division .prd_division_tab_03 .tab_download_box .tab_download_tit{font-size: 17px;font-family:'notokr-medium';color: #000;margin-bottom: 15px;}
+.manual_wrap .prd_division .prd_division_tab_03 .tab_download_box .tab_download_subtit{font-size: 14px;font-family:"notokr-regular";color: #444;margin-bottom: 20px;}
+.manual_wrap .prd_division .prd_division_tab_03 .tab_download_box a{width: 163px;}
+
+/******************************************************************
+	notice
+*******************************************************************/
+.notice_wrap .prd_division_top{background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/partner_notice_bg.jpg") no-repeat 50% 50% / cover;}
+
+.notice_wrap .prd_division{padding: 45px 15px;}
+
+.notice_wrap .search_wrap{text-align: center;padding-bottom: 30px;}
+.notice_wrap .search_wrap .search_tit{font-size: 12px;font-family:"notokr-demilight";color: #979797;margin-bottom: 15px;}
+.notice_wrap .search_wrap .search_box{width: 100%;position: relative;margin: 0 auto;}
+.notice_wrap .search_wrap .search_box::before{content: "";position: absolute;top: 15px;right: 15px;z-index: 1;width: 13px;height: 13px;background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/partner_search_icon.png")no-repeat 100% / cover;}
+.notice_wrap .search_wrap .search_box .search{width: 100%;height: 44px;padding: 0 15px;border: 2px solid #26988a;border-radius: 8px;background-color: #fff;font-size: 13px;font-family:"notokr-regular";color: #979797;}
+.notice_wrap .search_wrap .search_box .search::placeholder{font-size: 12px;font-family:"notokr-regular";color: #979797;}
+
+.notice_wrap .notice_list_wrap .notice_list_tit{font-size: 14px;font-family:"notokr-regular";color: #444;margin-bottom: 12px;padding: 0 15px;}
+.notice_wrap .notice_list_wrap .notice_list_tit span{margin-left: 4px;color: #26988a;}
+
+.notice_wrap .notice_list_wrap .notice_list_box ul li a{display: block;overflow: hidden;padding: 17px 0;border-bottom: 1px solid #c5c5c5;position: relative;}
+.notice_wrap .notice_list_wrap .notice_list_box ul li a::before{content: "";position: absolute;top: 27px;right: 5px;width: 10px;height: 17px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/notice_arrow_right_icon.png")no-repeat 100% / cover;}
+.notice_wrap .notice_list_wrap .notice_list_box ul li a.notice_header_first{border-top: 1px solid #444;}
+.notice_wrap .notice_list_wrap .notice_list_box ul li a .list_item{float: left;}
+.notice_wrap .notice_list_wrap .notice_list_box ul li a .list_num{width: 16%;padding-top: 10px;text-align: center;}
+.notice_wrap .notice_list_wrap .notice_list_box ul li a .list_num p{font-size: 14px;font-family:'notokr-medium';color: #444;}
+.notice_wrap .notice_list_wrap .notice_list_box ul li a .list_cont{width: 74%;padding-left: 10px;}
+.notice_wrap .notice_list_wrap .notice_list_box ul li a .list_cont .list_text{font-size: 14px;font-family:'notokr-medium';color: #444;margin-bottom: 5px;}
+.notice_wrap .notice_list_wrap .notice_list_box ul li a .list_cont .list_date{font-size: 11px;font-family:'notokr-medium';color: #979797;}
+
+.notice_wrap .notice_list_wrap .notice_list_header ul li a{border-bottom: 1px solid #444;}
+.notice_wrap .notice_list_wrap .notice_list_header ul li a .list_num p{color: #26988a;}
+
+/******************************************************************
+	QnA
+*******************************************************************/
+.notice_wrap  .qna_select_box{width: 100%;height: 40px;border-radius: 8px;border: 1px solid #cacaca;padding: 0 15px;margin-bottom: 25px;background-color: #fff;position: relative;}
+.notice_wrap  .qna_select_box.on{border: none;}
+.notice_wrap  .qna_select_box::after{content: "";position: absolute;top: 14px;right: 15px;width: 14px;height: 12px;background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/table_arrow_down.png");}
+.notice_wrap  .qna_select_box span{font-size: 15px;font-family:"notokr-regular";color: #444;line-height: 40px;}
+.notice_wrap  .qna_select_box span.qna_select_more{font-size: 11px;font-family:"notokr-regular";color: #c5c5c5;position: absolute;top: 0;right: 35px;}
+.notice_wrap  .qna_select_box .qna_select{position: absolute;top: 0px;left: 0px;z-index: 2;width: 100%;padding-bottom: 15px;background-color: #fff; border: 1px solid #c5c5c5;border-radius: 8px;box-shadow: 0px 5px 9px 0.3px rgba(82, 82, 82, 0.1);display: none;}
+.notice_wrap  .qna_select_box .qna_select.on{display: block;}
+.notice_wrap  .qna_select_box .qna_select .qna_select_list a{position: relative;font-size: 15px;font-family:"notokr-regular";color: #444;padding: 15px 15px 0 15px;background-color: #fff;display: block;}
+.notice_wrap  .qna_select_box .qna_select .qna_select_list a.qna_bt{border-radius: 8px 8px 0 0;color: #26988a;}
+.notice_wrap  .qna_select_box .qna_select .qna_select_list a.qna_bt::after{content: "";position: absolute;top: 20px;right: 20px;width: 14px;height: 12px;background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/table_arrow_on_up.png");}
+
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_show_list{overflow: hidden;height: 70px;position: relative;border-bottom: 1px solid #444;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_show_list.qna_show_first{border-top: 1px solid #444;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_show_list.on{background-color: #f5f5f5;border-bottom: none;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_show_list::before{content: "";position: absolute;top: 50%;transform: translateY(-50%);right: 5px;width: 17px;height: 9px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/fnq_down_arrow_icon.png")no-repeat 100% / cover;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_show_list.on::before{background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/fnq_up_arrow_icon.png")no-repeat 100% / cover;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_show_list p{float: left;position: absolute;top: 50%;transform: translateY(-50%);}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_show_list p.qna_tit{left: 2%;width: 18%;font-size: 13px;font-family:"notokr-regular";color: #979797;text-align: center;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_show_list p.qna_cont{left: 22%;width: 70%;font-size: 14px;font-family:"notokr-regular";color: #444;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_hidden_list{padding:25px 20px;border-bottom: 1px solid #444;background-color: #f5f5f5;position: relative;display: none;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_hidden_list::after{content: "";position: absolute;top: 0;left: 20px;width: 43px;height: 3px;background-color: #26988a;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_hidden_list.on{display: block;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_hidden_list p{font-size: 14px;font-family:"notokr-regular";color: #444;}
+.notice_wrap .qna_list_wrap ul .qna_list_box .qna_hidden_list p span{color: #26988a;}
+
+/******************************************************************
+	page nav
+*******************************************************************/
+.notice_wrap .notice_list_wrap .page_nav{margin-top: 25px;height: 24px;display: flex;align-items: center;justify-content: center;}
+.notice_wrap .notice_list_wrap .page_nav a{display: inline-block;}
+.notice_wrap .notice_list_wrap .page_nav .nav_text{font-size: 15px;font-family:"notokr-regular";color: #444;}
+.notice_wrap .notice_list_wrap .page_nav .nav_prev{width: 24px;height: 24px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/page_nav_prev_icon.png")no-repeat 100% / cover;margin-right: 18px;}
+.notice_wrap .notice_list_wrap .page_nav .nav_next{width: 24px;height: 24px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/page_nav_next_icon.png")no-repeat 100% / cover;margin-left: 18px;}
+
+/******************************************************************
+	notice detail
+*******************************************************************/
+.notice_wrap .notice_detail .detail_tit{font-size: 18px;font-family:'notokr-medium';color: #000;margin: 0 0 30px 15px;}
+.notice_wrap .notice_detail .detail_cont{margin-bottom: 30px;}
+.notice_wrap .notice_detail .detail_cont .cont_text{font-size: 16px;font-family:"notokr-regular";color: #444;margin: 0 0 5px 15px;}
+.notice_wrap .notice_detail .detail_cont .cont_date{font-size: 12px;font-family:"notokr-regular";color: #979797;margin: 0 0 10px 15px;}
+.notice_wrap .notice_detail .detail_cont .cont_file{padding: 6px 15px 10px;border-top: 1px solid #444;border-bottom: 1px solid #444;}
+.notice_wrap .notice_detail .detail_cont .cont_file span{font-size: 12px;font-family:"notokr-regular";color: #979797;}
+.notice_wrap .notice_detail .detail_cont .cont_file span.file_type{color: #26988a;padding-left: 10px;}
+
+.notice_wrap .notice_detail .paragraph{padding: 0 15px;}
+.notice_wrap .notice_detail .paragraph p{margin-bottom: 30px;font-size: 14px;font-family:"notokr-regular";color: #444;}
+
+.notice_wrap .notice_detail .paragraph_nav{margin-bottom: 25px;}
+.notice_wrap .notice_detail .paragraph_nav .nav_line{padding: 10px 15px;border-top: 1px solid #c5c5c5;overflow: hidden;}
+.notice_wrap .notice_detail .paragraph_nav .nav_line.nav_prev{border-bottom: 1px solid #c5c5c5;}
+.notice_wrap .notice_detail .paragraph_nav .nav_line .paragraph_icon{font-size: 12px;font-family:"notokr-regular";color: #979797;position: relative;float: left;display: block;margin: 2px 40px 0 0;}
+.notice_wrap .notice_detail .paragraph_nav .nav_line .paragraph_icon::after{content: "";position: absolute;top: 4px;right: -15px;width: 9px;height: 8px;background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/paragraph_up_icon.png")no-repeat 100% / cover;}
+.notice_wrap .notice_detail .paragraph_nav .nav_line.nav_prev .paragraph_icon::after{background: url("//img.ezwelfare.net/welfare_mobile/real/images/partner/paragraph_down_icon.png")no-repeat 100% / cover;}
+.notice_wrap .notice_detail .paragraph_nav .nav_line .paragraph_text{font-size: 14px;font-family:"notokr-regular";color: #444;float: left;display: block;}
+
+.notice_wrap .notice_detail .notice_detail_list{text-align: center;}
+.notice_wrap .notice_detail .notice_detail_list a{font-size: 15px;font-family:"notokr-regular";color: #444;display:block;width: 100%;padding: 8px 0;border-radius: 8px;border: 1px solid #c5c5c5;}
+
+/******************************************************************
+	login 
+*******************************************************************/
+.login_wrapper{width: 100%;}
+.login_wrap{width: 100%;background-color: #fff;padding: 75px 0;}
+.login_wrap .login_box{width: 100%;}
+.login_wrap .login_box.login_box_01{text-align: center;}
+.login_wrap .login_box.login_box_01 .login_logo{font-size: 16px;color: #000;font-family:'notokr-medium';margin: 0 0 16px 0;display: inline-block;}
+.login_wrap .login_box.login_box_01 .login_logo img{display: block;margin: 0 auto;margin-bottom: 10px;width: 110px;height: 43px;}
+.login_wrap .login_box.login_box_01 .login_box_01_text{font-size: 14px;color: #444;font-family:'notokr-medium';line-height: 1.5;margin-bottom: 30px;}
+ 
+.login_wrap .login_box.login_box_02{background-color: #fff;padding: 0 20px;}
+.login_wrap .login_box.login_box_02 h2{font-size: 13px;font-family:'notokr-medium';color: #373737;padding: 0 0 8px 16px;}
+.login_wrap .login_box.login_box_02 .login_select_box{position: relative;}
+.login_wrap .login_box.login_box_02 .login_select_box .login_select_top{position: relative;width: 100%;height: 40px;border: 1px solid #c5c5c5;border-radius: 6px;padding: 0 15px;cursor: pointer;margin-bottom: 20px;}
+.login_wrap .login_box.login_box_02 .login_select_box .login_select_top::after{content: "";position: absolute;top: 15px;right: 15px;width: 10px;height: 9px;background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/table_arrow_down.png")no-repeat 100% / cover;}
+.login_wrap .login_box.login_box_02 .login_select_box .login_select_top span{font-size: 14px;font-family:"notokr-regular";color: #c5c5c5;line-height: 40px;}
+.login_wrap .login_box.login_box_02 .login_select_box .login_select{position: absolute;top: 25px;left: 0px;z-index: 2;width: 100%;padding: 15px;border: 1px solid #c5c5c5;border-radius: 6px;background-color: #fff;box-shadow: 0px 5px 9px 0px rgba(82, 82, 82, 0.1);display: none;}
+.login_wrap .login_box.login_box_02 .login_select_box .login_select.on{display: block;}
+.login_wrap .login_box.login_box_02 .login_select_box .login_select .login_select_list{margin-bottom: 10px;}
+.login_wrap .login_box.login_box_02 .login_select_box .login_select .login_select_list.login_select_last_list{margin-bottom: 0;}
+.login_wrap .login_box.login_box_02 .login_select_box .login_select .login_select_list a{font-family:"notokr-regular";font-size: 14px;display: block;color: #444;text-align: left;}
+
+.login_wrap .login_box.login_box_02 .login_text_box{margin-bottom: 10px;font-size: 14px;font-family:"notokr-regular";color: #c5c5c5;line-height: 40px;width: 100%;height: 40px;border: 1px solid #c5c5c5;border-radius: 6px;padding: 0 15px;}
+.login_wrap .login_box.login_box_02 .login_pw_box{margin-bottom: 15px;}
+.login_wrap .login_box.login_box_02 .login_text_box::placeholder{font-size: 14px;font-family:'notokr-regular';color: #c5c5c5;line-height: 40px;}
+.login_wrap .login_box.login_box_02 input[type="checkbox"]{display: none;}
+.login_wrap .login_box.login_box_02 input[type="checkbox"] + label{cursor: pointer;display: inline-block;padding-left: 20px;line-height: 16px;width: 80px;height: 15px;background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/login_check.png")no-repeat;}
+.login_wrap .login_box.login_box_02 input[type="checkbox"]:checked + label{background: url("//img.ezwelfare.net/welfare_new/images/customer/partner/login_check_on.png") no-repeat;}
+.login_wrap .login_box.login_box_02 .login_id_save{font-size: 13px;color: #373737;font-family:'notokr-medium';margin: 0 0 0 8px;}
+
+.login_wrap .login_box.login_box_02 .login_button{width: 100%;height: 45px;border: 1px solid #c5c5c5;border-radius: 6px;margin-top: 10px;background-color: #26988a;}
+.login_wrap .login_box.login_box_02 .login_button a{display: block;text-align: center;line-height: 45px;font-size: 18px;color: #fff;font-family:'notokr-medium';}
+
+.login_wrap .login_box.login_box_02 .login_explanation{margin-top: 10px;}
+.login_wrap .login_box.login_box_02 .login_explanation p{font-size: 12px;font-family:"notokr-demilight";color: #373737;margin-bottom: 16px;}
+.login_wrap .login_box.login_box_02 .login_explanation a{font-size: 13px;font-family:'notokr-regular';color: #26988a;width: 84px;height: 29px;text-align: center;line-height: 29px;display: block;background-color: #fff;border: 1px solid #99cfc8;border-radius: 3px;margin-right: 3px;}

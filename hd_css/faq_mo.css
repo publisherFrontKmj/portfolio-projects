@@ -1,0 +1,85 @@
+@charset "utf-8";
+*{box-sizing: border-box;}
+body{background-color: #ebedef;}
+/* faq 상담센터 */
+.myez_box.ez_faq .orderpro_wrap input:focus{border: 1px solid #179a84;outline: none;}
+.myez_box.ez_faq .orderpro_wrap .search_bt .faq_search_icon{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 15px;height: 15px;display: block;}
+.myez_box.ez_faq .search_tab{margin-top: 10px;}
+.myez_box.ez_faq .search_tab ul{font-size:0;text-align:left;}
+.myez_box.ez_faq .search_tab li{margin-right: 15px;display:inline-block;}
+.myez_box.ez_faq .search_tab li:last-child{margin-right: 0;}
+.myez_box.ez_faq .search_tab li a{font-size:12px;font-family:"notokr-regular";color:#888;display:block;}
+.myez_box.ez_faq .faq_sub_tab01{width: 100%;}
+.myez_box.ez_faq .faq_sub_tab01 ul{display:flex;flex-wrap:wrap;justify-content: center;}
+.myez_box.ez_faq .faq_sub_tab01 li{width: 33.33%;text-align: center;}
+.myez_box.ez_faq .faq_sub_tab01 li a{display: block;font-size:12px;font-family:"notokr-regular";color:#666;padding: 12px 0;border: 1px solid #ddd;background-color: #f8f8f8;margin-top: -1px;margin-left: -1px;position: relative;}
+.myez_box.ez_faq .faq_sub_tab01 li.on a{border-color: #009782;background-color: #fff;color: #009782;z-index: 1;}
+.myez_box.ez_faq .faq_sub_tab02{width: 100%;padding: 0 0 15px 15px;background-color: #fff;position: relative;}
+.myez_box.ez_faq .faq_sub_tab02::after{content: "";position: absolute;top: 0;right: 0;width: 80px;height: 100%;z-index: 2;font-size: 0;text-indent: -9999px;background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 65%,rgba(255,255,255,1) 100%);}
+.myez_box.ez_faq .faq_sub_tab02 .tab_scroll_box{width: 100%;overflow-x: auto;overflow-y: hidden;white-space: nowrap;}
+.myez_box.ez_faq .faq_sub_tab02 .tab_scroll_box::-webkit-scrollbar{display: none;}
+.myez_box.ez_faq .faq_sub_tab02 ul{font-size: 0;width: 100%;}
+.myez_box.ez_faq .faq_sub_tab02 li{display: inline-block;margin-left: 5px;}
+.myez_box.ez_faq .faq_sub_tab02 li:first-child{margin-left: 0;}
+.myez_box.ez_faq .faq_sub_tab02 li:last-child{padding-right: 80px;}
+.myez_box.ez_faq .faq_sub_tab02 li a{display: block;font-size:12px;font-family:"notokr-regular";color:#666;padding: 0 15px;border: 1px solid #ddd;background-color: #fff;height: 25px;line-height: 25px;border-radius: 13px;}
+.myez_box.ez_faq .faq_sub_tab02 li.on a{border-color: #009782;background-color: #009782;color: #fff;font-family:"notokr-bold";}
+.myez_box.ez_faq .faq_tit_box{margin-top: 5px;padding: 15px;background-color: #fff;}
+.myez_box.ez_faq .faq_tit_box span{font-size:12px;font-family:"notokr-bold";color:#333;display: inline-block;height: 16px;vertical-align: middle;}
+.myez_box.ez_faq .faq_tit_box span.point_c{color:#009782;max-width: 121px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.myez_box.ez_faq .faq_table{width: 100%;}
+.myez_box.ez_faq .faq_table td{padding: 15px 42px 15px 15px;background-color: #fff;}
+.myez_box.ez_faq .faq_table .faq_q .faq_q02{margin-bottom: 10px;display: inline-block;font-size:11px;font-family:"notokr-medium";color:#009782;border-radius: 8px;border: 1px solid #e7e7e7;padding: 0 5px;height: 16px;line-height: 16px;}
+.myez_box.ez_faq .faq_table .faq_q .faq_q03{font-size:14px;font-family:"notokr-regular";color:#333;line-height: 1.5;word-break: break-all;} /* 241016 */
+.myez_box.ez_faq .faq_table .faq_q.on .faq_q03{font-family:"notokr-bold";}
+.myez_box.ez_faq .faq_table .faq_q td{position: relative;border-top: 1px solid #ebedef;}
+.myez_box.ez_faq .faq_table .faq_q td::before{content: "";transition: all 0.3s;position: absolute;top: 50%;transform: translateY(-50%);right: 15px;width: 12px;height: 8px;background: url("//img.ezwelfare.net/welfare_new/images/faq/faq_arrow_icon.png")no-repeat 100%/cover;}
+.myez_box.ez_faq .faq_table .faq_q.on td::before{transform: rotate(-180deg);}
+.myez_box.ez_faq .faq_table .faq_a{display: none;}
+.myez_box.ez_faq .faq_table .faq_a td{background-color: #f8f8f8;padding: 15px;}/* 241008 */
+.myez_box.ez_faq .faq_table .faq_a .faq_a_top span{font-family:'notokr-regular';font-size:12px;color:#a6a6a6;}
+.myez_box.ez_faq .faq_table .faq_a .faq_a_editor{padding: 19px 0;}
+/* 241008 faq editor */
+.myez_box.ez_faq .faq_table .faq_a .faq_a_editor table td{padding: 0;background-color: #fff;}
+.myez_box.ez_faq .faq_table .faq_a .faq_a_editor{word-break: break-all;}
+.myez_box.ez_faq .faq_table .faq_a .faq_a_editor hr{display: block;}
+.myez_box.ez_faq .faq_table .faq_a .faq_a_editor strong{font-weight: bold;}
+/* .myez_box.ez_faq .faq_table .faq_a .faq_a_editor table td{padding: 5px !important;background-color: #fff !important;border: 1px solid #333 !important;}
+.myez_box.ez_faq .faq_table .faq_a .faq_a_editor img{display: block !important;max-width: 100% !important;} */
+/* //241008 faq editor */
+.myez_box.ez_faq .faq_table .faq_a .faq_a_bottom a{display: inline-block;font-family:'notokr-medium';font-size:13px;color:#666;background-color: #fff;text-align: center;padding: 10px 20px 10px 10px;border-radius: 3px;border: 1px solid #c8c8c8;position: relative;}
+.myez_box.ez_faq .faq_table .faq_a .faq_a_bottom a::after{content: '';position: absolute;top: 50%;right: 10px;display: inline-block;width: 7px;height: 7px;border: 1px solid #333;border-width: 1px 1px 0 0;transform: translateY(-50%) rotate(45deg);}
+.myez_box.ez_faq .ez_tab_con .faq_empty_txt{text-align: center;background-color: #fff;padding: 85px 0 100px 0;line-height: 20px;}
+.myez_box.ez_faq .ez_tab_con .faq_empty_txt em{font-family:'notokr-bold';font-size:14px;color:#505050;display: block;}
+.myez_box.ez_faq .ez_tab_con .faq_empty_txt ul li{font-family:'notokr-regular';font-size:12px;color:#a6a6a6;}
+.myez_box.ez_faq .ez_tab_con .faq_empty_txt ul li:first-child{margin-top: 10px;}
+.myez_box.ez_faq .faq_bottom_box{margin-top: 5px;padding: 15px;background-color: #fff;}
+.myez_box.ez_faq .faq_bottom_box .bottom_txt_box{position: relative;padding-bottom: 25px;}
+.myez_box.ez_faq .faq_bottom_box .bottom_txt_box::before{content: "";position: absolute;bottom: 0;right: 0;width: 173px;height: 122px;background: url("//img.ezwelfare.net/welfare_new/images/faq/faq_person_icon.png")no-repeat 100%/cover;}
+.myez_box.ez_faq .faq_bottom_box .faq_t01{font-size:13px;font-family:"notokr-bold";color:#333;}
+.myez_box.ez_faq .faq_bottom_box .faq_t02{font-size:12px;font-family:"notokr-bold";color:#888;margin-top: 15px;}
+.myez_box.ez_faq .faq_bottom_box .faq_t03{font-size:20px;font-family:"notokr-bold";color:#009782;margin-top: 5px;}
+.myez_box.ez_faq .faq_bottom_box .faq_t04{font-size:12px;font-family:"notokr-regular";color:#a6a6a6;margin-top: 10px;line-height: 18px;}
+.myez_box.ez_faq .faq_bottom_box .bottom_btn_box{display: flex;justify-content: space-between;}
+.myez_box.ez_faq .faq_bottom_box .bottom_btn_box a{width: 49%;display: block;text-align: center;padding: 10px 0;font-size:12px;font-family:"notokr-medium";border: 1px solid #009782;}
+.myez_box.ez_faq .faq_bottom_box .bottom_btn_box a.bottom_btn01{color:#009782;background-color: #fff;}
+.myez_box.ez_faq .faq_bottom_box .bottom_btn_box a.bottom_btn02{color:#fff;background-color: #009782;}
+
+.more_bt2{height:35px;line-height:1em;padding:12px 0 0 0;text-align:center;display:block;color:#666;font-size:0.875rem;background:#f8f8f8;}
+.more_bt2 .arr_ic2{vertical-align:top;top:4px;position:relative;margin:0 0 0 4px;}
+.more_bt2.bdb1{border-bottom:1px solid #ddd;height:36px;}
+
+/*order_status*/
+.ordertab_block .text_box{padding:15px;text-align:center;background:#fff;}
+.ordertab_block .text_box strong{font-family:notokr-bold !important;color:#2f2f2f;font-size:0.815rem;display:block;margin-bottom:8px;}
+.ordertab_block .text_box span{color:#666;font-size: 0.75rem}
+.ordertab_block .text_box .btnarea{padding-top:5px;}
+
+.ez_input{position: relative;}
+.ez_input input{position:relative;display:block;width:100%;height:35px;padding:0 10px;border:1px solid #ddd;color:#666;font-size:0.813rem;}
+.ez_input input:focus{color:#333;}
+.ez_input input:disabled{background:#f5f6f7;border:1px solid #eee;color:#aaa;}
+
+.ez_input.search_type input{padding:0 45px 0 10px;}
+.ez_input.search_type .search_bt{display:block;position:absolute;right:0;top:0;width:35px;height:35px;}
+.ez_input.search_type .search_bt .search_ic2{margin:10px 0 0 10px;}
